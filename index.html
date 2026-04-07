@@ -13,39 +13,24 @@
   <div class="page-shell">
     <header class="topbar">
       <div class="topbar-inner">
-        <a href="index.html" class="brand-badge">
-          <span class="brand-logo">JP</span>
-          <span class="brand-copy">
-            <small>Demo hệ thống</small>
-            <strong>Job Position Advisor</strong>
-          </span>
-        </a>
+        <a href="index.html" class="brand-title">Job Position Advisor</a>
 
         <nav class="top-nav">
           <a class="top-nav-link active" href="index.html">Trang chủ</a>
           <a class="top-nav-link" href="pages/jobs.html">Việc làm</a>
           <a class="top-nav-link" href="pages/position-profile.html">Hồ sơ vị trí</a>
+          <a class="top-nav-link" href="pages/upload-profile.html">Hồ sơ cá nhân</a>
         </nav>
-
-        <a href="pages/upload-profile.html" class="top-cta">
-          <i class="bi bi-person-circle"></i>
-          <span>Hồ sơ cá nhân</span>
-        </a>
       </div>
     </header>
 
     <main class="hero-stage">
       <div class="container hero-container">
         <section class="hero-content">
-          <div class="hero-kicker">
-            Dữ liệu tuyển dụng - Hồ sơ cá nhân - Đối sánh vị trí việc làm
-          </div>
-
           <h1 class="hero-title">Hệ thống thử nghiệm tư vấn vị trí việc làm</h1>
 
           <p class="hero-subtitle">
-            Tìm kiếm vị trí việc làm theo từ khóa hoặc khám phá theo nhóm lĩnh vực
-            để xem các vị trí phù hợp với định hướng học tập và nghề nghiệp.
+            Tìm kiếm vị trí việc làm theo từ khóa hoặc khám phá theo lĩnh vực.
           </p>
 
           <div class="search-panel">
@@ -58,7 +43,7 @@
                 type="text"
                 id="searchInput"
                 class="form-control search-input"
-                placeholder="Nhập tên vị trí việc làm, kỹ năng hoặc từ khóa..."
+                placeholder="Tìm kiếm vị trí việc làm"
                 autocomplete="off"
               />
 
@@ -70,62 +55,36 @@
             <div id="searchSuggestions" class="suggestion-box d-none"></div>
           </div>
 
-          <div class="hero-note">
-            Gợi ý nhanh: Chuyên viên Quản lý thông tin, Phân tích dữ liệu, Quản trị cơ sở dữ liệu
-          </div>
-
           <section class="field-panel">
-            <h2 class="field-panel-title">Khám phá theo lĩnh vực</h2>
+            <h2 class="field-panel-title">Lĩnh vực</h2>
 
             <div class="field-grid">
               <button class="field-card field-tag" data-field="Khoa học thông tin" type="button">
-                <span class="field-icon-circle">
-                  <i class="bi bi-journal-richtext"></i>
+                <span class="field-folder-icon">
+                  <i class="bi bi-folder-fill"></i>
                 </span>
-                <div class="field-card-body">
-                  <h3 class="field-name">Khoa học thông tin</h3>
-                  <p class="field-desc">
-                    Nhóm vị trí liên quan đến tổ chức, quản lý, lưu trữ và khai thác nguồn tin.
-                  </p>
-                  <span class="field-meta">4 vị trí gợi ý</span>
-                </div>
+                <span class="field-name">Khoa học thông tin</span>
               </button>
 
               <button class="field-card field-tag" data-field="Công nghệ thông tin - truyền thông" type="button">
-                <span class="field-icon-circle">
-                  <i class="bi bi-laptop"></i>
+                <span class="field-folder-icon">
+                  <i class="bi bi-folder-fill"></i>
                 </span>
-                <div class="field-card-body">
-                  <h3 class="field-name">CNTT - truyền thông</h3>
-                  <p class="field-desc">
-                    Nhóm vị trí gắn với dữ liệu, hệ thống thông tin, phân tích và quản trị cơ sở dữ liệu.
-                  </p>
-                  <span class="field-meta">3 vị trí gợi ý</span>
-                </div>
+                <span class="field-name">Công nghệ thông tin - truyền thông</span>
               </button>
 
               <button class="field-card field-tag" data-field="Quản lý" type="button">
-                <span class="field-icon-circle">
-                  <i class="bi bi-briefcase"></i>
+                <span class="field-folder-icon">
+                  <i class="bi bi-folder-fill"></i>
                 </span>
-                <div class="field-card-body">
-                  <h3 class="field-name">Quản lý</h3>
-                  <p class="field-desc">
-                    Nhóm vị trí thiên về điều phối hồ sơ, hành chính, vận hành và quản trị công việc.
-                  </p>
-                  <span class="field-meta">3 vị trí gợi ý</span>
-                </div>
+                <span class="field-name">Quản lý</span>
               </button>
             </div>
           </section>
 
           <section id="fieldPreview" class="field-preview d-none" aria-live="polite">
             <div class="field-preview-header">
-              <div>
-                <div class="preview-kicker">Danh sách gợi ý</div>
-                <h5 id="fieldPreviewTitle" class="mb-0"></h5>
-              </div>
-
+              <h5 id="fieldPreviewTitle" class="mb-0"></h5>
               <button id="closeFieldPreview" class="btn-close-preview" type="button">
                 Đóng
               </button>
