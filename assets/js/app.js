@@ -3,7 +3,6 @@ const suggestionBox = document.getElementById("searchSuggestions");
 const searchBtn = document.getElementById("searchBtn");
 
 const fieldTags = document.querySelectorAll(".field-tag");
-
 const fieldPreview = document.getElementById("fieldPreview");
 const fieldPreviewTitle = document.getElementById("fieldPreviewTitle");
 const fieldPreviewList = document.getElementById("fieldPreviewList");
