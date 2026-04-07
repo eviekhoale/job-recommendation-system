@@ -33,64 +33,59 @@
       <section class="hero-section">
         <div class="container hero-container">
           <div class="hero-box">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-xl-9">
-                <div class="hero-content mx-auto">
-                  <h1 class="hero-title text-center">
-                    Hệ thống thử nghiệm tư vấn vị trí việc làm
-                  </h1>
+            <div class="hero-inner">
+              <h1 class="hero-title">
+                Hệ thống thử nghiệm tư vấn vị trí việc làm
+              </h1>
 
-                  <div class="search-panel mt-4">
-                    <div class="search-wrapper">
-                      <div class="search-icon">⌕</div>
-                      <input
-                        type="text"
-                        id="searchInput"
-                        class="form-control search-input"
-                        placeholder="Tìm kiếm vị trí việc làm"
-                        autocomplete="off"
-                      >
-                      <button id="searchBtn" class="btn search-btn" type="button">Tìm kiếm</button>
-                    </div>
+              <div class="search-panel mt-4">
+                <div class="search-wrapper">
+                  <div class="search-icon">⌕</div>
+                  <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control search-input"
+                    placeholder="Tìm kiếm vị trí việc làm"
+                    autocomplete="off"
+                  >
+                  <button id="searchBtn" class="btn search-btn" type="button">Tìm kiếm</button>
+                </div>
 
-                    <div id="searchSuggestions" class="suggestion-box d-none"></div>
+                <div id="searchSuggestions" class="suggestion-box d-none"></div>
 
-                    <div class="search-helper mt-4">
-                      <div class="helper-group">
-                        <p class="helper-title">Lĩnh vực</p>
+                <div class="search-helper mt-4">
+                  <div class="helper-group">
+                    <p class="helper-title">Lĩnh vực</p>
 
-                        <div class="field-grid">
-                          <button class="field-tag field-card" data-field="Khoa học thông tin">
-                            <span class="field-icon">📚</span>
-                            <span class="field-text">Khoa học thông tin</span>
-                          </button>
+                    <div class="field-grid">
+                      <button class="field-tag field-card" data-field="Khoa học thông tin">
+                        <span class="field-icon">📚</span>
+                        <span class="field-text">Khoa học thông tin</span>
+                      </button>
 
-                          <button class="field-tag field-card" data-field="Công nghệ thông tin - truyền thông">
-                            <span class="field-icon">💻</span>
-                            <span class="field-text">Công nghệ thông tin - truyền thông</span>
-                          </button>
+                      <button class="field-tag field-card" data-field="Công nghệ thông tin - truyền thông">
+                        <span class="field-icon">💻</span>
+                        <span class="field-text">Công nghệ thông tin - truyền thông</span>
+                      </button>
 
-                          <button class="field-tag field-card" data-field="Quản lý">
-                            <span class="field-icon">🗂️</span>
-                            <span class="field-text">Quản lý</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div id="fieldPreview" class="field-preview d-none mt-4">
-                      <div class="field-preview-header">
-                        <h5 id="fieldPreviewTitle" class="mb-0"></h5>
-                        <button id="closeFieldPreview" class="btn-close-preview" type="button">Đóng</button>
-                      </div>
-
-                      <div id="fieldPreviewList" class="field-preview-list mt-3"></div>
+                      <button class="field-tag field-card" data-field="Quản lý">
+                        <span class="field-icon">🗂️</span>
+                        <span class="field-text">Quản lý</span>
+                      </button>
                     </div>
                   </div>
                 </div>
+
+                <div id="fieldPreview" class="field-preview d-none mt-4">
+                  <div class="field-preview-header">
+                    <h5 id="fieldPreviewTitle" class="mb-0"></h5>
+                    <button id="closeFieldPreview" class="btn-close-preview" type="button">Đóng</button>
+                  </div>
+                  <div id="fieldPreviewList" class="field-preview-list mt-3"></div>
+                </div>
               </div>
-            </div>  
-          </div>
+            </div>
+          </div>  
         </div>
       </section>
     </main>
