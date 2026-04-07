@@ -6,11 +6,14 @@
   --text-main: #ffffff;
   --text-dark: #20324f;
 
-  --blue-main: #7fb2f0;
-  --blue-dark: #5a90db;
-  --blue-soft: #ecf4ff;
-  --blue-soft-2: #f5f9ff;
-  --blue-card-border: rgba(140, 178, 235, 0.28);
+  --blue-main: #86b8f5;
+  --blue-dark: #5f98e6;
+  --blue-soft: #edf5ff;
+  --blue-soft-2: #f7fbff;
+  --blue-border: rgba(156, 192, 241, 0.34);
+  --blue-border-strong: rgba(95, 152, 230, 0.28);
+
+  --border-card: rgba(174, 200, 232, 0.34);
 
   --shadow-hero: 0 16px 36px rgba(28, 59, 106, 0.16);
   --shadow-card: 0 12px 28px rgba(21, 45, 82, 0.12);
@@ -40,7 +43,7 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    linear-gradient(rgba(17, 30, 54, 0.42), rgba(17, 30, 54, 0.52)),
+    linear-gradient(rgba(17, 30, 54, 0.40), rgba(17, 30, 54, 0.50)),
     url("../images/bg.jpg") center center / cover no-repeat;
   transform: scale(1.02);
   filter: blur(4px);
@@ -53,7 +56,7 @@ body::after {
   inset: 0;
   background:
     radial-gradient(circle at top center, rgba(255, 255, 255, 0.08), transparent 38%),
-    linear-gradient(180deg, rgba(12, 22, 40, 0.03) 0%, rgba(12, 22, 40, 0.20) 100%);
+    linear-gradient(180deg, rgba(12, 22, 40, 0.03) 0%, rgba(12, 22, 40, 0.18) 100%);
   z-index: -1;
 }
 
@@ -128,23 +131,24 @@ input {
 }
 
 .hero-container {
-  max-width: 1280px;
+  max-width: 1360px;
 }
 
 .hero-content {
-  max-width: 1240px;
+  max-width: 1320px;
   margin: 0 auto;
   text-align: center;
 }
 
 .hero-title {
   margin: 0 0 20px;
-  font-size: clamp(2.45rem, 3.4vw, 3.3rem);
-  line-height: 1.12;
+  font-size: clamp(2.1rem, 2.9vw, 3.1rem);
+  line-height: 1.08;
   font-weight: 900;
   color: var(--white);
   text-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
   white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 
 .search-panel {
@@ -202,7 +206,7 @@ input {
   color: var(--white);
   font-size: 0.98rem;
   font-weight: 800;
-  box-shadow: 0 10px 20px rgba(90, 144, 219, 0.22);
+  box-shadow: 0 10px 20px rgba(95, 152, 230, 0.22);
   transition: all 0.22s ease;
   flex-shrink: 0;
 }
@@ -241,24 +245,23 @@ input {
   background: #eef5ff;
 }
 
+/* KHỐI LĨNH VỰC */
 .field-panel {
-  width: min(940px, 100%);
+  width: min(1120px, 100%);
   margin: 0 auto;
-  padding: 20px 24px 18px;
-  border-radius: 26px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 38px 36px 34px;
+  border-radius: 30px;
+  background: var(--surface);
   box-shadow: var(--shadow-hero);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .field-panel-title {
   text-align: center;
-  margin: 0 0 16px;
-  color: rgba(255, 255, 255, 0.94);
+  margin: 0 0 24px;
+  color: #6e84a8;
   font-weight: 800;
-  font-size: 0.98rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -266,7 +269,7 @@ input {
 .field-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 22px;
 }
 
 .field-tag {
@@ -276,17 +279,17 @@ input {
 }
 
 .field-card {
-  border: 1px solid var(--blue-card-border);
+  border: 1px solid var(--border-card);
   background: linear-gradient(180deg, #fbfcff 0%, #eef4ff 100%);
   border-radius: 24px;
-  padding: 22px 18px;
-  min-height: 148px;
+  padding: 28px 22px;
+  min-height: 238px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
   text-align: center;
+  justify-content: center;
+  gap: 18px;
   cursor: pointer;
   transition: all 0.24s ease;
 }
@@ -294,40 +297,40 @@ input {
 .field-card:hover,
 .field-card.is-active {
   transform: translateY(-3px);
-  border-color: rgba(90, 144, 219, 0.28);
-  box-shadow: 0 18px 34px rgba(25, 52, 94, 0.10);
-  background: linear-gradient(180deg, #fdfeff 0%, #e8f1ff 100%);
+  border-color: var(--blue-border-strong);
+  box-shadow: 0 18px 34px rgba(31, 67, 121, 0.10);
+  background: linear-gradient(180deg, #fdfefe 0%, #e6f0ff 100%);
 }
 
 .field-icon-circle {
-  width: 72px;
-  height: 72px;
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
-  border: 1px solid rgba(154, 187, 235, 0.34);
+  border: 1px solid var(--blue-border);
   background: #ffffff;
   color: var(--blue-dark);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.75rem;
+  font-size: 2rem;
   line-height: 1;
-  box-shadow: 0 8px 18px rgba(126, 167, 230, 0.14);
+  box-shadow: 0 10px 24px rgba(95, 152, 230, 0.14);
 }
 
 .field-text {
   color: #243757;
   font-weight: 800;
-  font-size: 0.98rem;
-  line-height: 1.42;
+  font-size: 1.02rem;
+  line-height: 1.45;
   max-width: 220px;
 }
 
 .field-preview {
-  width: min(940px, 100%);
+  width: min(1120px, 100%);
   margin: 14px auto 0;
-  padding: 16px 18px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.96);
+  padding: 18px 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.97);
   box-shadow: var(--shadow-card);
   border: 1px solid rgba(255, 255, 255, 0.55);
   text-align: left;
@@ -338,12 +341,12 @@ input {
   justify-content: space-between;
   align-items: center;
   gap: 14px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 #fieldPreviewTitle {
   color: #20324f;
-  font-size: 1rem;
+  font-size: 1.04rem;
   font-weight: 800;
 }
 
@@ -371,12 +374,12 @@ input {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 11px 13px;
+  padding: 12px 14px;
   border-radius: 14px;
   background: var(--blue-soft-2);
   border: 1px solid #deebfb;
   color: #243757;
-  font-size: 0.93rem;
+  font-size: 0.94rem;
   font-weight: 600;
 }
 
@@ -418,7 +421,7 @@ input {
   }
 
   .hero-title {
-    font-size: 2.15rem;
+    font-size: 2.1rem;
     white-space: normal;
   }
 
@@ -445,12 +448,12 @@ input {
   }
 
   .field-panel {
-    padding: 18px 16px;
-    border-radius: 22px;
+    padding: 24px 18px;
+    border-radius: 24px;
   }
 
   .field-card {
-    min-height: 122px;
+    min-height: 170px;
   }
 
   .field-preview {
@@ -474,7 +477,7 @@ input {
   }
 
   .hero-title {
-    font-size: 1.78rem;
+    font-size: 1.76rem;
   }
 
   .search-input {
@@ -482,8 +485,12 @@ input {
   }
 
   .field-icon-circle {
-    width: 66px;
-    height: 66px;
-    font-size: 1.6rem;
+    width: 72px;
+    height: 72px;
+    font-size: 1.8rem;
+  }
+
+  .field-card {
+    padding: 22px 16px;
   }
 }
