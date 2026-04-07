@@ -1,0 +1,280 @@
+[
+  {
+    "position_name": "Công nghệ thông tin - truyền thông (ICT)",
+    "job_count": 48,
+    "kkt_list": [
+      {
+        "kkt_type": "K",
+        "canonical_name": "Chuyển đổi số"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Cơ sở dữ liệu"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Enterprise Resource Planning"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Hệ quản trị cơ sở dữ liệu"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Học máy"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Hồi quy"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Kho dữ liệu"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Lập trình"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Lập trình hướng đối tượng"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Mạng máy tính"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Phân tích thống kê"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Quản lý thông tin"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "SQL"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Truyền thông xã hội"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Giải pháp tích hợp hệ thống"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Làm sạch dữ liệu"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Phân tích dữ liệu doanh nghiệp"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Quản trị cơ sở dữ liệu"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Xây dựng kế hoạch"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "C#"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "C/C++"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "ChatGPT"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Microsoft Excel"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Odoo Business Management Software"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Python"
+      }
+    ]
+  },
+  {
+    "position_name": "Khoa học thông tin (Information Science)",
+    "job_count": 54,
+    "kkt_list": [
+      {
+        "kkt_type": "K",
+        "canonical_name": "Chuyển đổi số"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Cơ sở dữ liệu"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Dự báo"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Enterprise Resource Planning"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Học máy"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Kho dữ liệu"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Lập trình"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Mạng máy tính"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Quy trình kinh doanh"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "SQL"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Làm sạch dữ liệu"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Mô hình hóa dữ liệu"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Phân tích dữ liệu doanh nghiệp"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Tư duy phản biện"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Xây dựng kế hoạch"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "ChatGPT"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Elicit"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Microsoft Excel"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Odoo Business Management Software"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Python"
+      }
+    ]
+  },
+  {
+    "position_name": "Quản lý (Management)",
+    "job_count": 44,
+    "kkt_list": [
+      {
+        "kkt_type": "K",
+        "canonical_name": "Chiến lược marketing"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Chuyển đổi số"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Cơ sở dữ liệu"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Dự báo"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Enterprise Resource Planning"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Hệ quản trị cơ sở dữ liệu"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Học máy"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Lập trình"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Mạng máy tính"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "Quản lý thông tin"
+      },
+      {
+        "kkt_type": "K",
+        "canonical_name": "SQL"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Năng lực tự học"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Phân tích dữ liệu doanh nghiệp"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Quản trị cơ sở dữ liệu"
+      },
+      {
+        "kkt_type": "S",
+        "canonical_name": "Tư duy phản biện"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "ChatGPT"
+      },
+      {
+        "kkt_type": "T",
+        "canonical_name": "Microsoft Excel"
+      }
+    ]
+  }
+]

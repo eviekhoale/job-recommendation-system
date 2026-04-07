@@ -1,0 +1,2802 @@
+[
+  {
+    "entity_id": "K0001",
+    "kkt_type": "K",
+    "canonical_name": "An toàn bảo mật thông tin",
+    "alias_list": "",
+    "canonical_norm": "an toàn bảo mật thông tin",
+    "canonical_ascii": "an toan bao mat thong tin"
+  },
+  {
+    "entity_id": "K0002",
+    "kkt_type": "K",
+    "canonical_name": "Bài toán lập trình phức tạp",
+    "alias_list": "",
+    "canonical_norm": "bài toán lập trình phức tạp",
+    "canonical_ascii": "bai toan lap trinh phuc tap"
+  },
+  {
+    "entity_id": "K0003",
+    "kkt_type": "K",
+    "canonical_name": "Bảo mật mạng máy tính",
+    "alias_list": "",
+    "canonical_norm": "bảo mật mạng máy tính",
+    "canonical_ascii": "bao mat mang may tinh"
+  },
+  {
+    "entity_id": "K0004",
+    "kkt_type": "K",
+    "canonical_name": "Bảo mật ứng dụng web",
+    "alias_list": "Web Application Security",
+    "canonical_norm": "bảo mật ứng dụng web",
+    "canonical_ascii": "bao mat ung dung web"
+  },
+  {
+    "entity_id": "K0005",
+    "kkt_type": "K",
+    "canonical_name": "Chiến lược marketing",
+    "alias_list": "",
+    "canonical_norm": "chiến lược marketing",
+    "canonical_ascii": "chien luoc marketing"
+  },
+  {
+    "entity_id": "K0006",
+    "kkt_type": "K",
+    "canonical_name": "Chiến lược truyền thông marketing",
+    "alias_list": "",
+    "canonical_norm": "chiến lược truyền thông marketing",
+    "canonical_ascii": "chien luoc truyen thong marketing"
+  },
+  {
+    "entity_id": "K0007",
+    "kkt_type": "K",
+    "canonical_name": "Chuyển đổi số",
+    "alias_list": "",
+    "canonical_norm": "chuyển đổi số",
+    "canonical_ascii": "chuyen đoi so"
+  },
+  {
+    "entity_id": "K0008",
+    "kkt_type": "K",
+    "canonical_name": "Chính sách an toàn bảo mật hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "chính sách an toàn bảo mật hệ thống thông tin",
+    "canonical_ascii": "chinh sach an toan bao mat he thong thong tin"
+  },
+  {
+    "entity_id": "K0009",
+    "kkt_type": "K",
+    "canonical_name": "Chính sách và luật về thông tin",
+    "alias_list": "",
+    "canonical_norm": "chính sách và luật về thông tin",
+    "canonical_ascii": "chinh sach va luat ve thong tin"
+  },
+  {
+    "entity_id": "K0010",
+    "kkt_type": "K",
+    "canonical_name": "Chức năng và vai trò người quản lý",
+    "alias_list": "",
+    "canonical_norm": "chức năng và vai trò người quản lý",
+    "canonical_ascii": "chuc nang va vai tro nguoi quan ly"
+  },
+  {
+    "entity_id": "K0011",
+    "kkt_type": "K",
+    "canonical_name": "Cài đặt phần mềm năng suất",
+    "alias_list": "",
+    "canonical_norm": "cài đặt phần mềm năng suất",
+    "canonical_ascii": "cai đat phan mem nang suat"
+  },
+  {
+    "entity_id": "K0012",
+    "kkt_type": "K",
+    "canonical_name": "Các nền tảng phổ biến trong tổ chức",
+    "alias_list": "",
+    "canonical_norm": "các nền tảng phổ biến trong tổ chức",
+    "canonical_ascii": "cac nen tang pho bien trong to chuc"
+  },
+  {
+    "entity_id": "K0013",
+    "kkt_type": "K",
+    "canonical_name": "Cách dùng sản phẩm xử lý nội dung thông tin",
+    "alias_list": "",
+    "canonical_norm": "cách dùng sản phẩm xử lý nội dung thông tin",
+    "canonical_ascii": "cach dung san pham xu ly noi dung thong tin"
+  },
+  {
+    "entity_id": "K0014",
+    "kkt_type": "K",
+    "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+    "alias_list": "",
+    "canonical_norm": "cách thiết kế, vận hành hệ thống mạng",
+    "canonical_ascii": "cach thiet ke, van hanh he thong mang"
+  },
+  {
+    "entity_id": "K0015",
+    "kkt_type": "K",
+    "canonical_name": "Công cụ diễn tả xử lý",
+    "alias_list": "",
+    "canonical_norm": "công cụ diễn tả xử lý",
+    "canonical_ascii": "cong cu dien ta xu ly"
+  },
+  {
+    "entity_id": "K0016",
+    "kkt_type": "K",
+    "canonical_name": "Công cụ marketing số",
+    "alias_list": "",
+    "canonical_norm": "công cụ marketing số",
+    "canonical_ascii": "cong cu marketing so"
+  },
+  {
+    "entity_id": "K0017",
+    "kkt_type": "K",
+    "canonical_name": "Công cụ và kỹ thuật tìm tin trực tuyến",
+    "alias_list": "",
+    "canonical_norm": "công cụ và kỹ thuật tìm tin trực tuyến",
+    "canonical_ascii": "cong cu va ky thuat tim tin truc tuyen"
+  },
+  {
+    "entity_id": "K0018",
+    "kkt_type": "K",
+    "canonical_name": "Công nghệ khai thác dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "công nghệ khai thác dữ liệu",
+    "canonical_ascii": "cong nghe khai thac du lieu"
+  },
+  {
+    "entity_id": "K0019",
+    "kkt_type": "K",
+    "canonical_name": "Công nghệ web",
+    "alias_list": "",
+    "canonical_norm": "công nghệ web",
+    "canonical_ascii": "cong nghe web"
+  },
+  {
+    "entity_id": "K0020",
+    "kkt_type": "K",
+    "canonical_name": "Cơ sở dữ liệu",
+    "alias_list": "CSDL, Database",
+    "canonical_norm": "cơ sở dữ liệu",
+    "canonical_ascii": "co so du lieu"
+  },
+  {
+    "entity_id": "K0021",
+    "kkt_type": "K",
+    "canonical_name": "Cấu hình và triển khai ứng dụng web",
+    "alias_list": "",
+    "canonical_norm": "cấu hình và triển khai ứng dụng web",
+    "canonical_ascii": "cau hinh va trien khai ung dung web"
+  },
+  {
+    "entity_id": "K0022",
+    "kkt_type": "K",
+    "canonical_name": "Cấu trúc và chức năng các thành phần phần cứng",
+    "alias_list": "",
+    "canonical_norm": "cấu trúc và chức năng các thành phần phần cứng",
+    "canonical_ascii": "cau truc va chuc nang cac thanh phan phan cung"
+  },
+  {
+    "entity_id": "K0023",
+    "kkt_type": "K",
+    "canonical_name": "Danh sách, khai báo, truy nhập, các loại danh sách",
+    "alias_list": "",
+    "canonical_norm": "danh sách, khai báo, truy nhập, các loại danh sách",
+    "canonical_ascii": "danh sach, khai bao, truy nhap, cac loai danh sach"
+  },
+  {
+    "entity_id": "K0024",
+    "kkt_type": "K",
+    "canonical_name": "Dịch vụ thông tin",
+    "alias_list": "",
+    "canonical_norm": "dịch vụ thông tin",
+    "canonical_ascii": "dich vu thong tin"
+  },
+  {
+    "entity_id": "K0025",
+    "kkt_type": "K",
+    "canonical_name": "Dự báo",
+    "alias_list": "Forecasting",
+    "canonical_norm": "dự báo",
+    "canonical_ascii": "du bao"
+  },
+  {
+    "entity_id": "K0026",
+    "kkt_type": "K",
+    "canonical_name": "Dự án tích hợp giải pháp phát triển và quản lý tài nguyên thông tin",
+    "alias_list": "",
+    "canonical_norm": "dự án tích hợp giải pháp phát triển và quản lý tài nguyên thông tin",
+    "canonical_ascii": "du an tich hop giai phap phat trien va quan ly tai nguyen thong tin"
+  },
+  {
+    "entity_id": "K0027",
+    "kkt_type": "K",
+    "canonical_name": "Enterprise Resource Planning",
+    "alias_list": "ERP",
+    "canonical_norm": "enterprise resource planning",
+    "canonical_ascii": "enterprise resource planning"
+  },
+  {
+    "entity_id": "K0028",
+    "kkt_type": "K",
+    "canonical_name": "Giải mã",
+    "alias_list": "",
+    "canonical_norm": "giải mã",
+    "canonical_ascii": "giai ma"
+  },
+  {
+    "entity_id": "K0029",
+    "kkt_type": "K",
+    "canonical_name": "Giải thích bối cảnh và phương án lập trình",
+    "alias_list": "",
+    "canonical_norm": "giải thích bối cảnh và phương án lập trình",
+    "canonical_ascii": "giai thich boi canh va phuong an lap trinh"
+  },
+  {
+    "entity_id": "K0030",
+    "kkt_type": "K",
+    "canonical_name": "HTML, CSS, Javascript",
+    "alias_list": "",
+    "canonical_norm": "html, css, javascript",
+    "canonical_ascii": "html, css, javascript"
+  },
+  {
+    "entity_id": "K0031",
+    "kkt_type": "K",
+    "canonical_name": "Hoạch định tổ chức",
+    "alias_list": "",
+    "canonical_norm": "hoạch định tổ chức",
+    "canonical_ascii": "hoach đinh to chuc"
+  },
+  {
+    "entity_id": "K0032",
+    "kkt_type": "K",
+    "canonical_name": "Hình thức số hóa tài liệu",
+    "alias_list": "",
+    "canonical_norm": "hình thức số hóa tài liệu",
+    "canonical_ascii": "hinh thuc so hoa tai lieu"
+  },
+  {
+    "entity_id": "K0033",
+    "kkt_type": "K",
+    "canonical_name": "Hệ quản trị cơ sở dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "hệ quản trị cơ sở dữ liệu",
+    "canonical_ascii": "he quan tri co so du lieu"
+  },
+  {
+    "entity_id": "K0034",
+    "kkt_type": "K",
+    "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+    "alias_list": "ERP, Enterprise Resource Planning",
+    "canonical_norm": "hệ thống thông tin doanh nghiệp tích hợp",
+    "canonical_ascii": "he thong thong tin doanh nghiep tich hop"
+  },
+  {
+    "entity_id": "K0035",
+    "kkt_type": "K",
+    "canonical_name": "Hệ thống tìm tin",
+    "alias_list": "",
+    "canonical_norm": "hệ thống tìm tin",
+    "canonical_ascii": "he thong tim tin"
+  },
+  {
+    "entity_id": "K0036",
+    "kkt_type": "K",
+    "canonical_name": "Học máy",
+    "alias_list": "Machine Learning, ML",
+    "canonical_norm": "học máy",
+    "canonical_ascii": "hoc may"
+  },
+  {
+    "entity_id": "K0037",
+    "kkt_type": "K",
+    "canonical_name": "Hồ sơ và quản lý hồ sơ",
+    "alias_list": "",
+    "canonical_norm": "hồ sơ và quản lý hồ sơ",
+    "canonical_ascii": "ho so va quan ly ho so"
+  },
+  {
+    "entity_id": "K0038",
+    "kkt_type": "K",
+    "canonical_name": "Hồi quy",
+    "alias_list": "Regression",
+    "canonical_norm": "hồi quy",
+    "canonical_ascii": "hoi quy"
+  },
+  {
+    "entity_id": "K0039",
+    "kkt_type": "K",
+    "canonical_name": "Internet, World Wide Web, Website",
+    "alias_list": "",
+    "canonical_norm": "internet, world wide web, website",
+    "canonical_ascii": "internet, world wide web, website"
+  },
+  {
+    "entity_id": "K0040",
+    "kkt_type": "K",
+    "canonical_name": "Kho dữ liệu",
+    "alias_list": "Data Warehouse",
+    "canonical_norm": "kho dữ liệu",
+    "canonical_ascii": "kho du lieu"
+  },
+  {
+    "entity_id": "K0041",
+    "kkt_type": "K",
+    "canonical_name": "Khoa học quản lý",
+    "alias_list": "",
+    "canonical_norm": "khoa học quản lý",
+    "canonical_ascii": "khoa hoc quan ly"
+  },
+  {
+    "entity_id": "K0042",
+    "kkt_type": "K",
+    "canonical_name": "Khoa học thông tin",
+    "alias_list": "",
+    "canonical_norm": "khoa học thông tin",
+    "canonical_ascii": "khoa hoc thong tin"
+  },
+  {
+    "entity_id": "K0043",
+    "kkt_type": "K",
+    "canonical_name": "Khung quản trị thông tin",
+    "alias_list": "",
+    "canonical_norm": "khung quản trị thông tin",
+    "canonical_ascii": "khung quan tri thong tin"
+  },
+  {
+    "entity_id": "K0044",
+    "kkt_type": "K",
+    "canonical_name": "Khái niệm cơ bản và đặc trưng của thông tin khoa học công nghệ",
+    "alias_list": "",
+    "canonical_norm": "khái niệm cơ bản và đặc trưng của thông tin khoa học công nghệ",
+    "canonical_ascii": "khai niem co ban va đac trung cua thong tin khoa hoc cong nghe"
+  },
+  {
+    "entity_id": "K0045",
+    "kkt_type": "K",
+    "canonical_name": "Khái niệm hướng đối tượng trong ứng dụng doanh nghiệp",
+    "alias_list": "",
+    "canonical_norm": "khái niệm hướng đối tượng trong ứng dụng doanh nghiệp",
+    "canonical_ascii": "khai niem huong đoi tuong trong ung dung doanh nghiep"
+  },
+  {
+    "entity_id": "K0046",
+    "kkt_type": "K",
+    "canonical_name": "Khái niệm liên quan ERP",
+    "alias_list": "",
+    "canonical_norm": "khái niệm liên quan erp",
+    "canonical_ascii": "khai niem lien quan erp"
+  },
+  {
+    "entity_id": "K0047",
+    "kkt_type": "K",
+    "canonical_name": "Khái niệm lý thuyết về quản lý",
+    "alias_list": "",
+    "canonical_norm": "khái niệm lý thuyết về quản lý",
+    "canonical_ascii": "khai niem ly thuyet ve quan ly"
+  },
+  {
+    "entity_id": "K0048",
+    "kkt_type": "K",
+    "canonical_name": "Khái niệm, phân loại, mô hình mạng máy tính cơ bản",
+    "alias_list": "",
+    "canonical_norm": "khái niệm, phân loại, mô hình mạng máy tính cơ bản",
+    "canonical_ascii": "khai niem, phan loai, mo hinh mang may tinh co ban"
+  },
+  {
+    "entity_id": "K0049",
+    "kkt_type": "K",
+    "canonical_name": "Khái niệm, vai trò và mô hình năng lực thông tin",
+    "alias_list": "",
+    "canonical_norm": "khái niệm, vai trò và mô hình năng lực thông tin",
+    "canonical_ascii": "khai niem, vai tro va mo hinh nang luc thong tin"
+  },
+  {
+    "entity_id": "K0050",
+    "kkt_type": "K",
+    "canonical_name": "Khái niệm, đặc điểm và lịch sử phát triển của khoa học thông tin",
+    "alias_list": "",
+    "canonical_norm": "khái niệm, đặc điểm và lịch sử phát triển của khoa học thông tin",
+    "canonical_ascii": "khai niem, đac điem va lich su phat trien cua khoa hoc thong tin"
+  },
+  {
+    "entity_id": "K0051",
+    "kkt_type": "K",
+    "canonical_name": "Khảo sát hiện trạng và xác lập dự án",
+    "alias_list": "",
+    "canonical_norm": "khảo sát hiện trạng và xác lập dự án",
+    "canonical_ascii": "khao sat hien trang va xac lap du an"
+  },
+  {
+    "entity_id": "K0052",
+    "kkt_type": "K",
+    "canonical_name": "Kiến trúc hoạt động của chương trình",
+    "alias_list": "",
+    "canonical_norm": "kiến trúc hoạt động của chương trình",
+    "canonical_ascii": "kien truc hoat đong cua chuong trinh"
+  },
+  {
+    "entity_id": "K0053",
+    "kkt_type": "K",
+    "canonical_name": "Kiến trúc máy tính và hệ điều hành",
+    "alias_list": "",
+    "canonical_norm": "kiến trúc máy tính và hệ điều hành",
+    "canonical_ascii": "kien truc may tinh va he đieu hanh"
+  },
+  {
+    "entity_id": "K0054",
+    "kkt_type": "K",
+    "canonical_name": "Kiến trúc tập lệnh và mã hóa",
+    "alias_list": "",
+    "canonical_norm": "kiến trúc tập lệnh và mã hóa",
+    "canonical_ascii": "kien truc tap lenh va ma hoa"
+  },
+  {
+    "entity_id": "K0055",
+    "kkt_type": "K",
+    "canonical_name": "Kiến trúc và mô hình dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "kiến trúc và mô hình dữ liệu",
+    "canonical_ascii": "kien truc va mo hinh du lieu"
+  },
+  {
+    "entity_id": "K0056",
+    "kkt_type": "K",
+    "canonical_name": "Kiến trúc và thiết kế kho dữ liệu",
+    "alias_list": "Data Warehouse Architecture",
+    "canonical_norm": "kiến trúc và thiết kế kho dữ liệu",
+    "canonical_ascii": "kien truc va thiet ke kho du lieu"
+  },
+  {
+    "entity_id": "K0057",
+    "kkt_type": "K",
+    "canonical_name": "Kiểu dữ liệu cấu trúc",
+    "alias_list": "",
+    "canonical_norm": "kiểu dữ liệu cấu trúc",
+    "canonical_ascii": "kieu du lieu cau truc"
+  },
+  {
+    "entity_id": "K0058",
+    "kkt_type": "K",
+    "canonical_name": "Kết nối và thao tác cơ sở dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "kết nối và thao tác cơ sở dữ liệu",
+    "canonical_ascii": "ket noi va thao tac co so du lieu"
+  },
+  {
+    "entity_id": "K0059",
+    "kkt_type": "K",
+    "canonical_name": "Kỹ thuật phát triển mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "kỹ thuật phát triển mã nguồn mở",
+    "canonical_ascii": "ky thuat phat trien ma nguon mo"
+  },
+  {
+    "entity_id": "K0060",
+    "kkt_type": "K",
+    "canonical_name": "Kỹ thuật tổ chức và bố trí nơi làm vièc",
+    "alias_list": "",
+    "canonical_norm": "kỹ thuật tổ chức và bố trí nơi làm vièc",
+    "canonical_ascii": "ky thuat to chuc va bo tri noi lam viec"
+  },
+  {
+    "entity_id": "K0061",
+    "kkt_type": "K",
+    "canonical_name": "Loại dịch vụ thông tin và vòng đời quản lý dịch vụ thông tin",
+    "alias_list": "",
+    "canonical_norm": "loại dịch vụ thông tin và vòng đời quản lý dịch vụ thông tin",
+    "canonical_ascii": "loai dich vu thong tin va vong đoi quan ly dich vu thong tin"
+  },
+  {
+    "entity_id": "K0062",
+    "kkt_type": "K",
+    "canonical_name": "Loại nguồn tin",
+    "alias_list": "",
+    "canonical_norm": "loại nguồn tin",
+    "canonical_ascii": "loai nguon tin"
+  },
+  {
+    "entity_id": "K0063",
+    "kkt_type": "K",
+    "canonical_name": "Lập trình",
+    "alias_list": "",
+    "canonical_norm": "lập trình",
+    "canonical_ascii": "lap trinh"
+  },
+  {
+    "entity_id": "K0064",
+    "kkt_type": "K",
+    "canonical_name": "Lập trình cấu trúc",
+    "alias_list": "Structured Programming",
+    "canonical_norm": "lập trình cấu trúc",
+    "canonical_ascii": "lap trinh cau truc"
+  },
+  {
+    "entity_id": "K0065",
+    "kkt_type": "K",
+    "canonical_name": "Lập trình hướng đối tượng",
+    "alias_list": "OOP, Object Oriented Programming",
+    "canonical_norm": "lập trình hướng đối tượng",
+    "canonical_ascii": "lap trinh huong đoi tuong"
+  },
+  {
+    "entity_id": "K0066",
+    "kkt_type": "K",
+    "canonical_name": "Lập trình web",
+    "alias_list": "Web Development",
+    "canonical_norm": "lập trình web",
+    "canonical_ascii": "lap trinh web"
+  },
+  {
+    "entity_id": "K0067",
+    "kkt_type": "K",
+    "canonical_name": "Lập và thực hiện kế hoạch công tác",
+    "alias_list": "",
+    "canonical_norm": "lập và thực hiện kế hoạch công tác",
+    "canonical_ascii": "lap va thuc hien ke hoach cong tac"
+  },
+  {
+    "entity_id": "K0068",
+    "kkt_type": "K",
+    "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+    "alias_list": "",
+    "canonical_norm": "lễ tân và giao tiếp trong môi trường văn phòng",
+    "canonical_ascii": "le tan va giao tiep trong moi truong van phong"
+  },
+  {
+    "entity_id": "K0069",
+    "kkt_type": "K",
+    "canonical_name": "Lớp đối tượng",
+    "alias_list": "",
+    "canonical_norm": "lớp đối tượng",
+    "canonical_ascii": "lop đoi tuong"
+  },
+  {
+    "entity_id": "K0070",
+    "kkt_type": "K",
+    "canonical_name": "Lợi ích, giấy phép trong cộng đồng mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "lợi ích, giấy phép trong cộng đồng mã nguồn mở",
+    "canonical_ascii": "loi ich, giay phep trong cong đong ma nguon mo"
+  },
+  {
+    "entity_id": "K0071",
+    "kkt_type": "K",
+    "canonical_name": "Marketing và truyền thông",
+    "alias_list": "",
+    "canonical_norm": "marketing và truyền thông",
+    "canonical_ascii": "marketing va truyen thong"
+  },
+  {
+    "entity_id": "K0072",
+    "kkt_type": "K",
+    "canonical_name": "Mã hóa",
+    "alias_list": "",
+    "canonical_norm": "mã hóa",
+    "canonical_ascii": "ma hoa"
+  },
+  {
+    "entity_id": "K0073",
+    "kkt_type": "K",
+    "canonical_name": "Mã hóa lệnh và dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "mã hóa lệnh và dữ liệu",
+    "canonical_ascii": "ma hoa lenh va du lieu"
+  },
+  {
+    "entity_id": "K0074",
+    "kkt_type": "K",
+    "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+    "alias_list": "",
+    "canonical_norm": "mô tả thông tin, tài liệu, hành vi người dùng",
+    "canonical_ascii": "mo ta thong tin, tai lieu, hanh vi nguoi dung"
+  },
+  {
+    "entity_id": "K0075",
+    "kkt_type": "K",
+    "canonical_name": "Mạng máy tính",
+    "alias_list": "",
+    "canonical_norm": "mạng máy tính",
+    "canonical_ascii": "mang may tinh"
+  },
+  {
+    "entity_id": "K0076",
+    "kkt_type": "K",
+    "canonical_name": "Mảng và con trỏ",
+    "alias_list": "",
+    "canonical_norm": "mảng và con trỏ",
+    "canonical_ascii": "mang va con tro"
+  },
+  {
+    "entity_id": "K0077",
+    "kkt_type": "K",
+    "canonical_name": "Mối liên hệ truyền thông xã hội với văn hóa tổ chức",
+    "alias_list": "",
+    "canonical_norm": "mối liên hệ truyền thông xã hội với văn hóa tổ chức",
+    "canonical_ascii": "moi lien he truyen thong xa hoi voi van hoa to chuc"
+  },
+  {
+    "entity_id": "K0078",
+    "kkt_type": "K",
+    "canonical_name": "Nguyên lý hoạt động cơ bản của hệ điều hành",
+    "alias_list": "",
+    "canonical_norm": "nguyên lý hoạt động cơ bản của hệ điều hành",
+    "canonical_ascii": "nguyen ly hoat đong co ban cua he đieu hanh"
+  },
+  {
+    "entity_id": "K0079",
+    "kkt_type": "K",
+    "canonical_name": "Nguyên lý phần cứng",
+    "alias_list": "",
+    "canonical_norm": "nguyên lý phần cứng",
+    "canonical_ascii": "nguyen ly phan cung"
+  },
+  {
+    "entity_id": "K0080",
+    "kkt_type": "K",
+    "canonical_name": "Nguyên tác hoạt động và đặc điểm kỹ thuật chuyển mạch, định tuyến trong hạ tầng mạng",
+    "alias_list": "",
+    "canonical_norm": "nguyên tác hoạt động và đặc điểm kỹ thuật chuyển mạch, định tuyến trong hạ tầng mạng",
+    "canonical_ascii": "nguyen tac hoat đong va đac điem ky thuat chuyen mach, đinh tuyen trong ha tang mang"
+  },
+  {
+    "entity_id": "K0081",
+    "kkt_type": "K",
+    "canonical_name": "Nguyên tắc hoạch định chính sách",
+    "alias_list": "",
+    "canonical_norm": "nguyên tắc hoạch định chính sách",
+    "canonical_ascii": "nguyen tac hoach đinh chinh sach"
+  },
+  {
+    "entity_id": "K0082",
+    "kkt_type": "K",
+    "canonical_name": "Nhu cầu xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "nhu cầu xử lý thông tin",
+    "canonical_ascii": "nhu cau xu ly thong tin"
+  },
+  {
+    "entity_id": "K0083",
+    "kkt_type": "K",
+    "canonical_name": "Nhận biết vai trò thông tin",
+    "alias_list": "",
+    "canonical_norm": "nhận biết vai trò thông tin",
+    "canonical_ascii": "nhan biet vai tro thong tin"
+  },
+  {
+    "entity_id": "K0084",
+    "kkt_type": "K",
+    "canonical_name": "Năng lực nghề quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "năng lực nghề quản lý thông tin",
+    "canonical_ascii": "nang luc nghe quan ly thong tin"
+  },
+  {
+    "entity_id": "K0085",
+    "kkt_type": "K",
+    "canonical_name": "Nền tảng phần mềm mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "nền tảng phần mềm mã nguồn mở",
+    "canonical_ascii": "nen tang phan mem ma nguon mo"
+  },
+  {
+    "entity_id": "K0086",
+    "kkt_type": "K",
+    "canonical_name": "Phát triển và ứng dụng web",
+    "alias_list": "",
+    "canonical_norm": "phát triển và ứng dụng web",
+    "canonical_ascii": "phat trien va ung dung web"
+  },
+  {
+    "entity_id": "K0087",
+    "kkt_type": "K",
+    "canonical_name": "Phân loại loại hình tài nguyên thông tin khoa học và công nghệ",
+    "alias_list": "",
+    "canonical_norm": "phân loại loại hình tài nguyên thông tin khoa học và công nghệ",
+    "canonical_ascii": "phan loai loai hinh tai nguyen thong tin khoa hoc va cong nghe"
+  },
+  {
+    "entity_id": "K0088",
+    "kkt_type": "K",
+    "canonical_name": "Phân loại thông tin",
+    "alias_list": "",
+    "canonical_norm": "phân loại thông tin",
+    "canonical_ascii": "phan loai thong tin"
+  },
+  {
+    "entity_id": "K0089",
+    "kkt_type": "K",
+    "canonical_name": "Phân loại tài nguyên thông tin",
+    "alias_list": "",
+    "canonical_norm": "phân loại tài nguyên thông tin",
+    "canonical_ascii": "phan loai tai nguyen thong tin"
+  },
+  {
+    "entity_id": "K0090",
+    "kkt_type": "K",
+    "canonical_name": "Phân tích dữ liệu quản lý doanh nghiệp",
+    "alias_list": "",
+    "canonical_norm": "phân tích dữ liệu quản lý doanh nghiệp",
+    "canonical_ascii": "phan tich du lieu quan ly doanh nghiep"
+  },
+  {
+    "entity_id": "K0091",
+    "kkt_type": "K",
+    "canonical_name": "Phân tích thống kê",
+    "alias_list": "Statistical analysis",
+    "canonical_norm": "phân tích thống kê",
+    "canonical_ascii": "phan tich thong ke"
+  },
+  {
+    "entity_id": "K0092",
+    "kkt_type": "K",
+    "canonical_name": "Phân tích, đánh giá, ứng dụng thông tin kinh tế hỗ trợ ra quyết định",
+    "alias_list": "",
+    "canonical_norm": "phân tích, đánh giá, ứng dụng thông tin kinh tế hỗ trợ ra quyết định",
+    "canonical_ascii": "phan tich, đanh gia, ung dung thong tin kinh te ho tro ra quyet đinh"
+  },
+  {
+    "entity_id": "K0093",
+    "kkt_type": "K",
+    "canonical_name": "Phương pháp luận phân tích hệ thống có cấu trúc",
+    "alias_list": "",
+    "canonical_norm": "phương pháp luận phân tích hệ thống có cấu trúc",
+    "canonical_ascii": "phuong phap luan phan tich he thong co cau truc"
+  },
+  {
+    "entity_id": "K0094",
+    "kkt_type": "K",
+    "canonical_name": "Phương pháp phân tích thiết kế hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "phương pháp phân tích thiết kế hệ thống thông tin",
+    "canonical_ascii": "phuong phap phan tich thiet ke he thong thong tin"
+  },
+  {
+    "entity_id": "K0095",
+    "kkt_type": "K",
+    "canonical_name": "Phương pháp tra cứu thông tin truyền thống",
+    "alias_list": "",
+    "canonical_norm": "phương pháp tra cứu thông tin truyền thống",
+    "canonical_ascii": "phuong phap tra cuu thong tin truyen thong"
+  },
+  {
+    "entity_id": "K0096",
+    "kkt_type": "K",
+    "canonical_name": "Phương pháp tổ chức phục vụ thông tin khoa học công nghệ",
+    "alias_list": "",
+    "canonical_norm": "phương pháp tổ chức phục vụ thông tin khoa học công nghệ",
+    "canonical_ascii": "phuong phap to chuc phuc vu thong tin khoa hoc cong nghe"
+  },
+  {
+    "entity_id": "K0097",
+    "kkt_type": "K",
+    "canonical_name": "Phương tiện và mô hình diễn tả dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "phương tiện và mô hình diễn tả dữ liệu",
+    "canonical_ascii": "phuong tien va mo hinh dien ta du lieu"
+  },
+  {
+    "entity_id": "K0098",
+    "kkt_type": "K",
+    "canonical_name": "Phần mềm quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "phần mềm quản lý thông tin",
+    "canonical_ascii": "phan mem quan ly thong tin"
+  },
+  {
+    "entity_id": "K0099",
+    "kkt_type": "K",
+    "canonical_name": "Query nâng cao",
+    "alias_list": "",
+    "canonical_norm": "query nâng cao",
+    "canonical_ascii": "query nang cao"
+  },
+  {
+    "entity_id": "K0100",
+    "kkt_type": "K",
+    "canonical_name": "Quy trình kinh doanh",
+    "alias_list": "Business Process",
+    "canonical_norm": "quy trình kinh doanh",
+    "canonical_ascii": "quy trinh kinh doanh"
+  },
+  {
+    "entity_id": "K0101",
+    "kkt_type": "K",
+    "canonical_name": "Quy trình phát triển phần mềm mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "quy trình phát triển phần mềm mã nguồn mở",
+    "canonical_ascii": "quy trinh phat trien phan mem ma nguon mo"
+  },
+  {
+    "entity_id": "K0102",
+    "kkt_type": "K",
+    "canonical_name": "Quy trình quản lý thông tin tổ chức",
+    "alias_list": "",
+    "canonical_norm": "quy trình quản lý thông tin tổ chức",
+    "canonical_ascii": "quy trinh quan ly thong tin to chuc"
+  },
+  {
+    "entity_id": "K0103",
+    "kkt_type": "K",
+    "canonical_name": "Quy trình xử lý nội dung thông tin",
+    "alias_list": "",
+    "canonical_norm": "quy trình xử lý nội dung thông tin",
+    "canonical_ascii": "quy trinh xu ly noi dung thong tin"
+  },
+  {
+    "entity_id": "K0104",
+    "kkt_type": "K",
+    "canonical_name": "Quy trình xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "quy trình xử lý thông tin",
+    "canonical_ascii": "quy trinh xu ly thong tin"
+  },
+  {
+    "entity_id": "K0105",
+    "kkt_type": "K",
+    "canonical_name": "Quy đinh pháp lý điều chỉnh hoạt động quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "quy đinh pháp lý điều chỉnh hoạt động quản lý thông tin",
+    "canonical_ascii": "quy đinh phap ly đieu chinh hoat đong quan ly thong tin"
+  },
+  {
+    "entity_id": "K0106",
+    "kkt_type": "K",
+    "canonical_name": "Quá trình quản lý",
+    "alias_list": "",
+    "canonical_norm": "quá trình quản lý",
+    "canonical_ascii": "qua trinh quan ly"
+  },
+  {
+    "entity_id": "K0107",
+    "kkt_type": "K",
+    "canonical_name": "Quá trình tìm tin",
+    "alias_list": "",
+    "canonical_norm": "quá trình tìm tin",
+    "canonical_ascii": "qua trinh tim tin"
+  },
+  {
+    "entity_id": "K0108",
+    "kkt_type": "K",
+    "canonical_name": "Quá trình và cách thức quản lý dịch vụ thông tin",
+    "alias_list": "",
+    "canonical_norm": "quá trình và cách thức quản lý dịch vụ thông tin",
+    "canonical_ascii": "qua trinh va cach thuc quan ly dich vu thong tin"
+  },
+  {
+    "entity_id": "K0109",
+    "kkt_type": "K",
+    "canonical_name": "Quản lý hệ điều hành",
+    "alias_list": "",
+    "canonical_norm": "quản lý hệ điều hành",
+    "canonical_ascii": "quan ly he đieu hanh"
+  },
+  {
+    "entity_id": "K0110",
+    "kkt_type": "K",
+    "canonical_name": "Quản lý phân quyền người dùng",
+    "alias_list": "User Permission Management",
+    "canonical_norm": "quản lý phân quyền người dùng",
+    "canonical_ascii": "quan ly phan quyen nguoi dung"
+  },
+  {
+    "entity_id": "K0111",
+    "kkt_type": "K",
+    "canonical_name": "Quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "quản lý thông tin",
+    "canonical_ascii": "quan ly thong tin"
+  },
+  {
+    "entity_id": "K0112",
+    "kkt_type": "K",
+    "canonical_name": "Quản lý và kiểm soát thông tin",
+    "alias_list": "",
+    "canonical_norm": "quản lý và kiểm soát thông tin",
+    "canonical_ascii": "quan ly va kiem soat thong tin"
+  },
+  {
+    "entity_id": "K0113",
+    "kkt_type": "K",
+    "canonical_name": "Quản trị, văn phòng và quản trị hành chính văn phòng",
+    "alias_list": "",
+    "canonical_norm": "quản trị, văn phòng và quản trị hành chính văn phòng",
+    "canonical_ascii": "quan tri, van phong va quan tri hanh chinh van phong"
+  },
+  {
+    "entity_id": "K0114",
+    "kkt_type": "K",
+    "canonical_name": "SQL",
+    "alias_list": "",
+    "canonical_norm": "sql",
+    "canonical_ascii": "sql"
+  },
+  {
+    "entity_id": "K0115",
+    "kkt_type": "K",
+    "canonical_name": "Server Control",
+    "alias_list": "",
+    "canonical_norm": "server control",
+    "canonical_ascii": "server control"
+  },
+  {
+    "entity_id": "K0116",
+    "kkt_type": "K",
+    "canonical_name": "Soạn thảo và quản lý văn bản hành chính",
+    "alias_list": "",
+    "canonical_norm": "soạn thảo và quản lý văn bản hành chính",
+    "canonical_ascii": "soan thao va quan ly van ban hanh chinh"
+  },
+  {
+    "entity_id": "K0117",
+    "kkt_type": "K",
+    "canonical_name": "Soạn thảo đề cương nghiên cứu",
+    "alias_list": "",
+    "canonical_norm": "soạn thảo đề cương nghiên cứu",
+    "canonical_ascii": "soan thao đe cuong nghien cuu"
+  },
+  {
+    "entity_id": "K0118",
+    "kkt_type": "K",
+    "canonical_name": "Số hóa tài liệu",
+    "alias_list": "",
+    "canonical_norm": "số hóa tài liệu",
+    "canonical_ascii": "so hoa tai lieu"
+  },
+  {
+    "entity_id": "K0119",
+    "kkt_type": "K",
+    "canonical_name": "Sự hình thành và phát triển của xã hội thông tin",
+    "alias_list": "",
+    "canonical_norm": "sự hình thành và phát triển của xã hội thông tin",
+    "canonical_ascii": "su hinh thanh va phat trien cua xa hoi thong tin"
+  },
+  {
+    "entity_id": "K0120",
+    "kkt_type": "K",
+    "canonical_name": "Thiết kế web tĩnh và ứng dụng web động",
+    "alias_list": "",
+    "canonical_norm": "thiết kế web tĩnh và ứng dụng web động",
+    "canonical_ascii": "thiet ke web tinh va ung dung web đong"
+  },
+  {
+    "entity_id": "K0121",
+    "kkt_type": "K",
+    "canonical_name": "Thuật toán khai thác dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "thuật toán khai thác dữ liệu",
+    "canonical_ascii": "thuat toan khai thac du lieu"
+  },
+  {
+    "entity_id": "K0122",
+    "kkt_type": "K",
+    "canonical_name": "Thành phần của hoạt động đào tạo năng lực thông tin",
+    "alias_list": "",
+    "canonical_norm": "thành phần của hoạt động đào tạo năng lực thông tin",
+    "canonical_ascii": "thanh phan cua hoat đong đao tao nang luc thong tin"
+  },
+  {
+    "entity_id": "K0123",
+    "kkt_type": "K",
+    "canonical_name": "Thông tin khoa học công nghệ",
+    "alias_list": "",
+    "canonical_norm": "thông tin khoa học công nghệ",
+    "canonical_ascii": "thong tin khoa hoc cong nghe"
+  },
+  {
+    "entity_id": "K0124",
+    "kkt_type": "K",
+    "canonical_name": "Thông tin và vòng đời quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "thông tin và vòng đời quản lý thông tin",
+    "canonical_ascii": "thong tin va vong đoi quan ly thong tin"
+  },
+  {
+    "entity_id": "K0125",
+    "kkt_type": "K",
+    "canonical_name": "Thực hành lệnh trong lập trình",
+    "alias_list": "",
+    "canonical_norm": "thực hành lệnh trong lập trình",
+    "canonical_ascii": "thuc hanh lenh trong lap trinh"
+  },
+  {
+    "entity_id": "K0126",
+    "kkt_type": "K",
+    "canonical_name": "Thực trạng, nhu cầu, các bước chuyển đổi số gắn với bối cảnh",
+    "alias_list": "",
+    "canonical_norm": "thực trạng, nhu cầu, các bước chuyển đổi số gắn với bối cảnh",
+    "canonical_ascii": "thuc trang, nhu cau, cac buoc chuyen đoi so gan voi boi canh"
+  },
+  {
+    "entity_id": "K0127",
+    "kkt_type": "K",
+    "canonical_name": "Triển khai và cải tiến toàn diện hoạt động quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "triển khai và cải tiến toàn diện hoạt động quản lý thông tin",
+    "canonical_ascii": "trien khai va cai tien toan dien hoat đong quan ly thong tin"
+  },
+  {
+    "entity_id": "K0128",
+    "kkt_type": "K",
+    "canonical_name": "Truyền thông xã hội",
+    "alias_list": "",
+    "canonical_norm": "truyền thông xã hội",
+    "canonical_ascii": "truyen thong xa hoi"
+  },
+  {
+    "entity_id": "K0129",
+    "kkt_type": "K",
+    "canonical_name": "Trích dẫn tài liệu đúng chuẩn",
+    "alias_list": "",
+    "canonical_norm": "trích dẫn tài liệu đúng chuẩn",
+    "canonical_ascii": "trich dan tai lieu đung chuan"
+  },
+  {
+    "entity_id": "K0130",
+    "kkt_type": "K",
+    "canonical_name": "Tác động của công nghệ thông tin đến khía cạnh xã hội thông tin",
+    "alias_list": "",
+    "canonical_norm": "tác động của công nghệ thông tin đến khía cạnh xã hội thông tin",
+    "canonical_ascii": "tac đong cua cong nghe thong tin đen khia canh xa hoi thong tin"
+  },
+  {
+    "entity_id": "K0131",
+    "kkt_type": "K",
+    "canonical_name": "Tình huống, thông tin quản lý và ra quyết định",
+    "alias_list": "",
+    "canonical_norm": "tình huống, thông tin quản lý và ra quyết định",
+    "canonical_ascii": "tinh huong, thong tin quan ly va ra quyet đinh"
+  },
+  {
+    "entity_id": "K0132",
+    "kkt_type": "K",
+    "canonical_name": "Tập tin và hàm vào ra chuẩn",
+    "alias_list": "",
+    "canonical_norm": "tập tin và hàm vào ra chuẩn",
+    "canonical_ascii": "tap tin va ham vao ra chuan"
+  },
+  {
+    "entity_id": "K0133",
+    "kkt_type": "K",
+    "canonical_name": "Tổ chức cuộc họp",
+    "alias_list": "",
+    "canonical_norm": "tổ chức cuộc họp",
+    "canonical_ascii": "to chuc cuoc hop"
+  },
+  {
+    "entity_id": "K0134",
+    "kkt_type": "K",
+    "canonical_name": "Tổ chức thông tin trong hệ thống tìm tin",
+    "alias_list": "",
+    "canonical_norm": "tổ chức thông tin trong hệ thống tìm tin",
+    "canonical_ascii": "to chuc thong tin trong he thong tim tin"
+  },
+  {
+    "entity_id": "K0135",
+    "kkt_type": "K",
+    "canonical_name": "Tổ chức, phân tích, khai phá tập dữ liệu lớn",
+    "alias_list": "",
+    "canonical_norm": "tổ chức, phân tích, khai phá tập dữ liệu lớn",
+    "canonical_ascii": "to chuc, phan tich, khai pha tap du lieu lon"
+  },
+  {
+    "entity_id": "K0136",
+    "kkt_type": "K",
+    "canonical_name": "Tự học và làm việc nhóm hiệu quả",
+    "alias_list": "",
+    "canonical_norm": "tự học và làm việc nhóm hiệu quả",
+    "canonical_ascii": "tu hoc va lam viec nhom hieu qua"
+  },
+  {
+    "entity_id": "K0137",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò chiến lược của thông tin kinh tế",
+    "alias_list": "",
+    "canonical_norm": "vai trò chiến lược của thông tin kinh tế",
+    "canonical_ascii": "vai tro chien luoc cua thong tin kinh te"
+  },
+  {
+    "entity_id": "K0138",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò công nghệ thông tin và truyền thông trong quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "vai trò công nghệ thông tin và truyền thông trong quản lý thông tin",
+    "canonical_ascii": "vai tro cong nghe thong tin va truyen thong trong quan ly thong tin"
+  },
+  {
+    "entity_id": "K0139",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò ngôn ngữ tư liệu trong lưu trữ và truy xuất thông tin",
+    "alias_list": "",
+    "canonical_norm": "vai trò ngôn ngữ tư liệu trong lưu trữ và truy xuất thông tin",
+    "canonical_ascii": "vai tro ngon ngu tu lieu trong luu tru va truy xuat thong tin"
+  },
+  {
+    "entity_id": "K0140",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò quản lý hồ sơ, quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "vai trò quản lý hồ sơ, quản lý thông tin",
+    "canonical_ascii": "vai tro quan ly ho so, quan ly thong tin"
+  },
+  {
+    "entity_id": "K0141",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò thành phần cơ sở dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "vai trò thành phần cơ sở dữ liệu",
+    "canonical_ascii": "vai tro thanh phan co so du lieu"
+  },
+  {
+    "entity_id": "K0142",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò và thành phần cốt lõi an toàn bảo mật",
+    "alias_list": "",
+    "canonical_norm": "vai trò và thành phần cốt lõi an toàn bảo mật",
+    "canonical_ascii": "vai tro va thanh phan cot loi an toan bao mat"
+  },
+  {
+    "entity_id": "K0143",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò và ý nghĩa của quy định pháp lý, chính sách xã hội",
+    "alias_list": "",
+    "canonical_norm": "vai trò và ý nghĩa của quy định pháp lý, chính sách xã hội",
+    "canonical_ascii": "vai tro va y nghia cua quy đinh phap ly, chinh sach xa hoi"
+  },
+  {
+    "entity_id": "K0144",
+    "kkt_type": "K",
+    "canonical_name": "Vai trò và ảnh hưởng truyền thôn xã hội trong tổ chức",
+    "alias_list": "",
+    "canonical_norm": "vai trò và ảnh hưởng truyền thôn xã hội trong tổ chức",
+    "canonical_ascii": "vai tro va anh huong truyen thon xa hoi trong to chuc"
+  },
+  {
+    "entity_id": "K0145",
+    "kkt_type": "K",
+    "canonical_name": "Vấn đề chính về xã hội thông tin",
+    "alias_list": "",
+    "canonical_norm": "vấn đề chính về xã hội thông tin",
+    "canonical_ascii": "van đe chinh ve xa hoi thong tin"
+  },
+  {
+    "entity_id": "K0146",
+    "kkt_type": "K",
+    "canonical_name": "Vận dụng kiến thức và công cụ thực hiện nghiên cứu khoa học hệ thống và đúng chuẩn",
+    "alias_list": "",
+    "canonical_norm": "vận dụng kiến thức và công cụ thực hiện nghiên cứu khoa học hệ thống và đúng chuẩn",
+    "canonical_ascii": "van dung kien thuc va cong cu thuc hien nghien cuu khoa hoc he thong va đung chuan"
+  },
+  {
+    "entity_id": "K0147",
+    "kkt_type": "K",
+    "canonical_name": "Xây dựng Web Form",
+    "alias_list": "",
+    "canonical_norm": "xây dựng web form",
+    "canonical_ascii": "xay dung web form"
+  },
+  {
+    "entity_id": "K0148",
+    "kkt_type": "K",
+    "canonical_name": "Xây dựng và quản lý dự án",
+    "alias_list": "",
+    "canonical_norm": "xây dựng và quản lý dự án",
+    "canonical_ascii": "xay dung va quan ly du an"
+  },
+  {
+    "entity_id": "K0149",
+    "kkt_type": "K",
+    "canonical_name": "Xây dựng ứng dụng web động",
+    "alias_list": "",
+    "canonical_norm": "xây dựng ứng dụng web động",
+    "canonical_ascii": "xay dung ung dung web đong"
+  },
+  {
+    "entity_id": "K0150",
+    "kkt_type": "K",
+    "canonical_name": "Yêu cầu xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "yêu cầu xử lý thông tin",
+    "canonical_ascii": "yeu cau xu ly thong tin"
+  },
+  {
+    "entity_id": "K0151",
+    "kkt_type": "K",
+    "canonical_name": "Đặc điểm năng lực thông tin",
+    "alias_list": "",
+    "canonical_norm": "đặc điểm năng lực thông tin",
+    "canonical_ascii": "đac điem nang luc thong tin"
+  },
+  {
+    "entity_id": "K0152",
+    "kkt_type": "K",
+    "canonical_name": "Đặc điểm phần mềm quản lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "đặc điểm phần mềm quản lý thông tin",
+    "canonical_ascii": "đac điem phan mem quan ly thong tin"
+  },
+  {
+    "entity_id": "K0153",
+    "kkt_type": "K",
+    "canonical_name": "Đặc điểm, yêu cầu năng lực thông tin trong môi trường làm việc",
+    "alias_list": "",
+    "canonical_norm": "đặc điểm, yêu cầu năng lực thông tin trong môi trường làm việc",
+    "canonical_ascii": "đac điem, yeu cau nang luc thong tin trong moi truong lam viec"
+  },
+  {
+    "entity_id": "K0154",
+    "kkt_type": "K",
+    "canonical_name": "Đặc điểm, ảnh hưởng của môi trường vi mô và vĩ mô",
+    "alias_list": "",
+    "canonical_norm": "đặc điểm, ảnh hưởng của môi trường vi mô và vĩ mô",
+    "canonical_ascii": "đac điem, anh huong cua moi truong vi mo va vi mo"
+  },
+  {
+    "entity_id": "K0155",
+    "kkt_type": "K",
+    "canonical_name": "Định hướng quy trình phát triển phần mềm mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "định hướng quy trình phát triển phần mềm mã nguồn mở",
+    "canonical_ascii": "đinh huong quy trinh phat trien phan mem ma nguon mo"
+  },
+  {
+    "entity_id": "K0156",
+    "kkt_type": "K",
+    "canonical_name": "Đối tượng và hành vi đối tượng trong lập trình",
+    "alias_list": "",
+    "canonical_norm": "đối tượng và hành vi đối tượng trong lập trình",
+    "canonical_ascii": "đoi tuong va hanh vi đoi tuong trong lap trinh"
+  },
+  {
+    "entity_id": "K0157",
+    "kkt_type": "K",
+    "canonical_name": "Ứng dụng công nghệ thông tin",
+    "alias_list": "",
+    "canonical_norm": "ứng dụng công nghệ thông tin",
+    "canonical_ascii": "ung dung cong nghe thong tin"
+  },
+  {
+    "entity_id": "K0158",
+    "kkt_type": "K",
+    "canonical_name": "Ứng dụng công nghệ thông tin trong văn phòng",
+    "alias_list": "",
+    "canonical_norm": "ứng dụng công nghệ thông tin trong văn phòng",
+    "canonical_ascii": "ung dung cong nghe thong tin trong van phong"
+  },
+  {
+    "entity_id": "K0159",
+    "kkt_type": "K",
+    "canonical_name": "Ứng dụng thủ tục và hàm trong cơ sở dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "ứng dụng thủ tục và hàm trong cơ sở dữ liệu",
+    "canonical_ascii": "ung dung thu tuc va ham trong co so du lieu"
+  },
+  {
+    "entity_id": "S0001",
+    "kkt_type": "S",
+    "canonical_name": "Biên soạn từ khóa, bài tóm tắt, chú giải",
+    "alias_list": "",
+    "canonical_norm": "biên soạn từ khóa, bài tóm tắt, chú giải",
+    "canonical_ascii": "bien soan tu khoa, bai tom tat, chu giai"
+  },
+  {
+    "entity_id": "S0002",
+    "kkt_type": "S",
+    "canonical_name": "Biểu diễn kiến thức ngôn ngữ thiết kế web trong trình bày thông tin",
+    "alias_list": "Biểu diễn kiến thức HTML và CSS trong trình bày thông tin trên web",
+    "canonical_norm": "biểu diễn kiến thức ngôn ngữ thiết kế web trong trình bày thông tin",
+    "canonical_ascii": "bieu dien kien thuc ngon ngu thiet ke web trong trinh bay thong tin"
+  },
+  {
+    "entity_id": "S0003",
+    "kkt_type": "S",
+    "canonical_name": "Biểu diễn mô hình dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "biểu diễn mô hình dữ liệu",
+    "canonical_ascii": "bieu dien mo hinh du lieu"
+  },
+  {
+    "entity_id": "S0004",
+    "kkt_type": "S",
+    "canonical_name": "Biểu diễn thông tin hỗ trợ ra quyết định trên ERP",
+    "alias_list": "",
+    "canonical_norm": "biểu diễn thông tin hỗ trợ ra quyết định trên erp",
+    "canonical_ascii": "bieu dien thong tin ho tro ra quyet đinh tren erp"
+  },
+  {
+    "entity_id": "S0005",
+    "kkt_type": "S",
+    "canonical_name": "Báo cáo kết quả phân tích",
+    "alias_list": "",
+    "canonical_norm": "báo cáo kết quả phân tích",
+    "canonical_ascii": "bao cao ket qua phan tich"
+  },
+  {
+    "entity_id": "S0006",
+    "kkt_type": "S",
+    "canonical_name": "Chuyển dạng dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "chuyển dạng dữ liệu",
+    "canonical_ascii": "chuyen dang du lieu"
+  },
+  {
+    "entity_id": "S0007",
+    "kkt_type": "S",
+    "canonical_name": "Cài đặt và cấu hình dịch vụ mạng cơ bản trong Workgroup và Domain",
+    "alias_list": "",
+    "canonical_norm": "cài đặt và cấu hình dịch vụ mạng cơ bản trong workgroup và domain",
+    "canonical_ascii": "cai đat va cau hinh dich vu mang co ban trong workgroup va domain"
+  },
+  {
+    "entity_id": "S0008",
+    "kkt_type": "S",
+    "canonical_name": "Các bước cơ bản xây dựng kế hoạch công tác",
+    "alias_list": "",
+    "canonical_norm": "các bước cơ bản xây dựng kế hoạch công tác",
+    "canonical_ascii": "cac buoc co ban xay dung ke hoach cong tac"
+  },
+  {
+    "entity_id": "S0009",
+    "kkt_type": "S",
+    "canonical_name": "Câu lệnh Linux đơn giản",
+    "alias_list": "",
+    "canonical_norm": "câu lệnh linux đơn giản",
+    "canonical_ascii": "cau lenh linux đon gian"
+  },
+  {
+    "entity_id": "S0010",
+    "kkt_type": "S",
+    "canonical_name": "Cấu hình công cụ phân tích lỗ hổng",
+    "alias_list": "",
+    "canonical_norm": "cấu hình công cụ phân tích lỗ hổng",
+    "canonical_ascii": "cau hinh cong cu phan tich lo hong"
+  },
+  {
+    "entity_id": "S0011",
+    "kkt_type": "S",
+    "canonical_name": "Giải pháp thiết kế",
+    "alias_list": "",
+    "canonical_norm": "giải pháp thiết kế",
+    "canonical_ascii": "giai phap thiet ke"
+  },
+  {
+    "entity_id": "S0012",
+    "kkt_type": "S",
+    "canonical_name": "Giải pháp tích hợp hệ thống",
+    "alias_list": "",
+    "canonical_norm": "giải pháp tích hợp hệ thống",
+    "canonical_ascii": "giai phap tich hop he thong"
+  },
+  {
+    "entity_id": "S0013",
+    "kkt_type": "S",
+    "canonical_name": "Giải quyết bài toán bằng dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "giải quyết bài toán bằng dữ liệu",
+    "canonical_ascii": "giai quyet bai toan bang du lieu"
+  },
+  {
+    "entity_id": "S0014",
+    "kkt_type": "S",
+    "canonical_name": "Giải thích vấn đề chủ yếu trong công tác hành chính văn phòng",
+    "alias_list": "",
+    "canonical_norm": "giải thích vấn đề chủ yếu trong công tác hành chính văn phòng",
+    "canonical_ascii": "giai thich van đe chu yeu trong cong tac hanh chinh van phong"
+  },
+  {
+    "entity_id": "S0015",
+    "kkt_type": "S",
+    "canonical_name": "Hiểu và tiếp cận hoạt động marketing",
+    "alias_list": "",
+    "canonical_norm": "hiểu và tiếp cận hoạt động marketing",
+    "canonical_ascii": "hieu va tiep can hoat đong marketing"
+  },
+  {
+    "entity_id": "S0016",
+    "kkt_type": "S",
+    "canonical_name": "Hoạch định địa chỉ IP theo mô hình mạng",
+    "alias_list": "",
+    "canonical_norm": "hoạch định địa chỉ ip theo mô hình mạng",
+    "canonical_ascii": "hoach đinh đia chi ip theo mo hinh mang"
+  },
+  {
+    "entity_id": "S0017",
+    "kkt_type": "S",
+    "canonical_name": "Hình thức tấn công hệ thống",
+    "alias_list": "Cyber Attack",
+    "canonical_norm": "hình thức tấn công hệ thống",
+    "canonical_ascii": "hinh thuc tan cong he thong"
+  },
+  {
+    "entity_id": "S0018",
+    "kkt_type": "S",
+    "canonical_name": "Hệ thống hóa quy trình phát triển và quản lý tài nguyên thông tin",
+    "alias_list": "",
+    "canonical_norm": "hệ thống hóa quy trình phát triển và quản lý tài nguyên thông tin",
+    "canonical_ascii": "he thong hoa quy trinh phat trien va quan ly tai nguyen thong tin"
+  },
+  {
+    "entity_id": "S0019",
+    "kkt_type": "S",
+    "canonical_name": "Khảo sát hiện trạng hệ thống",
+    "alias_list": "",
+    "canonical_norm": "khảo sát hiện trạng hệ thống",
+    "canonical_ascii": "khao sat hien trang he thong"
+  },
+  {
+    "entity_id": "S0020",
+    "kkt_type": "S",
+    "canonical_name": "Làm rõ mức độ xử lý thông tin hình thức",
+    "alias_list": "",
+    "canonical_norm": "làm rõ mức độ xử lý thông tin hình thức",
+    "canonical_ascii": "lam ro muc đo xu ly thong tin hinh thuc"
+  },
+  {
+    "entity_id": "S0021",
+    "kkt_type": "S",
+    "canonical_name": "Làm sạch dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "làm sạch dữ liệu",
+    "canonical_ascii": "lam sach du lieu"
+  },
+  {
+    "entity_id": "S0022",
+    "kkt_type": "S",
+    "canonical_name": "Lập bản thuyết minh cơ bản",
+    "alias_list": "",
+    "canonical_norm": "lập bản thuyết minh cơ bản",
+    "canonical_ascii": "lap ban thuyet minh co ban"
+  },
+  {
+    "entity_id": "S0023",
+    "kkt_type": "S",
+    "canonical_name": "Lập kế hoạch chuyển đổi số",
+    "alias_list": "",
+    "canonical_norm": "lập kế hoạch chuyển đổi số",
+    "canonical_ascii": "lap ke hoach chuyen đoi so"
+  },
+  {
+    "entity_id": "S0024",
+    "kkt_type": "S",
+    "canonical_name": "Lập kế hoạch chuyển đổi số theo yêu cầu",
+    "alias_list": "",
+    "canonical_norm": "lập kế hoạch chuyển đổi số theo yêu cầu",
+    "canonical_ascii": "lap ke hoach chuyen đoi so theo yeu cau"
+  },
+  {
+    "entity_id": "S0025",
+    "kkt_type": "S",
+    "canonical_name": "Lập kế hoạch lưu giữ, truy hồi, bảo về hồ sơ",
+    "alias_list": "",
+    "canonical_norm": "lập kế hoạch lưu giữ, truy hồi, bảo về hồ sơ",
+    "canonical_ascii": "lap ke hoach luu giu, truy hoi, bao ve ho so"
+  },
+  {
+    "entity_id": "S0026",
+    "kkt_type": "S",
+    "canonical_name": "Lập trình cơ bản",
+    "alias_list": "",
+    "canonical_norm": "lập trình cơ bản",
+    "canonical_ascii": "lap trinh co ban"
+  },
+  {
+    "entity_id": "S0027",
+    "kkt_type": "S",
+    "canonical_name": "Lựa chọn công cụ công nghệ thông tin và truyền thông cho xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "lựa chọn công cụ công nghệ thông tin và truyền thông cho xử lý thông tin",
+    "canonical_ascii": "lua chon cong cu cong nghe thong tin va truyen thong cho xu ly thong tin"
+  },
+  {
+    "entity_id": "S0028",
+    "kkt_type": "S",
+    "canonical_name": "Lựa chọn công nghệ thông tin",
+    "alias_list": "",
+    "canonical_norm": "lựa chọn công nghệ thông tin",
+    "canonical_ascii": "lua chon cong nghe thong tin"
+  },
+  {
+    "entity_id": "S0029",
+    "kkt_type": "S",
+    "canonical_name": "Lựa chọn giải pháp bảo mật phù hợp",
+    "alias_list": "",
+    "canonical_norm": "lựa chọn giải pháp bảo mật phù hợp",
+    "canonical_ascii": "lua chon giai phap bao mat phu hop"
+  },
+  {
+    "entity_id": "S0030",
+    "kkt_type": "S",
+    "canonical_name": "Lựa chọn phần mềm phù hợp mục tiêu sử dụng",
+    "alias_list": "",
+    "canonical_norm": "lựa chọn phần mềm phù hợp mục tiêu sử dụng",
+    "canonical_ascii": "lua chon phan mem phu hop muc tieu su dung"
+  },
+  {
+    "entity_id": "S0031",
+    "kkt_type": "S",
+    "canonical_name": "Lựa chọn và ứng dụng công nghệ mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "lựa chọn và ứng dụng công nghệ mã nguồn mở",
+    "canonical_ascii": "lua chon va ung dung cong nghe ma nguon mo"
+  },
+  {
+    "entity_id": "S0032",
+    "kkt_type": "S",
+    "canonical_name": "Mô hình hóa dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "mô hình hóa dữ liệu",
+    "canonical_ascii": "mo hinh hoa du lieu"
+  },
+  {
+    "entity_id": "S0033",
+    "kkt_type": "S",
+    "canonical_name": "Mô hình hóa phân tích thiết kế hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "mô hình hóa phân tích thiết kế hệ thống thông tin",
+    "canonical_ascii": "mo hinh hoa phan tich thiet ke he thong thong tin"
+  },
+  {
+    "entity_id": "S0034",
+    "kkt_type": "S",
+    "canonical_name": "Mô hình hóa quá trình thiết kế và cài đặt ứng dụng hướng đối tượng",
+    "alias_list": "",
+    "canonical_norm": "mô hình hóa quá trình thiết kế và cài đặt ứng dụng hướng đối tượng",
+    "canonical_ascii": "mo hinh hoa qua trinh thiet ke va cai đat ung dung huong đoi tuong"
+  },
+  {
+    "entity_id": "S0035",
+    "kkt_type": "S",
+    "canonical_name": "Nhận diện mức độ xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "nhận diện mức độ xử lý thông tin",
+    "canonical_ascii": "nhan dien muc đo xu ly thong tin"
+  },
+  {
+    "entity_id": "S0036",
+    "kkt_type": "S",
+    "canonical_name": "Nhận diện nhu cầu xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "nhận diện nhu cầu xử lý thông tin",
+    "canonical_ascii": "nhan dien nhu cau xu ly thong tin"
+  },
+  {
+    "entity_id": "S0037",
+    "kkt_type": "S",
+    "canonical_name": "Nhận diện yêu cầu thông tin",
+    "alias_list": "",
+    "canonical_norm": "nhận diện yêu cầu thông tin",
+    "canonical_ascii": "nhan dien yeu cau thong tin"
+  },
+  {
+    "entity_id": "S0038",
+    "kkt_type": "S",
+    "canonical_name": "Nhận thức và tư duy hệ thống về yếu tố thiết yếu của quản lý",
+    "alias_list": "",
+    "canonical_norm": "nhận thức và tư duy hệ thống về yếu tố thiết yếu của quản lý",
+    "canonical_ascii": "nhan thuc va tu duy he thong ve yeu to thiet yeu cua quan ly"
+  },
+  {
+    "entity_id": "S0039",
+    "kkt_type": "S",
+    "canonical_name": "Năng lực công nghệ thông tin",
+    "alias_list": "",
+    "canonical_norm": "năng lực công nghệ thông tin",
+    "canonical_ascii": "nang luc cong nghe thong tin"
+  },
+  {
+    "entity_id": "S0040",
+    "kkt_type": "S",
+    "canonical_name": "Năng lực thích ứng với chuyển đổi số và xã hội thông tin",
+    "alias_list": "",
+    "canonical_norm": "năng lực thích ứng với chuyển đổi số và xã hội thông tin",
+    "canonical_ascii": "nang luc thich ung voi chuyen đoi so va xa hoi thong tin"
+  },
+  {
+    "entity_id": "S0041",
+    "kkt_type": "S",
+    "canonical_name": "Năng lực tự chủ, linh hoạt",
+    "alias_list": "",
+    "canonical_norm": "năng lực tự chủ, linh hoạt",
+    "canonical_ascii": "nang luc tu chu, linh hoat"
+  },
+  {
+    "entity_id": "S0042",
+    "kkt_type": "S",
+    "canonical_name": "Năng lực tự học",
+    "alias_list": "",
+    "canonical_norm": "năng lực tự học",
+    "canonical_ascii": "nang luc tu hoc"
+  },
+  {
+    "entity_id": "S0043",
+    "kkt_type": "S",
+    "canonical_name": "Phát triển năng lực phân tích, tổng hợp, tư duy phản biện",
+    "alias_list": "",
+    "canonical_norm": "phát triển năng lực phân tích, tổng hợp, tư duy phản biện",
+    "canonical_ascii": "phat trien nang luc phan tich, tong hop, tu duy phan bien"
+  },
+  {
+    "entity_id": "S0044",
+    "kkt_type": "S",
+    "canonical_name": "Phát triển và sử dụng ứng dụng AI",
+    "alias_list": "Phát triển và sử dụng ứng dụng trí tuệ nhân tạo",
+    "canonical_norm": "phát triển và sử dụng ứng dụng ai",
+    "canonical_ascii": "phat trien va su dung ung dung ai"
+  },
+  {
+    "entity_id": "S0045",
+    "kkt_type": "S",
+    "canonical_name": "Phát triển website động",
+    "alias_list": "",
+    "canonical_norm": "phát triển website động",
+    "canonical_ascii": "phat trien website đong"
+  },
+  {
+    "entity_id": "S0046",
+    "kkt_type": "S",
+    "canonical_name": "Phân quyền người dùng trong cơ sở dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "phân quyền người dùng trong cơ sở dữ liệu",
+    "canonical_ascii": "phan quyen nguoi dung trong co so du lieu"
+  },
+  {
+    "entity_id": "S0047",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích bối cảnh thông tin trong tổ chức và xã hội",
+    "alias_list": "",
+    "canonical_norm": "phân tích bối cảnh thông tin trong tổ chức và xã hội",
+    "canonical_ascii": "phan tich boi canh thong tin trong to chuc va xa hoi"
+  },
+  {
+    "entity_id": "S0048",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích cách doanh nghiêp lựa chọn và triển khai chiến lược truyền thông",
+    "alias_list": "",
+    "canonical_norm": "phân tích cách doanh nghiêp lựa chọn và triển khai chiến lược truyền thông",
+    "canonical_ascii": "phan tich cach doanh nghiep lua chon va trien khai chien luoc truyen thong"
+  },
+  {
+    "entity_id": "S0049",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích cách dùng kiến thức chuyên ngành trong xử lý và cung cấp thông tin",
+    "alias_list": "",
+    "canonical_norm": "phân tích cách dùng kiến thức chuyên ngành trong xử lý và cung cấp thông tin",
+    "canonical_ascii": "phan tich cach dung kien thuc chuyen nganh trong xu ly va cung cap thong tin"
+  },
+  {
+    "entity_id": "S0050",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+    "alias_list": "Data Analysis",
+    "canonical_norm": "phân tích dữ liệu doanh nghiệp",
+    "canonical_ascii": "phan tich du lieu doanh nghiep"
+  },
+  {
+    "entity_id": "S0051",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích mô hình hoạt động của website",
+    "alias_list": "",
+    "canonical_norm": "phân tích mô hình hoạt động của website",
+    "canonical_ascii": "phan tich mo hinh hoat đong cua website"
+  },
+  {
+    "entity_id": "S0052",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích mô hình khoa học dữ liệu ứng dụng",
+    "alias_list": "",
+    "canonical_norm": "phân tích mô hình khoa học dữ liệu ứng dụng",
+    "canonical_ascii": "phan tich mo hinh khoa hoc du lieu ung dung"
+  },
+  {
+    "entity_id": "S0053",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích nguyên lý quản lý, đánh giá môi trường, văn hóa tổ chức đến quản trị",
+    "alias_list": "",
+    "canonical_norm": "phân tích nguyên lý quản lý, đánh giá môi trường, văn hóa tổ chức đến quản trị",
+    "canonical_ascii": "phan tich nguyen ly quan ly, đanh gia moi truong, van hoa to chuc đen quan tri"
+  },
+  {
+    "entity_id": "S0054",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích nguồn tin, phương pháp thu thập và hệ thống thông tin phục vụ lãnh đạo",
+    "alias_list": "",
+    "canonical_norm": "phân tích nguồn tin, phương pháp thu thập và hệ thống thông tin phục vụ lãnh đạo",
+    "canonical_ascii": "phan tich nguon tin, phuong phap thu thap va he thong thong tin phuc vu lanh đao"
+  },
+  {
+    "entity_id": "S0055",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích nhược điểm quy trình kinh doanh trước khi ứng dụng hệ thống",
+    "alias_list": "",
+    "canonical_norm": "phân tích nhược điểm quy trình kinh doanh trước khi ứng dụng hệ thống",
+    "canonical_ascii": "phan tich nhuoc điem quy trinh kinh doanh truoc khi ung dung he thong"
+  },
+  {
+    "entity_id": "S0056",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích nội dung thông tin từ bài báo, văn bản pháp quy, báo cáo,..",
+    "alias_list": "",
+    "canonical_norm": "phân tích nội dung thông tin từ bài báo, văn bản pháp quy, báo cáo,..",
+    "canonical_ascii": "phan tich noi dung thong tin tu bai bao, van ban phap quy, bao cao,.."
+  },
+  {
+    "entity_id": "S0057",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích quy trình phân tích dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "phân tích quy trình phân tích dữ liệu",
+    "canonical_ascii": "phan tich quy trinh phan tich du lieu"
+  },
+  {
+    "entity_id": "S0058",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích quy trình sao lưu, phục hồi cơ sở dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "phân tích quy trình sao lưu, phục hồi cơ sở dữ liệu",
+    "canonical_ascii": "phan tich quy trinh sao luu, phuc hoi co so du lieu"
+  },
+  {
+    "entity_id": "S0059",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích thực trạng, nhu cầu chuyển đổi số",
+    "alias_list": "",
+    "canonical_norm": "phân tích thực trạng, nhu cầu chuyển đổi số",
+    "canonical_ascii": "phan tich thuc trang, nhu cau chuyen đoi so"
+  },
+  {
+    "entity_id": "S0060",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích và thu thập thông tin đa phương tiện",
+    "alias_list": "",
+    "canonical_norm": "phân tích và thu thập thông tin đa phương tiện",
+    "canonical_ascii": "phan tich va thu thap thong tin đa phuong tien"
+  },
+  {
+    "entity_id": "S0061",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích và thích nghi với yêu cầu chuyên môn",
+    "alias_list": "",
+    "canonical_norm": "phân tích và thích nghi với yêu cầu chuyên môn",
+    "canonical_ascii": "phan tich va thich nghi voi yeu cau chuyen mon"
+  },
+  {
+    "entity_id": "S0062",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích yêu cầu đào tạo năng lực thông tin của đa dạng đối tượng",
+    "alias_list": "",
+    "canonical_norm": "phân tích yêu cầu đào tạo năng lực thông tin của đa dạng đối tượng",
+    "canonical_ascii": "phan tich yeu cau đao tao nang luc thong tin cua đa dang đoi tuong"
+  },
+  {
+    "entity_id": "S0063",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích yếu tố chính trị, pháp lý, xã hội tác động đến môi trường thông tin và nghề thông tin",
+    "alias_list": "",
+    "canonical_norm": "phân tích yếu tố chính trị, pháp lý, xã hội tác động đến môi trường thông tin và nghề thông tin",
+    "canonical_ascii": "phan tich yeu to chinh tri, phap ly, xa hoi tac đong đen moi truong thong tin va nghe thong tin"
+  },
+  {
+    "entity_id": "S0064",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích đặc điểm môi trường thông tin và nghề nghiệp trong bối cảnh pháp lý - chính sách",
+    "alias_list": "",
+    "canonical_norm": "phân tích đặc điểm môi trường thông tin và nghề nghiệp trong bối cảnh pháp lý - chính sách",
+    "canonical_ascii": "phan tich đac điem moi truong thong tin va nghe nghiep trong boi canh phap ly - chinh sach"
+  },
+  {
+    "entity_id": "S0065",
+    "kkt_type": "S",
+    "canonical_name": "Phân tích đặc điểm và nhu cầu tổ chức",
+    "alias_list": "",
+    "canonical_norm": "phân tích đặc điểm và nhu cầu tổ chức",
+    "canonical_ascii": "phan tich đac điem va nhu cau to chuc"
+  },
+  {
+    "entity_id": "S0066",
+    "kkt_type": "S",
+    "canonical_name": "Phương pháp xây dựng bản thiết kế hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "phương pháp xây dựng bản thiết kế hệ thống thông tin",
+    "canonical_ascii": "phuong phap xay dung ban thiet ke he thong thong tin"
+  },
+  {
+    "entity_id": "S0067",
+    "kkt_type": "S",
+    "canonical_name": "Quy trình xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "quy trình xử lý thông tin",
+    "canonical_ascii": "quy trinh xu ly thong tin"
+  },
+  {
+    "entity_id": "S0068",
+    "kkt_type": "S",
+    "canonical_name": "Quản trị cơ sở dữ liệu",
+    "alias_list": "Database Administration",
+    "canonical_norm": "quản trị cơ sở dữ liệu",
+    "canonical_ascii": "quan tri co so du lieu"
+  },
+  {
+    "entity_id": "S0069",
+    "kkt_type": "S",
+    "canonical_name": "So sánh phương án thiết kế và phát triển ứng dụng web",
+    "alias_list": "So sánh giao diện",
+    "canonical_norm": "so sánh phương án thiết kế và phát triển ứng dụng web",
+    "canonical_ascii": "so sanh phuong an thiet ke va phat trien ung dung web"
+  },
+  {
+    "entity_id": "S0070",
+    "kkt_type": "S",
+    "canonical_name": "Soạn thảo văn bản hành chính",
+    "alias_list": "",
+    "canonical_norm": "soạn thảo văn bản hành chính",
+    "canonical_ascii": "soan thao van ban hanh chinh"
+  },
+  {
+    "entity_id": "S0071",
+    "kkt_type": "S",
+    "canonical_name": "Sử dụng PHP và MySQL tạo website mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "sử dụng php và mysql tạo website mã nguồn mở",
+    "canonical_ascii": "su dung php va mysql tao website ma nguon mo"
+  },
+  {
+    "entity_id": "S0072",
+    "kkt_type": "S",
+    "canonical_name": "Sử dụng SQL cơ bản",
+    "alias_list": "",
+    "canonical_norm": "sử dụng sql cơ bản",
+    "canonical_ascii": "su dung sql co ban"
+  },
+  {
+    "entity_id": "S0073",
+    "kkt_type": "S",
+    "canonical_name": "Sử dụng các phần mềm phổ biến",
+    "alias_list": "",
+    "canonical_norm": "sử dụng các phần mềm phổ biến",
+    "canonical_ascii": "su dung cac phan mem pho bien"
+  },
+  {
+    "entity_id": "S0074",
+    "kkt_type": "S",
+    "canonical_name": "Sử dụng công cụ xử lý ngữ nghĩa trong hệ thống tìm tin",
+    "alias_list": "",
+    "canonical_norm": "sử dụng công cụ xử lý ngữ nghĩa trong hệ thống tìm tin",
+    "canonical_ascii": "su dung cong cu xu ly ngu nghia trong he thong tim tin"
+  },
+  {
+    "entity_id": "S0075",
+    "kkt_type": "S",
+    "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+    "alias_list": "",
+    "canonical_norm": "sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+    "canonical_ascii": "su dung kien thuc mang may tinh trong hoc tap va giao tiep"
+  },
+  {
+    "entity_id": "S0076",
+    "kkt_type": "S",
+    "canonical_name": "Thao tác trên hệ điều hành Linux",
+    "alias_list": "",
+    "canonical_norm": "thao tác trên hệ điều hành linux",
+    "canonical_ascii": "thao tac tren he đieu hanh linux"
+  },
+  {
+    "entity_id": "S0077",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế chiến lược quản lý hồ sơ phù hợp",
+    "alias_list": "",
+    "canonical_norm": "thiết kế chiến lược quản lý hồ sơ phù hợp",
+    "canonical_ascii": "thiet ke chien luoc quan ly ho so phu hop"
+  },
+  {
+    "entity_id": "S0078",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế dịch vụ thông tin phục vụ khách hàng",
+    "alias_list": "",
+    "canonical_norm": "thiết kế dịch vụ thông tin phục vụ khách hàng",
+    "canonical_ascii": "thiet ke dich vu thong tin phuc vu khach hang"
+  },
+  {
+    "entity_id": "S0079",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế dịch vụ và hệ thống thông tin cho khai thác dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "thiết kế dịch vụ và hệ thống thông tin cho khai thác dữ liệu",
+    "canonical_ascii": "thiet ke dich vu va he thong thong tin cho khai thac du lieu"
+  },
+  {
+    "entity_id": "S0080",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế hoạt động đào tạo năng lực thông tin",
+    "alias_list": "",
+    "canonical_norm": "thiết kế hoạt động đào tạo năng lực thông tin",
+    "canonical_ascii": "thiet ke hoat đong đao tao nang luc thong tin"
+  },
+  {
+    "entity_id": "S0081",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "thiết kế hệ thống thông tin",
+    "canonical_ascii": "thiet ke he thong thong tin"
+  },
+  {
+    "entity_id": "S0082",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế nghiên cứu",
+    "alias_list": "",
+    "canonical_norm": "thiết kế nghiên cứu",
+    "canonical_ascii": "thiet ke nghien cuu"
+  },
+  {
+    "entity_id": "S0083",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế thủ tục",
+    "alias_list": "",
+    "canonical_norm": "thiết kế thủ tục",
+    "canonical_ascii": "thiet ke thu tuc"
+  },
+  {
+    "entity_id": "S0084",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế và thao tác cơ sở dữ liệu cơ bản",
+    "alias_list": "",
+    "canonical_norm": "thiết kế và thao tác cơ sở dữ liệu cơ bản",
+    "canonical_ascii": "thiet ke va thao tac co so du lieu co ban"
+  },
+  {
+    "entity_id": "S0085",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế và triển khai chương trình đào tạo năng lực thông tin",
+    "alias_list": "",
+    "canonical_norm": "thiết kế và triển khai chương trình đào tạo năng lực thông tin",
+    "canonical_ascii": "thiet ke va trien khai chuong trinh đao tao nang luc thong tin"
+  },
+  {
+    "entity_id": "S0086",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế và triển khai ứng dụng hướng đối tượng",
+    "alias_list": "",
+    "canonical_norm": "thiết kế và triển khai ứng dụng hướng đối tượng",
+    "canonical_ascii": "thiet ke va trien khai ung dung huong đoi tuong"
+  },
+  {
+    "entity_id": "S0087",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế và tùy biến được cổng thông tin",
+    "alias_list": "",
+    "canonical_norm": "thiết kế và tùy biến được cổng thông tin",
+    "canonical_ascii": "thiet ke va tuy bien đuoc cong thong tin"
+  },
+  {
+    "entity_id": "S0088",
+    "kkt_type": "S",
+    "canonical_name": "Thiết kế web để tổ chức và lưu trữ thông tin",
+    "alias_list": "",
+    "canonical_norm": "thiết kế web để tổ chức và lưu trữ thông tin",
+    "canonical_ascii": "thiet ke web đe to chuc va luu tru thong tin"
+  },
+  {
+    "entity_id": "S0089",
+    "kkt_type": "S",
+    "canonical_name": "Thu thập, xử lý, tổ chức, phục vụ thông tin kinh tế",
+    "alias_list": "",
+    "canonical_norm": "thu thập, xử lý, tổ chức, phục vụ thông tin kinh tế",
+    "canonical_ascii": "thu thap, xu ly, to chuc, phuc vu thong tin kinh te"
+  },
+  {
+    "entity_id": "S0090",
+    "kkt_type": "S",
+    "canonical_name": "Thu thập, xử lý, đánh giá độ tin cậy của nguồn tin",
+    "alias_list": "",
+    "canonical_norm": "thu thập, xử lý, đánh giá độ tin cậy của nguồn tin",
+    "canonical_ascii": "thu thap, xu ly, đanh gia đo tin cay cua nguon tin"
+  },
+  {
+    "entity_id": "S0091",
+    "kkt_type": "S",
+    "canonical_name": "Thành thạo Python và thư viện",
+    "alias_list": "",
+    "canonical_norm": "thành thạo python và thư viện",
+    "canonical_ascii": "thanh thao python va thu vien"
+  },
+  {
+    "entity_id": "S0092",
+    "kkt_type": "S",
+    "canonical_name": "Thành thạo Python và thư viện hỗ trợ lập trình hướng đối tượng",
+    "alias_list": "",
+    "canonical_norm": "thành thạo python và thư viện hỗ trợ lập trình hướng đối tượng",
+    "canonical_ascii": "thanh thao python va thu vien ho tro lap trinh huong đoi tuong"
+  },
+  {
+    "entity_id": "S0093",
+    "kkt_type": "S",
+    "canonical_name": "Thành thạo công cụ thu thập, lưu trữ và phân tích thông tin số",
+    "alias_list": "",
+    "canonical_norm": "thành thạo công cụ thu thập, lưu trữ và phân tích thông tin số",
+    "canonical_ascii": "thanh thao cong cu thu thap, luu tru va phan tich thong tin so"
+  },
+  {
+    "entity_id": "S0094",
+    "kkt_type": "S",
+    "canonical_name": "Thành thạo hệ thống quản lý phiên bản",
+    "alias_list": "",
+    "canonical_norm": "thành thạo hệ thống quản lý phiên bản",
+    "canonical_ascii": "thanh thao he thong quan ly phien ban"
+  },
+  {
+    "entity_id": "S0095",
+    "kkt_type": "S",
+    "canonical_name": "Thích nghi nhanh với công việc hành chính văn phòng",
+    "alias_list": "",
+    "canonical_norm": "thích nghi nhanh với công việc hành chính văn phòng",
+    "canonical_ascii": "thich nghi nhanh voi cong viec hanh chinh van phong"
+  },
+  {
+    "entity_id": "S0096",
+    "kkt_type": "S",
+    "canonical_name": "Thích nghi với các bối cảnh truyền thông xã hội khác nhau",
+    "alias_list": "",
+    "canonical_norm": "thích nghi với các bối cảnh truyền thông xã hội khác nhau",
+    "canonical_ascii": "thich nghi voi cac boi canh truyen thong xa hoi khac nhau"
+  },
+  {
+    "entity_id": "S0097",
+    "kkt_type": "S",
+    "canonical_name": "Thích nghi với môi trường truyền thông số",
+    "alias_list": "",
+    "canonical_norm": "thích nghi với môi trường truyền thông số",
+    "canonical_ascii": "thich nghi voi moi truong truyen thong so"
+  },
+  {
+    "entity_id": "S0098",
+    "kkt_type": "S",
+    "canonical_name": "Thích ứng trong việc giải quyết tình huống",
+    "alias_list": "",
+    "canonical_norm": "thích ứng trong việc giải quyết tình huống",
+    "canonical_ascii": "thich ung trong viec giai quyet tinh huong"
+  },
+  {
+    "entity_id": "S0099",
+    "kkt_type": "S",
+    "canonical_name": "Thực hiện chuỗi quy trình kinh doanh trên ERP",
+    "alias_list": "",
+    "canonical_norm": "thực hiện chuỗi quy trình kinh doanh trên erp",
+    "canonical_ascii": "thuc hien chuoi quy trinh kinh doanh tren erp"
+  },
+  {
+    "entity_id": "S0100",
+    "kkt_type": "S",
+    "canonical_name": "Thực hiện các bước trong quy trình thiết kế hệ thống tìm tin",
+    "alias_list": "",
+    "canonical_norm": "thực hiện các bước trong quy trình thiết kế hệ thống tìm tin",
+    "canonical_ascii": "thuc hien cac buoc trong quy trinh thiet ke he thong tim tin"
+  },
+  {
+    "entity_id": "S0101",
+    "kkt_type": "S",
+    "canonical_name": "Thực hiện nhiệm vụ linh hoạt, cẩn thận, đúng hạn",
+    "alias_list": "",
+    "canonical_norm": "thực hiện nhiệm vụ linh hoạt, cẩn thận, đúng hạn",
+    "canonical_ascii": "thuc hien nhiem vu linh hoat, can than, đung han"
+  },
+  {
+    "entity_id": "S0102",
+    "kkt_type": "S",
+    "canonical_name": "Thực hiện phân quyền trong cổng thông tin",
+    "alias_list": "",
+    "canonical_norm": "thực hiện phân quyền trong cổng thông tin",
+    "canonical_ascii": "thuc hien phan quyen trong cong thong tin"
+  },
+  {
+    "entity_id": "S0103",
+    "kkt_type": "S",
+    "canonical_name": "Thực hiện phân tích dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "thực hiện phân tích dữ liệu",
+    "canonical_ascii": "thuc hien phan tich du lieu"
+  },
+  {
+    "entity_id": "S0104",
+    "kkt_type": "S",
+    "canonical_name": "Thực hiện tổng quan nghiên cứu",
+    "alias_list": "",
+    "canonical_norm": "thực hiện tổng quan nghiên cứu",
+    "canonical_ascii": "thuc hien tong quan nghien cuu"
+  },
+  {
+    "entity_id": "S0105",
+    "kkt_type": "S",
+    "canonical_name": "Tra cứu các dạng thông tin khác nhau trên các công cụ tra cứu",
+    "alias_list": "",
+    "canonical_norm": "tra cứu các dạng thông tin khác nhau trên các công cụ tra cứu",
+    "canonical_ascii": "tra cuu cac dang thong tin khac nhau tren cac cong cu tra cuu"
+  },
+  {
+    "entity_id": "S0106",
+    "kkt_type": "S",
+    "canonical_name": "Triển khai vấn đề nghiên cứu trong bối cảnh học thuật và nghề nghiệp",
+    "alias_list": "",
+    "canonical_norm": "triển khai vấn đề nghiên cứu trong bối cảnh học thuật và nghề nghiệp",
+    "canonical_ascii": "trien khai van đe nghien cuu trong boi canh hoc thuat va nghe nghiep"
+  },
+  {
+    "entity_id": "S0107",
+    "kkt_type": "S",
+    "canonical_name": "Truy xuất dữ liệu",
+    "alias_list": "Data Retrieval",
+    "canonical_norm": "truy xuất dữ liệu",
+    "canonical_ascii": "truy xuat du lieu"
+  },
+  {
+    "entity_id": "S0108",
+    "kkt_type": "S",
+    "canonical_name": "Trình bày mục tiêu thiết kế",
+    "alias_list": "",
+    "canonical_norm": "trình bày mục tiêu thiết kế",
+    "canonical_ascii": "trinh bay muc tieu thiet ke"
+  },
+  {
+    "entity_id": "S0109",
+    "kkt_type": "S",
+    "canonical_name": "Trình bày phương án thiết kế",
+    "alias_list": "",
+    "canonical_norm": "trình bày phương án thiết kế",
+    "canonical_ascii": "trinh bay phuong an thiet ke"
+  },
+  {
+    "entity_id": "S0110",
+    "kkt_type": "S",
+    "canonical_name": "Trình bày thuyết minh dự án bằng văn bản và lời nói thuyết phục",
+    "alias_list": "",
+    "canonical_norm": "trình bày thuyết minh dự án bằng văn bản và lời nói thuyết phục",
+    "canonical_ascii": "trinh bay thuyet minh du an bang van ban va loi noi thuyet phuc"
+  },
+  {
+    "entity_id": "S0111",
+    "kkt_type": "S",
+    "canonical_name": "Tìm kiếm, chọn lọc, xử lý thông tin phục vụ lãnh đạo",
+    "alias_list": "",
+    "canonical_norm": "tìm kiếm, chọn lọc, xử lý thông tin phục vụ lãnh đạo",
+    "canonical_ascii": "tim kiem, chon loc, xu ly thong tin phuc vu lanh đao"
+  },
+  {
+    "entity_id": "S0112",
+    "kkt_type": "S",
+    "canonical_name": "Tích hợp công nghệ thông tin vào xây dựng và quản lý hệ thống thông tin doanh nghiệp",
+    "alias_list": "",
+    "canonical_norm": "tích hợp công nghệ thông tin vào xây dựng và quản lý hệ thống thông tin doanh nghiệp",
+    "canonical_ascii": "tich hop cong nghe thong tin vao xay dung va quan ly he thong thong tin doanh nghiep"
+  },
+  {
+    "entity_id": "S0113",
+    "kkt_type": "S",
+    "canonical_name": "Tích hợp và vận dụng công nghệ web và đa phương tiện",
+    "alias_list": "",
+    "canonical_norm": "tích hợp và vận dụng công nghệ web và đa phương tiện",
+    "canonical_ascii": "tich hop va van dung cong nghe web va đa phuong tien"
+  },
+  {
+    "entity_id": "S0114",
+    "kkt_type": "S",
+    "canonical_name": "Tích hợp và vận dụng công nghệ web động",
+    "alias_list": "",
+    "canonical_norm": "tích hợp và vận dụng công nghệ web động",
+    "canonical_ascii": "tich hop va van dung cong nghe web đong"
+  },
+  {
+    "entity_id": "S0115",
+    "kkt_type": "S",
+    "canonical_name": "Tích hợp và vận dụng nền tảng phần mềm tự do, công cụ cộng tác, giải pháp mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "tích hợp và vận dụng nền tảng phần mềm tự do, công cụ cộng tác, giải pháp mã nguồn mở",
+    "canonical_ascii": "tich hop va van dung nen tang phan mem tu do, cong cu cong tac, giai phap ma nguon mo"
+  },
+  {
+    "entity_id": "S0116",
+    "kkt_type": "S",
+    "canonical_name": "Tích hợp và vận dụng quản trị cơ sở dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "tích hợp và vận dụng quản trị cơ sở dữ liệu",
+    "canonical_ascii": "tich hop va van dung quan tri co so du lieu"
+  },
+  {
+    "entity_id": "S0117",
+    "kkt_type": "S",
+    "canonical_name": "Tùy chỉnh CMS và nâng cấp phiên bản hệ thống",
+    "alias_list": "",
+    "canonical_norm": "tùy chỉnh cms và nâng cấp phiên bản hệ thống",
+    "canonical_ascii": "tuy chinh cms va nang cap phien ban he thong"
+  },
+  {
+    "entity_id": "S0118",
+    "kkt_type": "S",
+    "canonical_name": "Tư duy phản biện",
+    "alias_list": "",
+    "canonical_norm": "tư duy phản biện",
+    "canonical_ascii": "tu duy phan bien"
+  },
+  {
+    "entity_id": "S0119",
+    "kkt_type": "S",
+    "canonical_name": "Tư duy truyền thông",
+    "alias_list": "",
+    "canonical_norm": "tư duy truyền thông",
+    "canonical_ascii": "tu duy truyen thong"
+  },
+  {
+    "entity_id": "S0120",
+    "kkt_type": "S",
+    "canonical_name": "Tạo lập biểu mẫu quản lý dữ liệu hình thức",
+    "alias_list": "",
+    "canonical_norm": "tạo lập biểu mẫu quản lý dữ liệu hình thức",
+    "canonical_ascii": "tao lap bieu mau quan ly du lieu hinh thuc"
+  },
+  {
+    "entity_id": "S0121",
+    "kkt_type": "S",
+    "canonical_name": "Tạo lập dấu hiệu hình thức",
+    "alias_list": "",
+    "canonical_norm": "tạo lập dấu hiệu hình thức",
+    "canonical_ascii": "tao lap dau hieu hinh thuc"
+  },
+  {
+    "entity_id": "S0122",
+    "kkt_type": "S",
+    "canonical_name": "Tổ chức và liên kết giữa các thành phần trong ứng dụng web mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "tổ chức và liên kết giữa các thành phần trong ứng dụng web mã nguồn mở",
+    "canonical_ascii": "to chuc va lien ket giua cac thanh phan trong ung dung web ma nguon mo"
+  },
+  {
+    "entity_id": "S0123",
+    "kkt_type": "S",
+    "canonical_name": "Vận dụng công cụ Công nghệ thông tin và truyền thông",
+    "alias_list": "",
+    "canonical_norm": "vận dụng công cụ công nghệ thông tin và truyền thông",
+    "canonical_ascii": "van dung cong cu cong nghe thong tin va truyen thong"
+  },
+  {
+    "entity_id": "S0124",
+    "kkt_type": "S",
+    "canonical_name": "Vận dụng giải pháp ứng dụng công nghệ thông tin",
+    "alias_list": "",
+    "canonical_norm": "vận dụng giải pháp ứng dụng công nghệ thông tin",
+    "canonical_ascii": "van dung giai phap ung dung cong nghe thong tin"
+  },
+  {
+    "entity_id": "S0125",
+    "kkt_type": "S",
+    "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+    "alias_list": "",
+    "canonical_norm": "vận dụng kỹ năng giao tiếp và làm việc",
+    "canonical_ascii": "van dung ky nang giao tiep va lam viec"
+  },
+  {
+    "entity_id": "S0126",
+    "kkt_type": "S",
+    "canonical_name": "Vận dụng mô hình phân tích dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "vận dụng mô hình phân tích dữ liệu",
+    "canonical_ascii": "van dung mo hinh phan tich du lieu"
+  },
+  {
+    "entity_id": "S0127",
+    "kkt_type": "S",
+    "canonical_name": "Vận dụng nguyên tắc và phương pháp xây dựng chính sách quản lý tài nguyên thông tin",
+    "alias_list": "",
+    "canonical_norm": "vận dụng nguyên tắc và phương pháp xây dựng chính sách quản lý tài nguyên thông tin",
+    "canonical_ascii": "van dung nguyen tac va phuong phap xay dung chinh sach quan ly tai nguyen thong tin"
+  },
+  {
+    "entity_id": "S0128",
+    "kkt_type": "S",
+    "canonical_name": "Vận dụng nền tảng website động",
+    "alias_list": "",
+    "canonical_norm": "vận dụng nền tảng website động",
+    "canonical_ascii": "van dung nen tang website đong"
+  },
+  {
+    "entity_id": "S0129",
+    "kkt_type": "S",
+    "canonical_name": "Vận hành hệ thống ERP trong môi trường mô phỏng",
+    "alias_list": "",
+    "canonical_norm": "vận hành hệ thống erp trong môi trường mô phỏng",
+    "canonical_ascii": "van hanh he thong erp trong moi truong mo phong"
+  },
+  {
+    "entity_id": "S0130",
+    "kkt_type": "S",
+    "canonical_name": "Vận hành phần mềm",
+    "alias_list": "",
+    "canonical_norm": "vận hành phần mềm",
+    "canonical_ascii": "van hanh phan mem"
+  },
+  {
+    "entity_id": "S0131",
+    "kkt_type": "S",
+    "canonical_name": "Vận hành quy trình quản lý dữ liệu và thông tin",
+    "alias_list": "",
+    "canonical_norm": "vận hành quy trình quản lý dữ liệu và thông tin",
+    "canonical_ascii": "van hanh quy trinh quan ly du lieu va thong tin"
+  },
+  {
+    "entity_id": "S0132",
+    "kkt_type": "S",
+    "canonical_name": "Xác định cấu trúc và quy trình xây dựng cổng thông tin điện tử",
+    "alias_list": "",
+    "canonical_norm": "xác định cấu trúc và quy trình xây dựng cổng thông tin điện tử",
+    "canonical_ascii": "xac đinh cau truc va quy trinh xay dung cong thong tin đien tu"
+  },
+  {
+    "entity_id": "S0133",
+    "kkt_type": "S",
+    "canonical_name": "Xác định hệ thống thông tin phục vụ lãnh đạo",
+    "alias_list": "",
+    "canonical_norm": "xác định hệ thống thông tin phục vụ lãnh đạo",
+    "canonical_ascii": "xac đinh he thong thong tin phuc vu lanh đao"
+  },
+  {
+    "entity_id": "S0134",
+    "kkt_type": "S",
+    "canonical_name": "Xác định thành phần phù hợp cho từng đối tượng sử dụng",
+    "alias_list": "",
+    "canonical_norm": "xác định thành phần phù hợp cho từng đối tượng sử dụng",
+    "canonical_ascii": "xac đinh thanh phan phu hop cho tung đoi tuong su dung"
+  },
+  {
+    "entity_id": "S0135",
+    "kkt_type": "S",
+    "canonical_name": "Xác định vấn đề nghiên cứu",
+    "alias_list": "",
+    "canonical_norm": "xác định vấn đề nghiên cứu",
+    "canonical_ascii": "xac đinh van đe nghien cuu"
+  },
+  {
+    "entity_id": "S0136",
+    "kkt_type": "S",
+    "canonical_name": "Xác định yêu cầu với phần mềm với từng giai đoạn",
+    "alias_list": "",
+    "canonical_norm": "xác định yêu cầu với phần mềm với từng giai đoạn",
+    "canonical_ascii": "xac đinh yeu cau voi phan mem voi tung giai đoan"
+  },
+  {
+    "entity_id": "S0137",
+    "kkt_type": "S",
+    "canonical_name": "Xác định yếu tố môi trường thông tin",
+    "alias_list": "",
+    "canonical_norm": "xác định yếu tố môi trường thông tin",
+    "canonical_ascii": "xac đinh yeu to moi truong thong tin"
+  },
+  {
+    "entity_id": "S0138",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng bản thiết kế hệ thống portal",
+    "alias_list": "",
+    "canonical_norm": "xây dựng bản thiết kế hệ thống portal",
+    "canonical_ascii": "xay dung ban thiet ke he thong portal"
+  },
+  {
+    "entity_id": "S0139",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng chiến lược phát triển dịch vụ thông tin",
+    "alias_list": "",
+    "canonical_norm": "xây dựng chiến lược phát triển dịch vụ thông tin",
+    "canonical_ascii": "xay dung chien luoc phat trien dich vu thong tin"
+  },
+  {
+    "entity_id": "S0140",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng chiến lược truyền thông xã hội",
+    "alias_list": "",
+    "canonical_norm": "xây dựng chiến lược truyền thông xã hội",
+    "canonical_ascii": "xay dung chien luoc truyen thong xa hoi"
+  },
+  {
+    "entity_id": "S0141",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng chính sách an toàn bảo mật phù hợp",
+    "alias_list": "",
+    "canonical_norm": "xây dựng chính sách an toàn bảo mật phù hợp",
+    "canonical_ascii": "xay dung chinh sach an toan bao mat phu hop"
+  },
+  {
+    "entity_id": "S0142",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng công cụ thu thập và phân tích dữ liệu",
+    "alias_list": "",
+    "canonical_norm": "xây dựng công cụ thu thập và phân tích dữ liệu",
+    "canonical_ascii": "xay dung cong cu thu thap va phan tich du lieu"
+  },
+  {
+    "entity_id": "S0143",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng giao diện web",
+    "alias_list": "",
+    "canonical_norm": "xây dựng giao diện web",
+    "canonical_ascii": "xay dung giao dien web"
+  },
+  {
+    "entity_id": "S0144",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng hệ thống an toàn bảo mật",
+    "alias_list": "",
+    "canonical_norm": "xây dựng hệ thống an toàn bảo mật",
+    "canonical_ascii": "xay dung he thong an toan bao mat"
+  },
+  {
+    "entity_id": "S0145",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "xây dựng hệ thống thông tin",
+    "canonical_ascii": "xay dung he thong thong tin"
+  },
+  {
+    "entity_id": "S0146",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng kế hoạch",
+    "alias_list": "",
+    "canonical_norm": "xây dựng kế hoạch",
+    "canonical_ascii": "xay dung ke hoach"
+  },
+  {
+    "entity_id": "S0147",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng kế hoạch marketing phù hợp",
+    "alias_list": "",
+    "canonical_norm": "xây dựng kế hoạch marketing phù hợp",
+    "canonical_ascii": "xay dung ke hoach marketing phu hop"
+  },
+  {
+    "entity_id": "S0148",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "xây dựng và quản lý hệ thống thông tin",
+    "canonical_ascii": "xay dung va quan ly he thong thong tin"
+  },
+  {
+    "entity_id": "S0149",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng và triển khai hoạt động marketing phù hợp",
+    "alias_list": "",
+    "canonical_norm": "xây dựng và triển khai hoạt động marketing phù hợp",
+    "canonical_ascii": "xay dung va trien khai hoat đong marketing phu hop"
+  },
+  {
+    "entity_id": "S0150",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng ý tưởng và lập kế hoạch triển khai dự án",
+    "alias_list": "",
+    "canonical_norm": "xây dựng ý tưởng và lập kế hoạch triển khai dự án",
+    "canonical_ascii": "xay dung y tuong va lap ke hoach trien khai du an"
+  },
+  {
+    "entity_id": "S0151",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng ứng dụng web",
+    "alias_list": "",
+    "canonical_norm": "xây dựng ứng dụng web",
+    "canonical_ascii": "xay dung ung dung web"
+  },
+  {
+    "entity_id": "S0152",
+    "kkt_type": "S",
+    "canonical_name": "Xây dựng, tổ chức và phát triển dịch vụ thông tin",
+    "alias_list": "",
+    "canonical_norm": "xây dựng, tổ chức và phát triển dịch vụ thông tin",
+    "canonical_ascii": "xay dung, to chuc va phat trien dich vu thong tin"
+  },
+  {
+    "entity_id": "S0153",
+    "kkt_type": "S",
+    "canonical_name": "Xử lý hình thức cho sản phẩm/dịch vụ",
+    "alias_list": "",
+    "canonical_norm": "xử lý hình thức cho sản phẩm/dịch vụ",
+    "canonical_ascii": "xu ly hinh thuc cho san pham/dich vu"
+  },
+  {
+    "entity_id": "S0154",
+    "kkt_type": "S",
+    "canonical_name": "Xử lý nội dung thông tin",
+    "alias_list": "",
+    "canonical_norm": "xử lý nội dung thông tin",
+    "canonical_ascii": "xu ly noi dung thong tin"
+  },
+  {
+    "entity_id": "S0155",
+    "kkt_type": "S",
+    "canonical_name": "Xử lý yêu cầu nghiệp vụ trong hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "xử lý yêu cầu nghiệp vụ trong hệ thống thông tin",
+    "canonical_ascii": "xu ly yeu cau nghiep vu trong he thong thong tin"
+  },
+  {
+    "entity_id": "S0156",
+    "kkt_type": "S",
+    "canonical_name": "Xử lý định đạng thông tn",
+    "alias_list": "",
+    "canonical_norm": "xử lý định đạng thông tn",
+    "canonical_ascii": "xu ly đinh đang thong tn"
+  },
+  {
+    "entity_id": "S0157",
+    "kkt_type": "S",
+    "canonical_name": "Yêu cầu xử lý thông tin",
+    "alias_list": "",
+    "canonical_norm": "yêu cầu xử lý thông tin",
+    "canonical_ascii": "yeu cau xu ly thong tin"
+  },
+  {
+    "entity_id": "S0158",
+    "kkt_type": "S",
+    "canonical_name": "Áp dụng kiến thức và kỹ năng vào các tình huống",
+    "alias_list": "",
+    "canonical_norm": "áp dụng kiến thức và kỹ năng vào các tình huống",
+    "canonical_ascii": "ap dung kien thuc va ky nang vao cac tinh huong"
+  },
+  {
+    "entity_id": "S0159",
+    "kkt_type": "S",
+    "canonical_name": "Áp dụng kỹ thuật VLSM",
+    "alias_list": "",
+    "canonical_norm": "áp dụng kỹ thuật vlsm",
+    "canonical_ascii": "ap dung ky thuat vlsm"
+  },
+  {
+    "entity_id": "S0160",
+    "kkt_type": "S",
+    "canonical_name": "Áp dụng kỹ thuật chia mạng con",
+    "alias_list": "",
+    "canonical_norm": "áp dụng kỹ thuật chia mạng con",
+    "canonical_ascii": "ap dung ky thuat chia mang con"
+  },
+  {
+    "entity_id": "S0161",
+    "kkt_type": "S",
+    "canonical_name": "Áp dụng mô hình học máy",
+    "alias_list": "",
+    "canonical_norm": "áp dụng mô hình học máy",
+    "canonical_ascii": "ap dung mo hinh hoc may"
+  },
+  {
+    "entity_id": "S0162",
+    "kkt_type": "S",
+    "canonical_name": "Áp dụng phương pháp tìm kiếm và đánh giá thông tin",
+    "alias_list": "",
+    "canonical_norm": "áp dụng phương pháp tìm kiếm và đánh giá thông tin",
+    "canonical_ascii": "ap dung phuong phap tim kiem va đanh gia thong tin"
+  },
+  {
+    "entity_id": "S0163",
+    "kkt_type": "S",
+    "canonical_name": "Đánh giá hiện trạng hệ thống",
+    "alias_list": "",
+    "canonical_norm": "đánh giá hiện trạng hệ thống",
+    "canonical_ascii": "đanh gia hien trang he thong"
+  },
+  {
+    "entity_id": "S0164",
+    "kkt_type": "S",
+    "canonical_name": "Đánh giá phương pháp xây dựng Portal",
+    "alias_list": "",
+    "canonical_norm": "đánh giá phương pháp xây dựng portal",
+    "canonical_ascii": "đanh gia phuong phap xay dung portal"
+  },
+  {
+    "entity_id": "S0165",
+    "kkt_type": "S",
+    "canonical_name": "Đánh giá tính năng phần mềm",
+    "alias_list": "",
+    "canonical_norm": "đánh giá tính năng phần mềm",
+    "canonical_ascii": "đanh gia tinh nang phan mem"
+  },
+  {
+    "entity_id": "S0166",
+    "kkt_type": "S",
+    "canonical_name": "Đáp ứng nhu cầu thông tin kinh tế",
+    "alias_list": "",
+    "canonical_norm": "đáp ứng nhu cầu thông tin kinh tế",
+    "canonical_ascii": "đap ung nhu cau thong tin kinh te"
+  },
+  {
+    "entity_id": "S0167",
+    "kkt_type": "S",
+    "canonical_name": "Đặc điểm nhu cầu thông tin kinh tế theo từng nhóm người dùng",
+    "alias_list": "",
+    "canonical_norm": "đặc điểm nhu cầu thông tin kinh tế theo từng nhóm người dùng",
+    "canonical_ascii": "đac điem nhu cau thong tin kinh te theo tung nhom nguoi dung"
+  },
+  {
+    "entity_id": "S0168",
+    "kkt_type": "S",
+    "canonical_name": "Đề xuất kế hoạch chuyển đổi số",
+    "alias_list": "",
+    "canonical_norm": "đề xuất kế hoạch chuyển đổi số",
+    "canonical_ascii": "đe xuat ke hoach chuyen đoi so"
+  },
+  {
+    "entity_id": "S0169",
+    "kkt_type": "S",
+    "canonical_name": "Đề xuất ý tưởng và biện pháp phát triển, phân phối, vận hàng và cải tiến dịch vụ thông tin",
+    "alias_list": "",
+    "canonical_norm": "đề xuất ý tưởng và biện pháp phát triển, phân phối, vận hàng và cải tiến dịch vụ thông tin",
+    "canonical_ascii": "đe xuat y tuong va bien phap phat trien, phan phoi, van hang va cai tien dich vu thong tin"
+  },
+  {
+    "entity_id": "S0170",
+    "kkt_type": "S",
+    "canonical_name": "Định hướng cấu trúc ứng dụng web mã nguồn mở",
+    "alias_list": "",
+    "canonical_norm": "định hướng cấu trúc ứng dụng web mã nguồn mở",
+    "canonical_ascii": "đinh huong cau truc ung dung web ma nguon mo"
+  },
+  {
+    "entity_id": "S0171",
+    "kkt_type": "S",
+    "canonical_name": "Định hướng triển khai hoạt động marketing doanh nghiệp",
+    "alias_list": "",
+    "canonical_norm": "định hướng triển khai hoạt động marketing doanh nghiệp",
+    "canonical_ascii": "đinh huong trien khai hoat đong marketing doanh nghiep"
+  },
+  {
+    "entity_id": "S0172",
+    "kkt_type": "S",
+    "canonical_name": "Ứng dụng công nghệ thông tin - truyền thông để xây dụng và quản lý website và hệ thống thông tin",
+    "alias_list": "",
+    "canonical_norm": "ứng dụng công nghệ thông tin - truyền thông để xây dụng và quản lý website và hệ thống thông tin",
+    "canonical_ascii": "ung dung cong nghe thong tin - truyen thong đe xay dung va quan ly website va he thong thong tin"
+  },
+  {
+    "entity_id": "S0173",
+    "kkt_type": "S",
+    "canonical_name": "Ứng dụng công nghệ trong hoạt động marketing",
+    "alias_list": "",
+    "canonical_norm": "ứng dụng công nghệ trong hoạt động marketing",
+    "canonical_ascii": "ung dung cong nghe trong hoat đong marketing"
+  },
+  {
+    "entity_id": "T0001",
+    "kkt_type": "T",
+    "canonical_name": "Adobe Dreamweaver",
+    "alias_list": "Macromedia Dreamweaver, Dreamweaver, DW",
+    "canonical_norm": "adobe dreamweaver",
+    "canonical_ascii": "adobe dreamweaver"
+  },
+  {
+    "entity_id": "T0002",
+    "kkt_type": "T",
+    "canonical_name": "C#",
+    "alias_list": "C Sharp",
+    "canonical_norm": "c#",
+    "canonical_ascii": "c#"
+  },
+  {
+    "entity_id": "T0003",
+    "kkt_type": "T",
+    "canonical_name": "C/C++",
+    "alias_list": "",
+    "canonical_norm": "c/c++",
+    "canonical_ascii": "c/c++"
+  },
+  {
+    "entity_id": "T0004",
+    "kkt_type": "T",
+    "canonical_name": "ChatGPT",
+    "alias_list": "",
+    "canonical_norm": "chatgpt",
+    "canonical_ascii": "chatgpt"
+  },
+  {
+    "entity_id": "T0005",
+    "kkt_type": "T",
+    "canonical_name": "Code::Blocks",
+    "alias_list": "CodeBlock",
+    "canonical_norm": "code::blocks",
+    "canonical_ascii": "code::blocks"
+  },
+  {
+    "entity_id": "T0006",
+    "kkt_type": "T",
+    "canonical_name": "Elicit",
+    "alias_list": "",
+    "canonical_norm": "elicit",
+    "canonical_ascii": "elicit"
+  },
+  {
+    "entity_id": "T0007",
+    "kkt_type": "T",
+    "canonical_name": "Google Colab",
+    "alias_list": "Colab",
+    "canonical_norm": "google colab",
+    "canonical_ascii": "google colab"
+  },
+  {
+    "entity_id": "T0008",
+    "kkt_type": "T",
+    "canonical_name": "Microsoft Academic",
+    "alias_list": "",
+    "canonical_norm": "microsoft academic",
+    "canonical_ascii": "microsoft academic"
+  },
+  {
+    "entity_id": "T0009",
+    "kkt_type": "T",
+    "canonical_name": "Microsoft Excel",
+    "alias_list": "MS Excel, Excel",
+    "canonical_norm": "microsoft excel",
+    "canonical_ascii": "microsoft excel"
+  },
+  {
+    "entity_id": "T0010",
+    "kkt_type": "T",
+    "canonical_name": "Microsoft SQL Server Express",
+    "alias_list": "SQL Express, SQL Server Express, MS SQL Server Express",
+    "canonical_norm": "microsoft sql server express",
+    "canonical_ascii": "microsoft sql server express"
+  },
+  {
+    "entity_id": "T0011",
+    "kkt_type": "T",
+    "canonical_name": "Microsoft SQL Server Management Studio",
+    "alias_list": "SSMS, SQL Server Management Studio",
+    "canonical_norm": "microsoft sql server management studio",
+    "canonical_ascii": "microsoft sql server management studio"
+  },
+  {
+    "entity_id": "T0012",
+    "kkt_type": "T",
+    "canonical_name": "Microsoft SharePoint Online",
+    "alias_list": "",
+    "canonical_norm": "microsoft sharepoint online",
+    "canonical_ascii": "microsoft sharepoint online"
+  },
+  {
+    "entity_id": "T0013",
+    "kkt_type": "T",
+    "canonical_name": "Microsoft Visual Studio Code",
+    "alias_list": "VS Code, Visual Studio Code",
+    "canonical_norm": "microsoft visual studio code",
+    "canonical_ascii": "microsoft visual studio code"
+  },
+  {
+    "entity_id": "T0014",
+    "kkt_type": "T",
+    "canonical_name": "Odoo Business Management Software",
+    "alias_list": "Odoo, Odoo ERP",
+    "canonical_norm": "odoo business management software",
+    "canonical_ascii": "odoo business management software"
+  },
+  {
+    "entity_id": "T0015",
+    "kkt_type": "T",
+    "canonical_name": "Python",
+    "alias_list": "",
+    "canonical_norm": "python",
+    "canonical_ascii": "python"
+  },
+  {
+    "entity_id": "T0016",
+    "kkt_type": "T",
+    "canonical_name": "Scite",
+    "alias_list": "",
+    "canonical_norm": "scite",
+    "canonical_ascii": "scite"
+  },
+  {
+    "entity_id": "T0017",
+    "kkt_type": "T",
+    "canonical_name": "Semantic Scholar",
+    "alias_list": "",
+    "canonical_norm": "semantic scholar",
+    "canonical_ascii": "semantic scholar"
+  },
+  {
+    "entity_id": "T0018",
+    "kkt_type": "T",
+    "canonical_name": "WorldWideScience",
+    "alias_list": "",
+    "canonical_norm": "worldwidescience",
+    "canonical_ascii": "worldwidescience"
+  }
+]
