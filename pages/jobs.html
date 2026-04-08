@@ -27,18 +27,20 @@
           <div class="jobs-content">
             <h1 class="jobs-title">Tra cứu vị trí việc làm</h1>
 
-            <div class="jobs-search-panel">
-              <div class="jobs-search-wrapper">
-                <div class="jobs-search-icon">⌕</div>
+            <div class="search-panel jobs-search-panel">
+              <div class="search-wrapper">
+                <div class="search-icon">⌕</div>
                 <input
                   type="text"
                   id="jobSearchInput"
-                  class="jobs-search-input"
+                  class="search-input"
                   placeholder="Nhập tên vị trí việc làm..."
                   autocomplete="off"
                 />
-                <button id="jobSearchBtn" class="jobs-search-btn">Tìm kiếm</button>
+                <button id="jobSearchBtn" class="search-btn">Tìm kiếm</button>
               </div>
+
+              <div id="searchSuggestions" class="suggestion-box" style="display: none;"></div>
             </div>
 
             <p id="resultCount" class="jobs-result-count">Đang tải dữ liệu...</p>
