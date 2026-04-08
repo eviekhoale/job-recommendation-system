@@ -45,29 +45,22 @@ async function loadJobs() {
     console.error(error);
     resultCountEl.textContent = "Không thể tải dữ liệu việc làm.";
     emptyStateEl.style.display = "block";
-    emptyStateEl.innerHTML = `
-      <h3>Lỗi tải dữ liệu</h3>
-      <p>Không thể đọc dữ liệu từ jobs.json.</p>
-    `;
+    emptyStateEl.innerHTML = `<p>Không thể đọc dữ liệu từ jobs.json.</p>`;
   }
 }
 
 function filterJobs() {
   const keyword = normalizeText(currentKeyword);
 
-  return allJobs.filter((job) => {
-    const title = normalizeText(getFirstValue(job, ["job_title", "title", "position_title", "job_name"]));
-    const field = normalizeText(getFirstValue(job, ["industry", "field", "job_field", "linh_vuc"]));
-    const company = normalizeText(getFirstValue(job, ["company_name", "company", "employer_name"]));
-    const source = normalizeText(getFirstValue(job, ["source", "source_name"]));
+  // Nếu vào từ menu "Việc làm" mà không có từ khóa -> hiện toàn bộ danh sách
+  if (!keyword) return allJobs;
 
-    return (
-      !keyword ||
-      title.includes(keyword) ||
-      field.includes(keyword) ||
-      company.includes(keyword) ||
-      source.includes(keyword)
+  // Chỉ tìm theo tên vị trí tuyển dụng
+  return allJobs.filter((job) => {
+    const title = normalizeText(
+      getFirstValue(job, ["job_title", "title", "position_title", "job_name"])
     );
+    return title.includes(keyword);
   });
 }
 
@@ -76,7 +69,7 @@ function renderJobs() {
   jobListEl.innerHTML = "";
 
   if (filteredJobs.length === 0) {
-    resultCountEl.textContent = "Có 0 kết quả phù hợp.";
+    resultCountEl.textContent = "Không tìm thấy dữ liệu tương ứng.";
     emptyStateEl.style.display = "block";
     return;
   }
@@ -86,36 +79,51 @@ function renderJobs() {
 
   filteredJobs.forEach((job) => {
     const jobId = getFirstValue(job, ["job_id", "id", "job_code"], "");
-    const title = getFirstValue(job, ["job_title", "title", "position_title", "job_name"], "Chưa có tên vị trí");
-    const field = getFirstValue(job, ["industry", "field", "job_field", "linh_vuc"], "Chưa có lĩnh vực");
-    const company = getFirstValue(job, ["company_name", "company", "employer_name"], "Chưa có công ty");
-    const source = getFirstValue(job, ["source", "source_name"], "Chưa có nguồn");
+    const title = getFirstValue(
+      job,
+      ["job_title", "title", "position_title", "job_name"],
+      "Chưa có tên vị trí"
+    );
+    const field = getFirstValue(
+      job,
+      ["industry", "field", "job_field", "linh_vuc"],
+      "Chưa có lĩnh vực"
+    );
+    const source = getFirstValue(
+      job,
+      ["source", "source_name"],
+      "Chưa có nguồn"
+    );
 
-    const card = document.createElement("article");
-    card.className = "job-card";
+    const item = document.createElement("article");
+    item.className = "jobs-result-item";
 
-    card.innerHTML = `
-      <div class="job-card-top">
-        <span class="job-chip">${field}</span>
-        <span class="job-chip soft">${source}</span>
+    item.innerHTML = `
+      <div class="jobs-result-info">
+        <h3 class="jobs-item-title">${title}</h3>
+        <p class="jobs-item-meta"><strong>Lĩnh vực:</strong> ${field}</p>
+        <p class="jobs-item-meta"><strong>Nguồn tin:</strong> ${source}</p>
       </div>
 
-      <h3 class="job-card-title">${title}</h3>
-      <p class="job-card-company"><strong>Công ty:</strong> ${company}</p>
-
-      <div class="job-card-actions">
-        <a class="job-detail-btn" href="detail.html?type=job&id=${encodeURIComponent(jobId)}">
-          Xem chi tiết
+      <div class="jobs-result-action">
+        <a class="jobs-detail-btn" href="job-detail.html?type=job&id=${encodeURIComponent(jobId)}">
+          Chi tiết
         </a>
       </div>
     `;
 
-    jobListEl.appendChild(card);
+    jobListEl.appendChild(item);
   });
 }
 
 function handleSearch() {
   currentKeyword = searchInputEl.value.trim();
+
+  const newUrl = currentKeyword
+    ? `jobs.html?q=${encodeURIComponent(currentKeyword)}`
+    : `jobs.html`;
+
+  window.history.replaceState({}, "", newUrl);
   renderJobs();
 }
 
