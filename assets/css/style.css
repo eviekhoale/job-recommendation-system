@@ -494,3 +494,31 @@ input {
     padding: 22px 16px;
   }
 }
+
+/* =========================
+   HOME -> JOBS PAGE
+   Bổ sung an toàn, không ảnh hưởng phần cũ
+========================= */
+(function () {
+  const homeSearchInput = document.getElementById("searchInput");
+  const homeSearchBtn = document.querySelector(".search-btn");
+
+  if (!homeSearchInput || !homeSearchBtn) return;
+
+  function goToJobsPage() {
+    const keyword = homeSearchInput.value.trim();
+    window.location.href = `pages/jobs.html?q=${encodeURIComponent(keyword)}`;
+  }
+
+  homeSearchBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    goToJobsPage();
+  });
+
+  homeSearchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      goToJobsPage();
+    }
+  });
+})();
