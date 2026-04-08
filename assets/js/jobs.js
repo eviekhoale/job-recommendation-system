@@ -60,7 +60,8 @@ async function loadJobs() {
     renderJobs();
   } catch (error) {
     console.error(error);
-    resultCountEl.textContent = "Không thể tải dữ liệu việc làm.";
+    resultCountEl.textContent = "";
+    jobListEl.style.display = "none";
     emptyStateEl.style.display = "block";
     emptyStateEl.innerHTML = `<p>Không thể đọc dữ liệu từ jobs.json.</p>`;
   }
@@ -69,8 +70,10 @@ async function loadJobs() {
 function filterJobsByKeyword(keyword) {
   const normalizedKeyword = normalizeText(keyword);
 
+  // Nếu vào từ menu "Việc làm" mà không có từ khóa => hiện toàn bộ danh sách
   if (!normalizedKeyword) return allJobs;
 
+  // Logic đúng theo yêu cầu: chuẩn hóa từ khóa -> đối chiếu dữ liệu -> tìm theo tiêu đề công việc
   return allJobs.filter((job) => {
     const title = normalizeText(getJobTitle(job));
     return title.includes(normalizedKeyword);
@@ -82,12 +85,15 @@ function renderJobs() {
   jobListEl.innerHTML = "";
 
   if (filteredJobs.length === 0) {
-    resultCountEl.textContent = "Không tìm thấy dữ liệu tương ứng.";
+    resultCountEl.textContent = "";
+    jobListEl.style.display = "none";
     emptyStateEl.style.display = "block";
+    emptyStateEl.innerHTML = `<p>Không tìm thấy dữ liệu tương ứng.</p>`;
     return;
   }
 
   emptyStateEl.style.display = "none";
+  jobListEl.style.display = "flex";
 
   if (!currentKeyword) {
     resultCountEl.textContent = `Hiển thị toàn bộ ${filteredJobs.length} tin tuyển dụng.`;
