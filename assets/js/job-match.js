@@ -1,92 +1,3 @@
-const JOBS = [
-  {
-    id: "job001",
-    title: "Quản trị cơ sở dữ liệu",
-    field: "Công nghệ thông tin - truyền thông",
-    company: "Công ty Dữ liệu Minh An",
-    descriptionBullets: [
-      "Tham gia quản trị, duy trì và tối ưu cơ sở dữ liệu phục vụ hoạt động vận hành của tổ chức.",
-      "Hỗ trợ kiểm tra tính nhất quán dữ liệu, đảm bảo dữ liệu được lưu trữ và khai thác hiệu quả.",
-      "Phối hợp với các bộ phận liên quan để thực hiện truy vấn, cập nhật và quản lý dữ liệu."
-    ],
-    requirementBullets: [
-      "Có kiến thức nền tảng về cơ sở dữ liệu và mô hình dữ liệu.",
-      "Biết sử dụng SQL để truy vấn và thao tác dữ liệu.",
-      "Có khả năng thiết kế, thao tác cơ sở dữ liệu cơ bản.",
-      "Biết sử dụng công cụ hỗ trợ quản trị cơ sở dữ liệu."
-    ]
-  },
-  {
-    id: "job002",
-    title: "Phân tích dữ liệu",
-    field: "Công nghệ thông tin - truyền thông",
-    company: "Công ty Phân tích Tri Thức",
-    descriptionBullets: [
-      "Thu thập, xử lý và phân tích dữ liệu phục vụ báo cáo và ra quyết định.",
-      "Phối hợp xây dựng bộ chỉ số và trực quan hóa dữ liệu cho các đơn vị chuyên môn.",
-      "Hỗ trợ chuẩn hóa dữ liệu trước khi đưa vào khai thác."
-    ],
-    requirementBullets: [
-      "Có kiến thức về dữ liệu và quy trình phân tích dữ liệu.",
-      "Có kỹ năng xử lý dữ liệu và sử dụng SQL cơ bản.",
-      "Biết sử dụng công cụ hỗ trợ quản lý và khai thác dữ liệu."
-    ]
-  },
-  {
-    id: "job003",
-    title: "Quản lý hồ sơ",
-    field: "Quản lý",
-    company: "Trung tâm Hành chính Nam Việt",
-    descriptionBullets: [
-      "Tổ chức, sắp xếp và quản lý hồ sơ tài liệu trong đơn vị.",
-      "Phối hợp kiểm tra, cập nhật và theo dõi tình trạng hồ sơ.",
-      "Hỗ trợ vận hành các quy trình liên quan đến hồ sơ và văn bản."
-    ],
-    requirementBullets: [
-      "Có kiến thức cơ bản về hồ sơ và tài liệu.",
-      "Có kỹ năng quản lý, phân loại và sắp xếp hồ sơ.",
-      "Biết sử dụng công cụ hỗ trợ lưu trữ và xử lý hồ sơ."
-    ]
-  }
-];
-
-/*
-  Bộ từ khóa nhận diện K-S-T từ nội dung tin tuyển dụng.
-  Đây không phải dữ liệu hồ sơ học phần.
-  Nó chỉ là từ điển nhận diện đơn giản để demo hệ thống.
-*/
-const JOB_TERM_LEXICON = {
-  K: [
-    { canonical: "Cơ sở dữ liệu", aliases: ["cơ sở dữ liệu", "database"] },
-    { canonical: "Kiến trúc và mô hình dữ liệu", aliases: ["mô hình dữ liệu", "kiến trúc dữ liệu", "data model"] },
-    { canonical: "SQL", aliases: ["sql"] },
-    { canonical: "Dữ liệu", aliases: ["dữ liệu", "data"] },
-    { canonical: "Hồ sơ", aliases: ["hồ sơ"] },
-    { canonical: "Tài liệu", aliases: ["tài liệu", "văn bản"] },
-    { canonical: "Lưu trữ", aliases: ["lưu trữ", "lưu giữ"] }
-  ],
-  S: [
-    { canonical: "Thiết kế và thao tác cơ sở dữ liệu cơ bản", aliases: ["thiết kế cơ sở dữ liệu", "thao tác cơ sở dữ liệu"] },
-    { canonical: "Sử dụng SQL cơ bản", aliases: ["sử dụng sql", "truy vấn sql", "viết sql"] },
-    { canonical: "Phân tích dữ liệu", aliases: ["phân tích dữ liệu"] },
-    { canonical: "Xử lý dữ liệu", aliases: ["xử lý dữ liệu", "chuẩn hóa dữ liệu"] },
-    { canonical: "Quản lý hồ sơ", aliases: ["quản lý hồ sơ", "theo dõi hồ sơ"] },
-    { canonical: "Phân loại tài liệu", aliases: ["phân loại tài liệu"] },
-    { canonical: "Sắp xếp hồ sơ", aliases: ["sắp xếp hồ sơ"] }
-  ],
-  T: [
-    { canonical: "Microsoft SQL Server Management Studio", aliases: ["sql server management studio", "ssms"] },
-    { canonical: "Microsoft Excel", aliases: ["excel", "microsoft excel"] },
-    { canonical: "Power BI", aliases: ["power bi"] }
-  ]
-};
-
-const TYPE_LABELS = {
-  K: "Kiến thức",
-  S: "Kỹ năng",
-  T: "Công cụ"
-};
-
 const requiredProfileColumns = [
   "profile_id",
   "course_id",
@@ -96,6 +7,12 @@ const requiredProfileColumns = [
   "has_term",
   "source_origin"
 ];
+
+const TYPE_LABELS = {
+  K: "Kiến thức",
+  S: "Kỹ năng",
+  T: "Công cụ"
+};
 
 const matchLayout = document.getElementById("matchLayout");
 
@@ -121,6 +38,9 @@ const toolStat = document.getElementById("toolStat");
 const matchedGroups = document.getElementById("matchedGroups");
 const missingGroups = document.getElementById("missingGroups");
 
+let selectedJob = null;
+let selectedJobKKT = [];
+
 function normalizeText(value) {
   return String(value || "")
     .trim()
@@ -138,28 +58,108 @@ function isTruthy(value) {
   return ["true", "1", "yes", "y", "co", "có"].includes(normalized);
 }
 
+function toArrayBullets(value) {
+  if (Array.isArray(value)) {
+    return value.map(item => String(item).trim()).filter(Boolean);
+  }
+
+  if (!value) return [];
+
+  return String(value)
+    .split(/\n|•|;| - /g)
+    .map(item => item.trim())
+    .filter(Boolean);
+}
+
 function uniqueByKey(items, keyFn) {
   const map = new Map();
+
   items.forEach(item => {
     const key = keyFn(item);
     if (!map.has(key)) {
       map.set(key, item);
     }
   });
+
   return Array.from(map.values());
+}
+
+function normalizeJob(rawJob, index) {
+  return {
+    id:
+      rawJob.job_id ||
+      rawJob.id ||
+      rawJob.ma_tin ||
+      `job${String(index + 1).padStart(3, "0")}`,
+
+    title:
+      rawJob.job_title ||
+      rawJob.title ||
+      rawJob.ten_vi_tri ||
+      rawJob.position ||
+      "Chưa có tiêu đề",
+
+    field:
+      rawJob.field ||
+      rawJob.industry ||
+      rawJob.linh_vuc ||
+      rawJob.job_field ||
+      "Chưa phân lĩnh vực",
+
+    company:
+      rawJob.company ||
+      rawJob.company_name ||
+      rawJob.ten_cong_ty ||
+      "Chưa có tên công ty",
+
+    descriptionBullets: toArrayBullets(
+      rawJob.descriptionBullets ||
+      rawJob.description ||
+      rawJob.job_description ||
+      rawJob.mo_ta
+    ),
+
+    requirementBullets: toArrayBullets(
+      rawJob.requirementBullets ||
+      rawJob.requirements ||
+      rawJob.job_requirements ||
+      rawJob.yeu_cau
+    )
+  };
+}
+
+function normalizeJobKKT(rawItem) {
+  return {
+    job_id: rawItem.job_id || rawItem.id || rawItem.ma_tin || "",
+    kkt_type: String(rawItem.kkt_type || rawItem.type || "").trim().toUpperCase(),
+    canonical_name: String(rawItem.canonical_name || rawItem.name || rawItem.term || "").trim(),
+    has_term: typeof rawItem.has_term === "undefined" ? true : rawItem.has_term
+  };
 }
 
 function renderBulletList(targetEl, items) {
   targetEl.innerHTML = items.map(item => `<li>${item}</li>`).join("");
 }
 
-function getSelectedJob() {
-  const params = new URLSearchParams(window.location.search);
-  const jobId = params.get("id") || "job001";
-  return JOBS.find(job => job.id === jobId) || JOBS[0];
+function buildTagGroupsHTML(groupedData, className) {
+  return ["K", "S", "T"]
+    .map(type => {
+      const items = groupedData[type] || [];
+      return `
+        <div class="group-section">
+          <div class="group-title">${TYPE_LABELS[type]}</div>
+          ${
+            items.length
+              ? `<div class="tag-list">
+                  ${items.map(item => `<span class="result-tag ${className}">${item.canonical_name}</span>`).join("")}
+                </div>`
+              : `<div class="empty-tag">Không có mục nào.</div>`
+          }
+        </div>
+      `;
+    })
+    .join("");
 }
-
-const selectedJob = getSelectedJob();
 
 function renderJobDetail(job) {
   jobTitleEl.textContent = job.title;
@@ -169,29 +169,54 @@ function renderJobDetail(job) {
   renderBulletList(jobRequirementListEl, job.requirementBullets);
 }
 
-function extractJobKSTFromText(job) {
-  const fullText = normalizeText(
-    [...job.descriptionBullets, ...job.requirementBullets].join(" ")
-  );
+async function loadSelectedJob() {
+  const params = new URLSearchParams(window.location.search);
+  const jobId = params.get("id");
 
-  const extracted = [];
+  if (!jobId) {
+    throw new Error("Thiếu mã tin tuyển dụng trên URL.");
+  }
 
-  Object.entries(JOB_TERM_LEXICON).forEach(([type, terms]) => {
-    terms.forEach(term => {
-      const matched = term.aliases.some(alias =>
-        fullText.includes(normalizeText(alias))
-      );
+  const [jobsResponse, jobKktResponse] = await Promise.all([
+    fetch("../data/jobs.json"),
+    fetch("../data/job_kkt.json")
+  ]);
 
-      if (matched) {
-        extracted.push({
-          type,
-          name: term.canonical
-        });
-      }
-    });
+  if (!jobsResponse.ok) {
+    throw new Error("Không đọc được file jobs.json");
+  }
+
+  if (!jobKktResponse.ok) {
+    throw new Error("Không đọc được file job_kkt.json");
+  }
+
+  const rawJobs = await jobsResponse.json();
+  const rawJobKkt = await jobKktResponse.json();
+
+  const jobs = Array.isArray(rawJobs) ? rawJobs.map(normalizeJob) : [];
+  const allJobKKT = Array.isArray(rawJobKkt) ? rawJobKkt.map(normalizeJobKKT) : [];
+
+  selectedJob = jobs.find(job => String(job.id) === String(jobId));
+
+  if (!selectedJob) {
+    throw new Error("Không tìm thấy tin tuyển dụng tương ứng.");
+  }
+
+  selectedJobKKT = allJobKKT.filter(item => {
+    return (
+      String(item.job_id) === String(jobId) &&
+      ["K", "S", "T"].includes(item.kkt_type) &&
+      item.canonical_name &&
+      isTruthy(item.has_term)
+    );
   });
 
-  return uniqueByKey(extracted, item => `${item.type}|||${normalizeText(item.name)}`);
+  selectedJobKKT = uniqueByKey(
+    selectedJobKKT,
+    item => `${item.kkt_type}|||${normalizeText(item.canonical_name)}`
+  );
+
+  renderJobDetail(selectedJob);
 }
 
 async function parseProfileExcel(file) {
@@ -240,7 +265,7 @@ async function parseProfileExcel(file) {
   );
 }
 
-function calculateMatch(profileItems, jobTerms) {
+function calculateMatch(profileItems, jobItems) {
   const profileSet = new Set(
     profileItems.map(item => `${item.kkt_type}|||${normalizeText(item.canonical_name)}`)
   );
@@ -250,17 +275,18 @@ function calculateMatch(profileItems, jobTerms) {
 
   let matchedCount = 0;
 
-  jobTerms.forEach(term => {
-    const key = `${term.type}|||${normalizeText(term.name)}`;
+  jobItems.forEach(item => {
+    const key = `${item.kkt_type}|||${normalizeText(item.canonical_name)}`;
+
     if (profileSet.has(key)) {
-      groupedMatched[term.type].push(term);
+      groupedMatched[item.kkt_type].push(item);
       matchedCount += 1;
     } else {
-      groupedMissing[term.type].push(term);
+      groupedMissing[item.kkt_type].push(item);
     }
   });
 
-  const totalRequirements = jobTerms.length;
+  const totalRequirements = jobItems.length;
   const percentage = totalRequirements === 0
     ? 0
     : (matchedCount / totalRequirements) * 100;
@@ -288,35 +314,12 @@ function calculateMatch(profileItems, jobTerms) {
   };
 }
 
-function buildTagGroupsHTML(groupedData, className) {
-  return ["K", "S", "T"]
-    .map(type => {
-      const items = groupedData[type] || [];
-      return `
-        <div class="group-section">
-          <div class="group-title">${TYPE_LABELS[type]}</div>
-          ${
-            items.length
-              ? `<div class="tag-list">
-                  ${items
-                    .map(item => `<span class="result-tag ${className}">${item.name}</span>`)
-                    .join("")}
-                </div>`
-              : `<div class="empty-tag">Không có mục nào.</div>`
-          }
-        </div>
-      `;
-    })
-    .join("");
-}
-
 function renderMatchResult(result) {
   resultEmpty.classList.add("hidden");
   resultContent.classList.remove("hidden");
 
   overallScore.textContent = `${result.percentage.toFixed(1)}%`;
-  scoreFormula.textContent =
-    `${result.matchedCount} / ${result.totalRequirements} thực thể K-S-T trùng khớp`;
+  scoreFormula.textContent = `${result.matchedCount} / ${result.totalRequirements} thực thể K-S-T trùng khớp`;
 
   knowledgeStat.textContent = `${result.statByType.K.matched} / ${result.statByType.K.total}`;
   skillStat.textContent = `${result.statByType.S.matched} / ${result.statByType.S.total}`;
@@ -348,27 +351,30 @@ matchBtn.addEventListener("click", async () => {
     return;
   }
 
+  if (!selectedJobKKT.length) {
+    fileStatus.textContent = "Tin tuyển dụng này chưa có dữ liệu K-S-T trong file job_kkt.json.";
+    return;
+  }
+
   fileStatus.textContent = "Đang đọc file và thực hiện đối sánh...";
 
   try {
     const profileItems = await parseProfileExcel(file);
-    const extractedJobTerms = extractJobKSTFromText(selectedJob);
+    const result = calculateMatch(profileItems, selectedJobKKT);
 
-    if (!extractedJobTerms.length) {
-      throw new Error(
-        "Hệ thống chưa nhận diện được thực thể K-S-T nào từ nội dung tin tuyển dụng này."
-      );
-    }
-
-    const result = calculateMatch(profileItems, extractedJobTerms);
-
-    fileStatus.textContent =
-      `Đã đọc ${profileItems.length} thực thể K-S-T hợp lệ từ hồ sơ cá nhân và nhận diện ${extractedJobTerms.length} thực thể từ tin tuyển dụng.`;
-
+    fileStatus.textContent = `Đã đọc ${profileItems.length} thực thể K-S-T hợp lệ từ hồ sơ cá nhân.`;
     renderMatchResult(result);
   } catch (error) {
+    console.error(error);
     fileStatus.textContent = error.message || "Có lỗi khi xử lý file hồ sơ.";
   }
 });
 
-renderJobDetail(selectedJob);
+loadSelectedJob().catch(error => {
+  console.error(error);
+  jobTitleEl.textContent = "Không thể tải chi tiết tin tuyển dụng";
+  jobFieldEl.textContent = "-";
+  jobCompanyEl.textContent = "-";
+  jobDescriptionListEl.innerHTML = `<li>${error.message}</li>`;
+  jobRequirementListEl.innerHTML = `<li>Vui lòng kiểm tra lại jobs.json, job_kkt.json và tham số id trên URL.</li>`;
+});
