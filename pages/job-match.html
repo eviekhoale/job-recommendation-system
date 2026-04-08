@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiết tin tuyển dụng và đối sánh hồ sơ</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../assets/css/job-match.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand-title">Job Position Advisor</div>
+
+        <nav class="top-nav">
+          <a class="top-nav-link" href="../index.html">Trang chủ</a>
+          <a class="top-nav-link active" href="jobs.html">Việc làm</a>
+          <a class="top-nav-link" href="position-profile.html">Hồ sơ vị trí</a>
+          <a class="top-nav-link" href="upload-profile.html">Hồ sơ cá nhân</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <div class="container page-container">
+        <div id="matchLayout" class="match-layout">
+          <!-- CỘT CHI TIẾT -->
+          <section class="job-detail-card">
+            <div class="section-badge">Chi tiết tin tuyển dụng</div>
+
+            <h1 id="jobTitle" class="job-title"></h1>
+
+            <div class="job-meta">
+              <span class="meta-chip">
+                <i class="bi bi-diagram-3-fill"></i>
+                <span id="jobField"></span>
+              </span>
+
+              <span class="meta-chip">
+                <i class="bi bi-building"></i>
+                <span id="jobCompany"></span>
+              </span>
+            </div>
+
+            <div class="content-block">
+              <h3>Mô tả công việc</h3>
+              <ul id="jobDescriptionList" class="detail-list"></ul>
+            </div>
+
+            <div class="content-block">
+              <h3>Yêu cầu công việc</h3>
+              <ul id="jobRequirementList" class="detail-list"></ul>
+            </div>
+
+            <div class="action-area">
+              <button id="toggleMatchBtn" class="primary-btn" type="button">
+                Đối sánh với hồ sơ của tôi
+              </button>
+            </div>
+
+            <div id="uploadSection" class="upload-box hidden">
+              <h4>Tải lên hồ sơ cá nhân</h4>
+              <p class="upload-note">
+                File Excel cần có các cột:
+                <strong>profile_id, course_id, course_name, kkt_type, canonical_name, has_term, source_origin</strong>
+              </p>
+
+              <input
+                id="profileFile"
+                class="form-control"
+                type="file"
+                accept=".xlsx,.xls,.csv"
+              />
+
+              <button id="matchBtn" class="secondary-btn" type="button">
+                OK - Thực hiện đối sánh
+              </button>
+
+              <div id="fileStatus" class="file-status"></div>
+            </div>
+          </section>
+
+          <!-- CỘT KẾT QUẢ -->
+          <aside id="resultPanel" class="result-panel">
+            <div class="result-panel-inner">
+              <h2 class="result-title">Kết quả đối sánh</h2>
+
+              <div id="resultEmpty" class="result-empty">
+                <i class="bi bi-arrow-left-right"></i>
+                <p>
+                  Hãy tải file hồ sơ cá nhân lên để hệ thống đối sánh với tin tuyển dụng đã chọn.
+                </p>
+              </div>
+
+              <div id="resultContent" class="hidden">
+                <div class="score-card">
+                  <div class="score-label">Tỷ lệ phù hợp tổng thể</div>
+                  <div id="overallScore" class="score-number">0%</div>
+                  <div id="scoreFormula" class="score-formula"></div>
+                </div>
+
+                <div class="type-stat-grid">
+                  <div class="type-stat-item">
+                    <div class="type-name">Kiến thức</div>
+                    <div id="knowledgeStat" class="type-value">0 / 0</div>
+                  </div>
+
+                  <div class="type-stat-item">
+                    <div class="type-name">Kỹ năng</div>
+                    <div id="skillStat" class="type-value">0 / 0</div>
+                  </div>
+
+                  <div class="type-stat-item">
+                    <div class="type-name">Công cụ</div>
+                    <div id="toolStat" class="type-value">0 / 0</div>
+                  </div>
+                </div>
+
+                <div class="result-block">
+                  <h3>Các mục đã phù hợp</h3>
+                  <div id="matchedGroups"></div>
+                </div>
+
+                <div class="result-block">
+                  <h3>Các mục còn thiếu</h3>
+                  <div id="missingGroups"></div>
+                </div>
+
+                <div class="result-block">
+                  <h3>Ghi chú</h3>
+                  <p class="logic-note">
+                    Tỷ lệ phù hợp được tính theo công thức:
+                    <strong>(Số lượng thực thể K-S-T trùng khớp / Tổng số thực thể K-S-T của tin tuyển dụng) × 100</strong>.
+                    Kết quả chỉ phản ánh mức độ trùng khớp dữ liệu nội dung, không thay thế cho đánh giá toàn diện về năng lực thực tế hay kinh nghiệm làm việc.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="../assets/js/job-match.js"></script>
+</body>
+</html>
