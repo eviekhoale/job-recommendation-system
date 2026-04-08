@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Việc làm - Job Position Advisor</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a href="../index.html" class="brand-badge">
+          <div class="brand-copy">
+            <strong>Job Position Advisor</strong>
+          </div>
+        </a>
+
+        <nav class="top-nav">
+          <a class="top-nav-link" href="../index.html">Trang chủ</a>
+          <a class="top-nav-link active" href="jobs.html">Việc làm</a>
+          <a class="top-nav-link" href="position-profile.html">Hồ sơ vị trí</a>
+          <a class="top-nav-link" href="upload-profile.html">Hồ sơ cá nhân</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="jobs-page">
+      <section class="jobs-hero">
+        <div class="jobs-hero-inner">
+          <p class="jobs-kicker">Danh sách việc làm</p>
+          <h1 class="jobs-title">Tra cứu vị trí việc làm</h1>
+          <p class="jobs-subtitle">
+            Tìm kiếm các vị trí việc làm phù hợp theo từ khóa, công ty hoặc lĩnh vực.
+          </p>
+
+          <div class="jobs-search-panel">
+            <div class="jobs-search-wrapper">
+              <div class="jobs-search-icon">⌕</div>
+              <input
+                type="text"
+                id="jobSearchInput"
+                class="jobs-search-input"
+                placeholder="Nhập tên vị trí việc làm, công ty hoặc lĩnh vực..."
+                autocomplete="off"
+              />
+              <button id="jobSearchBtn" class="jobs-search-btn">Tìm kiếm</button>
+            </div>
+          </div>
+
+          <p id="resultCount" class="jobs-result-count">Đang tải dữ liệu...</p>
+        </div>
+      </section>
+
+      <section class="jobs-list-section">
+        <div id="jobList" class="jobs-list"></div>
+
+        <div id="emptyState" class="jobs-empty-state" style="display:none;">
+          <h3>Không tìm thấy kết quả phù hợp</h3>
+          <p>Hãy thử lại với từ khóa khác.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../assets/js/jobs.js"></script>
+</body>
+</html>
