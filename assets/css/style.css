@@ -536,7 +536,7 @@ input {
   letter-spacing: -0.01em;
 }
 
-/* Thanh tìm kiếm trang 2: giống trang chủ nhưng dài và mềm hơn */
+/* Thanh tìm kiếm trang 2 */
 .jobs-search-panel {
   width: min(1060px, 100%);
   margin: 0 auto 14px;
@@ -546,6 +546,7 @@ input {
   display: flex;
   align-items: center;
   gap: 14px;
+  width: 100%;
   min-height: 90px;
   padding: 12px 14px 12px 22px;
   border-radius: 999px;
@@ -568,7 +569,9 @@ input {
 }
 
 .jobs-search-panel .search-input {
-  flex: 1;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
   min-height: 56px;
   border: none !important;
   box-shadow: none !important;
@@ -586,6 +589,8 @@ input {
 }
 
 .jobs-search-panel .search-btn {
+  flex: 0 0 auto;
+  margin-left: auto;
   min-width: 186px;
   min-height: 64px;
   padding: 0 28px;
@@ -596,7 +601,6 @@ input {
   font-size: 1rem;
   font-weight: 800;
   box-shadow: 0 10px 22px rgba(95, 152, 230, 0.24);
-  flex-shrink: 0;
   transition: all 0.22s ease;
 }
 
@@ -640,7 +644,6 @@ input {
   background: transparent;
 }
 
-/* Kết quả nhỏ gọn hơn, nền trắng trong hơn thanh tìm kiếm */
 .jobs-result-item {
   display: flex;
   align-items: center;
@@ -699,18 +702,21 @@ input {
 }
 
 .jobs-empty-state {
-  padding: 16px 18px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  box-shadow: var(--shadow-card);
+  display: none;
+  padding: 0;
+  margin-top: 8px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .jobs-empty-state p {
   margin: 0;
   color: var(--white);
-  font-weight: 600;
-  font-size: 0.94rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 991px) {
