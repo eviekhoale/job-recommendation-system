@@ -1,6 +1,7 @@
 const searchInput = document.getElementById("searchInput");
 const suggestionBox = document.getElementById("searchSuggestions");
-const searchBtn = document.getElementById("searchBtn");
+const searchBtn =
+  document.getElementById("searchBtn") || document.querySelector(".search-btn");
 
 const fieldTags = document.querySelectorAll(".field-tag");
 const fieldPreview = document.getElementById("fieldPreview");
@@ -74,7 +75,7 @@ function goToJobsPage(keyword = "") {
   const normalized = keyword.trim();
 
   if (normalized) {
-    window.location.href = `pages/jobs.html?keyword=${encodeURIComponent(normalized)}`;
+    window.location.href = `pages/jobs.html?q=${encodeURIComponent(normalized)}`;
   } else {
     window.location.href = "pages/jobs.html";
   }
@@ -122,8 +123,10 @@ if (searchInput) {
     const value = normalizeKeyword(this.value);
 
     if (!value) {
-      suggestionBox.classList.add("d-none");
-      suggestionBox.innerHTML = "";
+      if (suggestionBox) {
+        suggestionBox.classList.add("d-none");
+        suggestionBox.innerHTML = "";
+      }
       return;
     }
 
@@ -188,6 +191,8 @@ if (closeFieldPreview) {
 }
 
 document.addEventListener("click", function (e) {
+  if (!suggestionBox) return;
+
   if (!e.target.closest(".search-panel")) {
     suggestionBox.classList.add("d-none");
   }
