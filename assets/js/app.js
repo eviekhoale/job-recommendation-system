@@ -221,8 +221,8 @@ if (searchInput) {
     }
 
     const matched = positionKeywords.filter(item =>
-      item.toLowerCase().includes(value)
-    );
+  normalizeText(item).includes(normalizeText(value))
+);
 
     renderSuggestions(matched.slice(0, 6));
   });
@@ -238,8 +238,8 @@ if (searchInput) {
     }
 
     const matched = positionKeywords.filter(item =>
-      item.toLowerCase().includes(value)
-    );
+  normalizeText(item).includes(normalizeText(value))
+);
 
     renderSuggestions(matched.slice(0, 6));
   });
