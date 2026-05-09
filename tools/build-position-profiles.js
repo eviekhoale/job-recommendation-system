@@ -586,45 +586,46 @@ function buildPositionProfiles(jobs, jobKktRows) {
   const termsByJob = buildTermsByJob(jobKktRows);
 
   const profiles = POSITION_PROFILE_CATALOG.map((catalogItem, index) => {
-    const jobIds = Array.from(new Set(catalogItem.job_ids));
-    const foundJobIds = jobIds.filter((jobId) => jobMap.has(jobId));
-    const missingJobIds = jobIds.filter((jobId) => !jobMap.has(jobId));
+    const sourceJobIds = Array.from(new Set(catalogItem.job_ids));
+const foundJobIds = sourceJobIds.filter((jobId) => jobMap.has(jobId));
+const missingJobIds = sourceJobIds.filter((jobId) => !jobMap.has(jobId));
 
-    const kktList = buildKktList(jobIds, termsByJob);
+const kktList = buildKktList(foundJobIds, termsByJob);
 
-    return {
-      position_id: `PP${String(index + 1).padStart(3, "0")}`,
-      order: index + 1,
+return {
+  position_id: `PP${String(index + 1).padStart(3, "0")}`,
+  order: index + 1,
 
-      // Tên hồ sơ vị trí chuẩn hóa theo file Excel
-      position_name: catalogItem.position_name,
+  // Tên hồ sơ vị trí chuẩn hóa theo file Excel
+  position_name: catalogItem.position_name,
 
-      // Để tương thích với position-profile.js hiện tại:
-      // field sẽ hiển thị trong giao diện.
-      // Ở đây dùng nhóm nghề từ file 44 vị trí thay vì 3 lĩnh vực lớn.
-      field: catalogItem.job_group,
+  // Để tương thích với position-profile.js hiện tại:
+  // field sẽ hiển thị trong giao diện.
+  // Ở đây dùng nhóm nghề từ file 44 vị trí thay vì 3 lĩnh vực lớn.
+  field: catalogItem.job_group,
 
-      // Lưu thêm để sau này muốn tách rõ thì vẫn có dữ liệu.
-      job_group: catalogItem.job_group,
-      major_field: getDominantMajorField(jobIds, jobMap),
+  // Lưu thêm để sau này muốn tách rõ thì vẫn có dữ liệu.
+  job_group: catalogItem.job_group,
+  major_field: getDominantMajorField(foundJobIds, jobMap),
 
-      // Số lượng theo file thống kê 44 vị trí
-      job_count: jobIds.length,
+  // Số lượng gốc theo file thống kê 44 vị trí
+  source_job_count: sourceJobIds.length,
+  source_job_ids: sourceJobIds,
 
-      // Mã tin thuộc hồ sơ vị trí
-      job_ids: jobIds,
+  // Số lượng job thật sự có trong jobs.json
+  job_count: foundJobIds.length,
+  job_ids: foundJobIds,
 
-      // Dùng để position-profile.js tìm được hồ sơ khi người dùng bấm từ title job gốc
-      aliases: buildAliases(jobIds, jobMap),
+  // Dùng để position-profile.js tìm được hồ sơ khi người dùng bấm từ title job gốc
+  aliases: buildAliases(foundJobIds, jobMap),
 
-      // Kiểm tra dữ liệu bị thiếu nếu có
-      found_job_count: foundJobIds.length,
-      missing_job_ids: missingJobIds,
+  // Kiểm tra dữ liệu bị thiếu nếu có
+  found_job_count: foundJobIds.length,
+  missing_job_ids: missingJobIds,
 
-      // K–S–T tổng hợp từ các job thuộc hồ sơ vị trí
-      kkt_list: kktList
-    };
-  });
+  // K–S–T tổng hợp từ các job thật sự tồn tại
+  kkt_list: kktList
+};
 
   if (profiles.length !== 44) {
     throw new Error(
@@ -642,12 +643,12 @@ function main() {
   const profiles = buildPositionProfiles(jobs, jobKktRows);
 
   const output = {
-    generated_at: new Date().toISOString(),
-    source_note:
-      "Generated from fixed 44-position catalog based on 'Thống kê 44 vtri.xlsx'.",
-    total_profiles: profiles.length,
-    position_profiles: profiles
-  };
+  generated_at: new Date().toISOString(),
+  source_note:
+    "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. The catalog was derived from the project's cleaned job-position statistics.",
+  total_profiles: profiles.length,
+  position_profiles: profiles
+};
 
   fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2), "utf8");
 
