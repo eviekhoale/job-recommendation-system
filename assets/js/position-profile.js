@@ -33,17 +33,22 @@ let allProfiles = [];
 let selectedProfile = null;
 let selectedProfileTerms = [];
 
-const REQUIRED_PROFILE_COLUMNS = [
-  "kkt_type",
-  "canonical_name",
-  "has_term"
-];
+/**
+ * File hồ sơ CTĐT hiện tại có các cột:
+ * profile_id, course_id, course_name, kkt_type, canonical_name, source_origin
+ *
+ * Cột has_term không bắt buộc.
+ * Nếu có has_term: chỉ lấy các dòng có has_term = 1/true/có/x...
+ * Nếu không có has_term: mặc định toàn bộ dòng hợp lệ là K–S–T có trong hồ sơ.
+ */
+const REQUIRED_PROFILE_COLUMNS = ["kkt_type", "canonical_name"];
 
-const OPTIONAL_PROFILE_COLUMNS = [
-  "profile_id",
-  "course_id",
-  "course_name",
-  "source_origin"
+const HAS_TERM_COLUMN_NAMES = [
+  "has_term",
+  "HAS_TERM",
+  "has term",
+  "Có trong hồ sơ",
+  "co_trong_ho_so"
 ];
 
 function getQueryParam(name) {
@@ -101,7 +106,7 @@ function getProfileField(profile) {
   return String(
     getFirstValue(
       profile,
-      ["field", "industry", "job_field", "linh_vuc"],
+      ["field", "job_group", "industry", "job_field", "linh_vuc"],
       "Chưa xác định"
     )
   ).trim();
@@ -115,7 +120,11 @@ function getProfileJobCount(profile) {
 }
 
 function getProfileAliases(profile) {
-  const aliases = profile?.aliases || profile?.alias_list || profile?.equivalent_titles || [];
+  const aliases =
+    profile?.aliases ||
+    profile?.alias_list ||
+    profile?.equivalent_titles ||
+    [];
 
   if (Array.isArray(aliases)) {
     return aliases
@@ -151,7 +160,7 @@ function getProfileTerms(profile) {
     const canonicalName = String(
       getFirstValue(
         item,
-        ["canonical_name", "canonical", "name", "Tên chuẩn (Canonical)"],
+        ["canonical_name", "canonical", "name", "Tên chuẩn (Canonical)", "Tên chuẩn"],
         ""
       )
     ).trim();
@@ -160,6 +169,7 @@ function getProfileTerms(profile) {
     if (!canonicalName) return;
 
     const term = {
+      entity_id: String(item.entity_id || "").trim(),
       kkt_type: kktType,
       canonical_name: canonicalName,
       job_count: Number(item.job_count || item.count || 0)
@@ -187,6 +197,10 @@ function getProfileTerms(profile) {
 
     return a.canonical_name.localeCompare(b.canonical_name, "vi");
   });
+}
+
+function getProfileTermCount(profile) {
+  return getProfileTerms(profile).length;
 }
 
 function groupTermsByType(terms) {
@@ -308,10 +322,11 @@ function populateProfileSelect(profiles) {
         const name = getProfileName(profile);
         const field = getProfileField(profile);
         const jobCount = getProfileJobCount(profile);
+        const termCount = getProfileTermCount(profile);
 
         return `
           <option value="${escapeHtml(name)}">
-            ${escapeHtml(name)} - ${escapeHtml(field)} (${jobCount} job)
+            ${escapeHtml(name)} - ${escapeHtml(field)} (${jobCount} job, ${termCount} K–S–T)
           </option>
         `;
       })
@@ -373,6 +388,25 @@ function searchProfileByKeyword(keyword) {
   return fuzzyByAlias || null;
 }
 
+function hideInitialMessage() {
+  if (!profileEmptyState) return;
+
+  profileEmptyState.textContent = "";
+  profileEmptyState.classList.add("is-hidden");
+  profileEmptyState.setAttribute("hidden", "hidden");
+}
+
+function showMessage(message) {
+  if (!profileEmptyState) {
+    alert(message);
+    return;
+  }
+
+  profileEmptyState.textContent = message;
+  profileEmptyState.classList.remove("is-hidden");
+  profileEmptyState.removeAttribute("hidden");
+}
+
 function renderProfile(profile) {
   selectedProfile = profile;
   selectedProfileTerms = getProfileTerms(profile);
@@ -381,9 +415,9 @@ function renderProfile(profile) {
   const profileField = getProfileField(profile);
   const jobCount = getProfileJobCount(profile);
 
-  profileNameEl.textContent = profileName;
-  profileFieldEl.textContent = profileField;
-  profileJobCountEl.textContent = String(jobCount);
+  if (profileNameEl) profileNameEl.textContent = profileName;
+  if (profileFieldEl) profileFieldEl.textContent = profileField;
+  if (profileJobCountEl) profileJobCountEl.textContent = String(jobCount);
 
   const grouped = groupTermsByType(selectedProfileTerms);
 
@@ -391,8 +425,11 @@ function renderProfile(profile) {
   renderSimpleList(profileSkillWrap, grouped.S);
   renderSimpleList(profileToolWrap, grouped.T);
 
-  profileEmptyState.classList.add("is-hidden");
-  positionProfileLayout.classList.remove("is-hidden");
+  hideInitialMessage();
+
+  if (positionProfileLayout) {
+    positionProfileLayout.classList.remove("is-hidden");
+  }
 
   if (profileSelect) {
     profileSelect.value = profileName;
@@ -406,39 +443,61 @@ function renderProfile(profile) {
 }
 
 function resetMatchState() {
-  profileUploadSection.classList.add("is-hidden");
-  profileMatchResultCard.classList.add("is-hidden");
-  positionProfileLayout.classList.remove("is-match-mode");
+  if (profileUploadSection) {
+    profileUploadSection.classList.add("is-hidden");
+  }
+
+  if (profileMatchResultCard) {
+    profileMatchResultCard.classList.add("is-hidden");
+  }
+
+  if (positionProfileLayout) {
+    positionProfileLayout.classList.remove("is-match-mode");
+  }
 
   if (profileExcelInput) {
     profileExcelInput.value = "";
   }
 
-  uploadStatusEl.textContent = "Chưa có file nào được chọn.";
+  if (uploadStatusEl) {
+    uploadStatusEl.textContent = "Chưa có file nào được chọn.";
+  }
 
-  matchPercentEl.textContent = "0%";
-  matchScoreLabelEl.textContent = "Chưa thực hiện đối sánh";
-  matchScoreSubtextEl.textContent =
-    "Tải hồ sơ cá nhân để xem mức độ phù hợp với hồ sơ vị trí.";
+  if (matchPercentEl) matchPercentEl.textContent = "0%";
+  if (matchScoreLabelEl) matchScoreLabelEl.textContent = "Chưa thực hiện đối sánh";
 
-  positionTermCountEl.textContent = "0";
-  matchedTermCountEl.textContent = "0";
-  missingTermCountEl.textContent = "0";
+  if (matchScoreSubtextEl) {
+    matchScoreSubtextEl.textContent =
+      "Tải hồ sơ CTĐT dạng Excel để xem mức độ bao phủ K–S–T của hồ sơ vị trí.";
+  }
 
-  matchedGroupWrapEl.innerHTML = "";
-  missingGroupWrapEl.innerHTML = "";
+  if (positionTermCountEl) positionTermCountEl.textContent = "0";
+  if (matchedTermCountEl) matchedTermCountEl.textContent = "0";
+  if (missingTermCountEl) missingTermCountEl.textContent = "0";
+
+  if (matchedGroupWrapEl) matchedGroupWrapEl.innerHTML = "";
+  if (missingGroupWrapEl) missingGroupWrapEl.innerHTML = "";
 }
 
 function openMatchMode() {
   if (!selectedProfile) {
-    profileEmptyState.textContent = "Vui lòng chọn một hồ sơ vị trí trước khi đối sánh.";
-    profileEmptyState.classList.remove("is-hidden");
+    showMessage("Vui lòng chọn một hồ sơ vị trí trước khi đối sánh.");
     return;
   }
 
-  profileUploadSection.classList.remove("is-hidden");
-  profileMatchResultCard.classList.remove("is-hidden");
-  positionProfileLayout.classList.add("is-match-mode");
+  hideInitialMessage();
+
+  if (profileUploadSection) {
+    profileUploadSection.classList.remove("is-hidden");
+  }
+
+  if (profileMatchResultCard) {
+    profileMatchResultCard.classList.remove("is-hidden");
+  }
+
+  if (positionProfileLayout) {
+    positionProfileLayout.classList.add("is-match-mode");
+  }
 }
 
 function getRowKeysLowerMap(row) {
@@ -470,6 +529,14 @@ function getColumnValue(row, possibleNames, fallback = "") {
   return fallback;
 }
 
+function hasAnyHasTermColumn(rows) {
+  if (!rows.length) return false;
+
+  return HAS_TERM_COLUMN_NAMES.some((columnName) => {
+    return hasColumn(rows[0], columnName);
+  });
+}
+
 function validateProfileColumns(rows) {
   if (!rows.length) {
     return {
@@ -499,12 +566,12 @@ function isTruthyHasTerm(value) {
     "yes",
     "y",
     "co",
-    "có",
     "x",
     "da hoc",
-    "đã học",
     "hoc",
-    "học"
+    "checked",
+    "available",
+    "present"
   ].includes(normalized);
 }
 
@@ -549,6 +616,7 @@ function readExcelFile(file) {
 
 function collectUserTerms(rows) {
   const map = new Map();
+  const shouldCheckHasTerm = hasAnyHasTermColumn(rows);
 
   rows.forEach((row) => {
     const kktType = String(
@@ -560,16 +628,24 @@ function collectUserTerms(rows) {
     const canonicalName = String(
       getColumnValue(
         row,
-        ["canonical_name", "CANONICAL_NAME", "Tên chuẩn (Canonical)", "Tên chuẩn"],
+        [
+          "canonical_name",
+          "CANONICAL_NAME",
+          "Tên chuẩn (Canonical)",
+          "Tên chuẩn"
+        ],
         ""
       )
     ).trim();
 
-    const hasTerm = getColumnValue(row, ["has_term", "HAS_TERM"], "");
-
     if (!["K", "S", "T"].includes(kktType)) return;
     if (!canonicalName) return;
-    if (!isTruthyHasTerm(hasTerm)) return;
+
+    if (shouldCheckHasTerm) {
+      const hasTerm = getColumnValue(row, HAS_TERM_COLUMN_NAMES, "");
+
+      if (!isTruthyHasTerm(hasTerm)) return;
+    }
 
     const term = {
       kkt_type: kktType,
@@ -593,33 +669,39 @@ function renderMatchResult(positionTerms, matchedTerms, missingTerms) {
     ? Math.round((numerator / denominator) * 100)
     : 0;
 
-  matchPercentEl.textContent = `${percent}%`;
-
-  if (percent >= 70) {
-    matchScoreLabelEl.textContent = "Mức độ phù hợp tương đối cao";
-  } else if (percent >= 40) {
-    matchScoreLabelEl.textContent = "Mức độ phù hợp tương đối trung bình";
-  } else {
-    matchScoreLabelEl.textContent = "Mức độ phù hợp còn thấp";
+  if (matchPercentEl) {
+    matchPercentEl.textContent = `${percent}%`;
   }
 
-  matchScoreSubtextEl.textContent =
-    "Kết quả chỉ phản ánh mức độ trùng khớp dữ liệu K–S–T giữa hồ sơ cá nhân và hồ sơ vị trí, không thay thế đánh giá toàn diện về năng lực, kinh nghiệm hoặc mức độ phù hợp thực tế.";
+  if (matchScoreLabelEl) {
+    if (percent >= 70) {
+      matchScoreLabelEl.textContent = "Mức độ bao phủ K–S–T cao";
+    } else if (percent >= 40) {
+      matchScoreLabelEl.textContent = "Mức độ bao phủ K–S–T trung bình";
+    } else {
+      matchScoreLabelEl.textContent = "Mức độ bao phủ K–S–T còn thấp";
+    }
+  }
 
-  positionTermCountEl.textContent = String(denominator);
-  matchedTermCountEl.textContent = String(numerator);
-  missingTermCountEl.textContent = String(missingTerms.length);
+  if (matchScoreSubtextEl) {
+    matchScoreSubtextEl.textContent =
+      "Kết quả chỉ phản ánh mức độ trùng khớp giữa K–S–T trong hồ sơ CTĐT và K–S–T đã trích xuất từ hồ sơ vị trí. Kết quả này chưa bao gồm kinh nghiệm làm việc, mức độ thành thạo, chứng chỉ, ngoại ngữ hoặc các tiêu chí tuyển dụng khác.";
+  }
+
+  if (positionTermCountEl) positionTermCountEl.textContent = String(denominator);
+  if (matchedTermCountEl) matchedTermCountEl.textContent = String(numerator);
+  if (missingTermCountEl) missingTermCountEl.textContent = String(missingTerms.length);
 
   renderMatchGroupBoxes(
     matchedGroupWrapEl,
     groupTermsByType(matchedTerms),
-    "Chưa có mục nào trùng khớp."
+    "Chưa có K–S–T nào trùng khớp theo dữ liệu đã trích xuất."
   );
 
   renderMatchGroupBoxes(
     missingGroupWrapEl,
     groupTermsByType(missingTerms),
-    "Không có mục còn thiếu."
+    "Không có K–S–T còn thiếu theo dữ liệu đã trích xuất."
   );
 }
 
@@ -637,13 +719,19 @@ function runMatching(userTerms) {
   renderMatchResult(selectedProfileTerms, matchedTerms, missingTerms);
 }
 
-function showInitialState(message = "Chọn hoặc tra cứu một hồ sơ vị trí để xem nội dung tổng hợp.") {
-  profileEmptyState.textContent = message;
-  profileEmptyState.classList.remove("is-hidden");
-  positionProfileLayout.classList.add("is-hidden");
+function showInitialState(message = "") {
+  if (positionProfileLayout) {
+    positionProfileLayout.classList.add("is-hidden");
+  }
 
   selectedProfile = null;
   selectedProfileTerms = [];
+
+  if (message) {
+    showMessage(message);
+  } else {
+    hideInitialMessage();
+  }
 }
 
 async function loadPageData() {
@@ -663,10 +751,16 @@ async function loadPageData() {
     allProfiles = allProfiles
       .filter((profile) => getProfileName(profile))
       .sort((a, b) => {
-        const fieldCompare = getProfileField(a).localeCompare(getProfileField(b), "vi");
+        const kstCompare = getProfileTermCount(b) - getProfileTermCount(a);
 
-        if (fieldCompare !== 0) {
-          return fieldCompare;
+        if (kstCompare !== 0) {
+          return kstCompare;
+        }
+
+        const jobCompare = getProfileJobCount(b) - getProfileJobCount(a);
+
+        if (jobCompare !== 0) {
+          return jobCompare;
         }
 
         return getProfileName(a).localeCompare(getProfileName(b), "vi");
@@ -703,7 +797,7 @@ async function loadPageData() {
 }
 
 profileSearchBtn?.addEventListener("click", () => {
-  const keyword = profileSearchInput.value.trim();
+  const keyword = profileSearchInput?.value.trim() || "";
 
   if (!keyword) {
     showInitialState("Vui lòng nhập tên hồ sơ vị trí cần tra cứu.");
@@ -723,7 +817,7 @@ profileSearchBtn?.addEventListener("click", () => {
 profileSearchInput?.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
-    profileSearchBtn.click();
+    profileSearchBtn?.click();
   }
 });
 
@@ -752,70 +846,97 @@ openProfileMatchBtn?.addEventListener("click", () => {
 profileExcelInput?.addEventListener("change", () => {
   const file = profileExcelInput.files?.[0];
 
-  uploadStatusEl.textContent = file
-    ? `Đã chọn file: ${file.name}`
-    : "Chưa có file nào được chọn.";
+  if (uploadStatusEl) {
+    uploadStatusEl.textContent = file
+      ? `Đã chọn file: ${file.name}`
+      : "Chưa có file nào được chọn.";
+  }
 });
 
 runProfileMatchBtn?.addEventListener("click", async () => {
-  const file = profileExcelInput.files?.[0];
+  const file = profileExcelInput?.files?.[0];
 
   if (!selectedProfile) {
-    uploadStatusEl.textContent = "Vui lòng chọn hồ sơ vị trí trước khi đối sánh.";
+    if (uploadStatusEl) {
+      uploadStatusEl.textContent = "Vui lòng chọn hồ sơ vị trí trước khi đối sánh.";
+    }
     return;
   }
 
   if (!selectedProfileTerms.length) {
-    uploadStatusEl.textContent =
-      "Hồ sơ vị trí hiện chưa có dữ liệu K–S–T để đối sánh.";
+    if (uploadStatusEl) {
+      uploadStatusEl.textContent =
+        "Hồ sơ vị trí hiện chưa có dữ liệu K–S–T để đối sánh.";
+    }
     return;
   }
 
   if (!file) {
-    uploadStatusEl.textContent = "Vui lòng chọn file Excel hồ sơ cá nhân trước.";
+    if (uploadStatusEl) {
+      uploadStatusEl.textContent = "Vui lòng chọn file Excel hồ sơ CTĐT trước.";
+    }
     return;
   }
 
   if (typeof XLSX === "undefined") {
-    uploadStatusEl.textContent =
-      "Không tìm thấy thư viện đọc Excel. Hãy kiểm tra link SheetJS trong HTML.";
+    if (uploadStatusEl) {
+      uploadStatusEl.textContent =
+        "Không tìm thấy thư viện đọc Excel. Hãy kiểm tra link SheetJS trong HTML.";
+    }
     return;
   }
 
   try {
-    uploadStatusEl.textContent = "Đang đọc file hồ sơ cá nhân...";
+    if (uploadStatusEl) {
+      uploadStatusEl.textContent = "Đang đọc file hồ sơ CTĐT...";
+    }
 
     const rows = await readExcelFile(file);
 
     if (!rows.length) {
-      uploadStatusEl.textContent = "File Excel không có dữ liệu.";
+      if (uploadStatusEl) {
+        uploadStatusEl.textContent = "File Excel không có dữ liệu.";
+      }
       return;
     }
 
     const validation = validateProfileColumns(rows);
 
     if (!validation.ok) {
-      uploadStatusEl.textContent =
-        `File chưa đúng cấu trúc. Thiếu cột: ${validation.missing.join(", ")}`;
+      if (uploadStatusEl) {
+        uploadStatusEl.textContent =
+          `File chưa đúng cấu trúc. Thiếu cột: ${validation.missing.join(", ")}`;
+      }
       return;
     }
 
     const userTerms = collectUserTerms(rows);
 
     if (!userTerms.length) {
-      uploadStatusEl.textContent =
-        "Không tìm thấy thực thể K–S–T hợp lệ trong hồ sơ cá nhân.";
+      if (uploadStatusEl) {
+        uploadStatusEl.textContent =
+          "Không tìm thấy thực thể K–S–T hợp lệ trong hồ sơ CTĐT.";
+      }
       return;
     }
 
     runMatching(userTerms);
 
-    uploadStatusEl.textContent =
-      `Đối sánh hoàn tất với ${userTerms.length} thực thể K–S–T từ hồ sơ cá nhân.`;
+    if (uploadStatusEl) {
+      const hasTermMode = hasAnyHasTermColumn(rows)
+        ? "có xét cột has_term"
+        : "không có cột has_term, mặc định toàn bộ dòng hợp lệ là K–S–T có trong hồ sơ";
+
+      uploadStatusEl.textContent =
+        `Đối sánh hoàn tất với ${userTerms.length} thực thể K–S–T từ hồ sơ CTĐT (${hasTermMode}).`;
+    }
   } catch (error) {
     console.error(error);
-    uploadStatusEl.textContent =
-      "Không thể xử lý file Excel. Vui lòng kiểm tra lại cấu trúc file.";
+
+    if (uploadStatusEl) {
+      uploadStatusEl.textContent =
+        "Không thể xử lý file Excel. Vui lòng kiểm tra lại cấu trúc file.";
+    }
   }
 });
 
