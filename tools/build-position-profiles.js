@@ -639,7 +639,7 @@ function main() {
   const output = {
   generated_at: new Date().toISOString(),
   source_note:
-    "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. The catalog was derived from cleaned job-position statistics.",
+  "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. The catalog was derived from cleaned job-position statistics.",
   total_profiles: profiles.length,
   position_profiles: profiles
 };
