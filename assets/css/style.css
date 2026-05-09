@@ -1873,154 +1873,128 @@ input {
 }
 
 /* =========================
-   POSITION PROFILE HEADER + SELECT COMPACT
+   POSITION PROFILE SEARCH BAR - SAME AS HOME
 ========================= */
 
-.position-profile-heading {
-  margin-bottom: 18px;
-  text-align: center;
-}
-
-.position-profile-title {
-  margin-bottom: 10px;
-}
-
-.position-profile-subtitle {
-  margin: 0 auto;
-  max-width: 760px;
-  color: rgba(255, 255, 255, 0.92);
-  font-size: 1.02rem;
-  font-weight: 600;
-  line-height: 1.5;
-  text-align: center;
-}
-
-/* Khối tìm kiếm + chọn nhanh */
 .position-search-panel {
-  width: min(820px, 100%);
-  margin: 0 auto 16px;
+  width: min(1040px, calc(100% - 32px)) !important;
+  margin: 0 auto 18px !important;
 }
 
-/* Thanh tìm kiếm giống trang chủ */
-.position-search-wrapper {
+.profile-search-bar {
+  width: 100%;
+  min-height: 78px;
+  padding: 10px 12px 10px 24px;
+
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
 
-  width: 100%;
-  min-height: 72px;
-  padding: 9px 10px 9px 16px;
   border-radius: 999px;
-
-  background: var(--surface);
-  box-shadow: var(--shadow-hero);
-  border: 1px solid rgba(255, 255, 255, 0.52);
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 16px 36px rgba(28, 59, 106, 0.16);
 }
 
-/* Icon bên trái */
-.position-search-wrapper .search-icon {
+.profile-search-icon {
   flex: 0 0 46px;
   width: 46px;
   height: 46px;
-  border-radius: 50%;
-
-  background: #f1f6fd;
-  color: #6f91c4;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 1rem;
+  border-radius: 50%;
+  color: #6f91c4;
+  font-size: 1.18rem;
 }
 
-/* Input phải chiếm toàn bộ khoảng trống ở giữa */
-.position-search-wrapper .search-input {
+.profile-search-input {
   flex: 1 1 auto;
-  width: 100%;
   min-width: 0;
-  min-height: 46px;
+  width: 100%;
+  min-height: 52px;
 
-  border: none !important;
-  box-shadow: none !important;
-  outline: none !important;
-  background: transparent !important;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
 
-  color: var(--text-dark) !important;
-  font-size: 1rem;
-  font-weight: 500;
-  padding-left: 0;
+  color: #20324f;
+  font-size: 1.05rem;
+  font-weight: 650;
 }
 
-.position-search-wrapper .search-input::placeholder {
-  color: #8294b2;
+.profile-search-input::placeholder {
+  color: #8ba0bf;
+  font-weight: 700;
 }
 
-/* Nút tra cứu nằm sát cuối bên phải */
-.position-search-wrapper .search-btn {
+.profile-search-btn {
   flex: 0 0 auto;
   margin-left: auto;
 
-  min-width: 144px;
-  min-height: 50px;
-  padding: 0 26px;
+  min-width: 170px;
+  min-height: 58px;
+  padding: 0 32px;
 
   border: none;
   border-radius: 999px;
 
-  background: linear-gradient(135deg, var(--blue-main), var(--blue-dark));
-  color: var(--white);
+  background: linear-gradient(135deg, #86b8f5, #5f98e6);
+  color: #ffffff;
 
-  font-size: 0.98rem;
-  font-weight: 800;
+  font-size: 1.02rem;
+  font-weight: 900;
 
-  box-shadow: 0 10px 20px rgba(95, 152, 230, 0.22);
+  box-shadow: 0 10px 22px rgba(95, 152, 230, 0.24);
+  cursor: pointer;
   transition: all 0.22s ease;
 }
 
-.position-search-wrapper .search-btn:hover {
-  color: var(--white);
+.profile-search-btn:hover {
   transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(95, 152, 230, 0.28);
 }
 
-/* Dòng chọn nhanh */
+/* Dropdown chọn nhanh bên dưới */
 .position-select-row {
-  width: min(720px, 100%);
-  margin: 14px auto 0;
+  width: min(760px, 100%) !important;
+  margin: 16px auto 0 !important;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 14px !important;
 }
 
 .position-select-label {
   flex: 0 0 auto;
-
   color: rgba(255, 255, 255, 0.96);
-  font-size: 0.98rem;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 850;
   white-space: nowrap;
 }
 
 .position-select {
   flex: 1 1 auto;
   min-width: 0;
-  max-width: 560px;
-  height: 48px;
+  max-width: 600px;
+  height: 50px;
 
-  padding: 0 42px 0 18px;
+  padding: 0 44px 0 20px;
   border: 1px solid rgba(255, 255, 255, 0.62);
   border-radius: 16px;
 
   background: rgba(255, 255, 255, 0.94);
   color: #20324f;
 
-  font-size: 0.98rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 750;
 
   outline: none;
-  box-shadow: 0 10px 22px rgba(21, 45, 82, 0.10);
+  box-shadow: 0 10px 22px rgba(21, 45, 82, 0.1);
 
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2032,40 +2006,35 @@ input {
   box-shadow: 0 0 0 4px rgba(95, 152, 230, 0.18);
 }
 
-/* Bỏ khung trắng trạng thái ban đầu */
 .position-empty-state {
   display: none !important;
 }
 
 @media (max-width: 991px) {
   .position-search-panel {
-    width: calc(100% - 28px);
+    width: calc(100% - 28px) !important;
   }
 
-  .position-search-wrapper {
+  .profile-search-bar {
     flex-direction: column;
     align-items: stretch;
-
-    min-height: auto;
-    padding: 14px;
     border-radius: 24px;
+    padding: 14px;
   }
 
-  .position-search-wrapper .search-icon {
+  .profile-search-icon {
     display: none;
   }
 
-  .position-search-wrapper .search-btn {
+  .profile-search-btn {
     width: 100%;
-    min-width: unset;
     margin-left: 0;
   }
 
   .position-select-row {
-    width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 8px !important;
   }
 
   .position-select-label {
