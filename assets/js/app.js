@@ -18,7 +18,7 @@ const fieldData = {
 };
 
 function normalizeKeyword(value) {
-  return value.trim().toLowerCase();
+  return String(value || "").trim().toLowerCase();
 }
 
 function normalizeText(value) {
@@ -26,47 +26,114 @@ function normalizeText(value) {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[–—]/g, "-")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
 function escapeHtml(text) {
   const div = document.createElement("div");
-  div.textContent = text;
+  div.textContent = String(text || "");
   return div.innerHTML;
+}
+
+function getFirstValue(obj, keys, fallback = "") {
+  for (const key of keys) {
+    const value = obj?.[key];
+
+    if (
+      value !== undefined &&
+      value !== null &&
+      String(value).trim() !== ""
+    ) {
+      return value;
+    }
+  }
+
+  return fallback;
+}
+
+function getJobId(job) {
+  return String(
+    getFirstValue(job, ["job_id", "id", "job_code", "Mã tin"], "")
+  ).trim();
 }
 
 function getJobTitle(job) {
   return String(
-    job.job_title ||
-    job.title ||
-    job.position_title ||
-    job.job_name ||
-    ""
+    getFirstValue(
+      job,
+      ["job_title", "title", "position_title", "job_name", "Tiêu đề việc làm"],
+      ""
+    )
+  ).trim();
+}
+
+function getJobRawField(job) {
+  return String(
+    getFirstValue(
+      job,
+      ["industry", "field", "job_field", "linh_vuc", "Lĩnh vực (theo khoa)"],
+      ""
+    )
   ).trim();
 }
 
 function mapFieldName(rawIndustry) {
   const value = normalizeText(rawIndustry);
 
-  if (value.includes("khoa hoc thong tin")) return "Khoa học thông tin";
+  if (
+    value.includes("khoa hoc thong tin") ||
+    value.includes("information science")
+  ) {
+    return "Khoa học thông tin";
+  }
 
   if (
     value.includes("cong nghe thong tin") ||
     value.includes("truyen thong") ||
-    value.includes("ict")
+    value.includes("ict") ||
+    value.includes("information technology") ||
+    value.includes("communication technology")
   ) {
     return "Công nghệ thông tin - truyền thông";
   }
 
-  if (value.includes("quan ly")) return "Quản lý";
+  if (
+    value.includes("quan ly") ||
+    value.includes("management")
+  ) {
+    return "Quản lý";
+  }
 
   return "";
+}
+
+function getUniqueTitlesFromJobs(jobs) {
+  const seen = new Set();
+  const titles = [];
+
+  jobs.forEach((job) => {
+    const title = String(job.title || "").trim();
+    if (!title) return;
+
+    const key = normalizeText(title);
+    if (seen.has(key)) return;
+
+    seen.add(key);
+    titles.push(title);
+  });
+
+  return titles.sort((a, b) => a.localeCompare(b, "vi"));
 }
 
 async function loadFieldDataFromJobs() {
   try {
     const response = await fetch("data/jobs.json");
-    if (!response.ok) throw new Error("Không thể tải data/jobs.json");
+
+    if (!response.ok) {
+      throw new Error("Không thể tải data/jobs.json");
+    }
 
     const data = await response.json();
     const jobs = Array.isArray(data) ? data : (data.jobs || []);
@@ -83,24 +150,33 @@ async function loadFieldDataFromJobs() {
     };
 
     jobs.forEach((job) => {
-      const fieldName = mapFieldName(
-        job.industry || job.field || job.job_field || job.linh_vuc || ""
-      );
-
+      const fieldName = mapFieldName(getJobRawField(job));
+      const jobId = getJobId(job);
       const title = getJobTitle(job);
 
-      if (!fieldName || !title) return;
-      if (seenByField[fieldName].has(title)) return;
+      if (!fieldName || !jobId || !title) return;
 
-      seenByField[fieldName].add(title);
-      fieldData[fieldName].push(title);
+      const uniqueKey = `${jobId}|${normalizeText(title)}`;
+
+      if (seenByField[fieldName].has(uniqueKey)) return;
+
+      seenByField[fieldName].add(uniqueKey);
+
+      fieldData[fieldName].push({
+        job_id: jobId,
+        title
+      });
     });
 
     Object.keys(fieldData).forEach((field) => {
-      fieldData[field].sort((a, b) => a.localeCompare(b, "vi"));
+      fieldData[field].sort((a, b) =>
+        a.title.localeCompare(b.title, "vi")
+      );
     });
 
-    positionKeywords = Object.values(fieldData).flat();
+    positionKeywords = getUniqueTitlesFromJobs(
+      Object.values(fieldData).flat()
+    );
   } catch (error) {
     console.error("Lỗi khi tải dữ liệu vị trí theo lĩnh vực:", error);
   }
@@ -117,8 +193,10 @@ function renderSuggestions(items) {
 
   suggestionBox.innerHTML = items
     .map(
-      item => `
-        <button type="button" class="suggestion-item">${escapeHtml(item)}</button>
+      (item) => `
+        <button type="button" class="suggestion-item">
+          ${escapeHtml(item)}
+        </button>
       `
     )
     .join("");
@@ -126,8 +204,15 @@ function renderSuggestions(items) {
   suggestionBox.classList.remove("d-none");
 }
 
+function hideSuggestions() {
+  if (!suggestionBox) return;
+
+  suggestionBox.classList.add("d-none");
+  suggestionBox.innerHTML = "";
+}
+
 function goToJobsPage(keyword = "") {
-  const normalized = keyword.trim();
+  const normalized = String(keyword || "").trim();
 
   if (normalized) {
     window.location.href = `pages/jobs.html?q=${encodeURIComponent(normalized)}`;
@@ -136,66 +221,65 @@ function goToJobsPage(keyword = "") {
   }
 }
 
-function goToPositionProfilePage(position = "", field = "") {
-  const params = new URLSearchParams();
+function goToJobDetailPage(jobId = "") {
+  const normalizedJobId = String(jobId || "").trim();
 
-  if (position.trim()) params.set("position", position.trim());
-  if (field.trim()) params.set("field", field.trim());
+  if (!normalizedJobId) return;
 
-  const query = params.toString();
-
-  window.location.href = query
-    ? `pages/position-profile.html?${query}`
-    : `pages/position-profile.html`;
+  window.location.href =
+    `pages/job-detail.html?type=job&id=${encodeURIComponent(normalizedJobId)}`;
 }
 
 function setActiveField(fieldName = "") {
-  fieldTags.forEach(tag => {
+  fieldTags.forEach((tag) => {
     const isMatched = tag.getAttribute("data-field") === fieldName;
     tag.classList.toggle("is-active", isMatched);
   });
 }
 
+function closeFieldModal() {
+  if (!fieldPreview) return;
+
+  fieldPreview.classList.add("d-none");
+  document.body.classList.remove("field-modal-open");
+  setActiveField("");
+}
+
 function showFieldPreview(fieldName) {
   if (!fieldPreview || !fieldPreviewTitle || !fieldPreviewList) return;
 
-  const positions = fieldData[fieldName] || [];
-  fieldPreviewTitle.textContent =
-    `Danh sách vị trí việc làm thuộc lĩnh vực: ${fieldName} (${positions.length})`;
+  const jobs = fieldData[fieldName] || [];
 
-  if (!positions.length) {
+  fieldPreviewTitle.textContent =
+    `Việc làm thuộc lĩnh vực: ${fieldName} (${jobs.length})`;
+
+  if (!jobs.length) {
     fieldPreviewList.innerHTML = `
       <div class="preview-list-item">
         <div class="preview-item-main">
           <i class="bi bi-folder2-open"></i>
-          <span>Hiện chưa có dữ liệu vị trí việc làm.</span>
+          <span class="preview-item-text">Hiện chưa có dữ liệu vị trí việc làm.</span>
         </div>
       </div>
     `;
   } else {
-    fieldPreviewList.innerHTML = positions
+    fieldPreviewList.innerHTML = jobs
       .map(
-        (position) => `
+        (job) => `
           <div class="preview-list-item">
             <div class="preview-item-main">
               <i class="bi bi-file-earmark-text"></i>
-              <span class="preview-item-text">${escapeHtml(position)}</span>
+              <span class="preview-item-text" title="${escapeHtml(job.title)}">
+                ${escapeHtml(job.title)}
+              </span>
             </div>
 
             <div class="preview-item-actions">
               <button
                 type="button"
-                class="preview-item-btn preview-open-jobs"
-                data-position="${escapeHtml(position)}">
-                Xem việc làm
-              </button>
-
-              <button
-                type="button"
-                class="preview-item-btn preview-open-profile"
-                data-position="${escapeHtml(position)}"
-                data-field="${escapeHtml(fieldName)}">
-                Hồ sơ vị trí
+                class="preview-item-btn preview-open-detail"
+                data-job-id="${escapeHtml(job.job_id)}">
+                Xem chi tiết
               </button>
             </div>
           </div>
@@ -205,6 +289,7 @@ function showFieldPreview(fieldName) {
   }
 
   setActiveField(fieldName);
+  document.body.classList.add("field-modal-open");
   fieldPreview.classList.remove("d-none");
 }
 
@@ -213,18 +298,17 @@ if (searchInput) {
     const value = normalizeKeyword(this.value);
 
     if (!value) {
-      if (suggestionBox) {
-        suggestionBox.classList.add("d-none");
-        suggestionBox.innerHTML = "";
-      }
+      hideSuggestions();
       return;
     }
 
-    const matched = positionKeywords.filter(item =>
-  normalizeText(item).includes(normalizeText(value))
-);
+    const normalizedValue = normalizeText(value);
 
-    renderSuggestions(matched.slice(0, 6));
+    const matched = positionKeywords.filter((item) =>
+      normalizeText(item).includes(normalizedValue)
+    );
+
+    renderSuggestions(matched.slice(0, 8));
   });
 
   searchInput.addEventListener("focus", function () {
@@ -233,32 +317,35 @@ if (searchInput) {
     if (!positionKeywords.length) return;
 
     if (!value) {
-      renderSuggestions(positionKeywords.slice(0, 6));
+      renderSuggestions(positionKeywords.slice(0, 8));
       return;
     }
 
-    const matched = positionKeywords.filter(item =>
-  normalizeText(item).includes(normalizeText(value))
-);
+    const normalizedValue = normalizeText(value);
 
-    renderSuggestions(matched.slice(0, 6));
+    const matched = positionKeywords.filter((item) =>
+      normalizeText(item).includes(normalizedValue)
+    );
+
+    renderSuggestions(matched.slice(0, 8));
   });
 
-  searchInput.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-      e.preventDefault();
+  searchInput.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
       goToJobsPage(searchInput.value);
     }
   });
 }
 
 if (suggestionBox) {
-  suggestionBox.addEventListener("click", function (e) {
-    const item = e.target.closest(".suggestion-item");
+  suggestionBox.addEventListener("click", function (event) {
+    const item = event.target.closest(".suggestion-item");
+
     if (!item || !searchInput) return;
 
     searchInput.value = item.textContent.trim();
-    suggestionBox.classList.add("d-none");
+    hideSuggestions();
   });
 }
 
@@ -268,7 +355,7 @@ if (searchBtn) {
   });
 }
 
-fieldTags.forEach(tag => {
+fieldTags.forEach((tag) => {
   tag.addEventListener("click", () => {
     const fieldName = tag.getAttribute("data-field") || "";
     showFieldPreview(fieldName);
@@ -276,36 +363,42 @@ fieldTags.forEach(tag => {
 });
 
 if (fieldPreviewList) {
-  fieldPreviewList.addEventListener("click", (e) => {
-    const openJobsBtn = e.target.closest(".preview-open-jobs");
-    const openProfileBtn = e.target.closest(".preview-open-profile");
+  fieldPreviewList.addEventListener("click", (event) => {
+    const detailBtn = event.target.closest(".preview-open-detail");
 
-    if (openJobsBtn) {
-      const position = openJobsBtn.getAttribute("data-position") || "";
-      goToJobsPage(position);
-      return;
-    }
+    if (!detailBtn) return;
 
-    if (openProfileBtn) {
-      const position = openProfileBtn.getAttribute("data-position") || "";
-      const field = openProfileBtn.getAttribute("data-field") || "";
-      goToPositionProfilePage(position, field);
-    }
+    const jobId = detailBtn.getAttribute("data-job-id") || "";
+    goToJobDetailPage(jobId);
   });
 }
 
 if (closeFieldPreview) {
-  closeFieldPreview.addEventListener("click", () => {
-    fieldPreview.classList.add("d-none");
-    setActiveField("");
-  });
+  closeFieldPreview.addEventListener("click", closeFieldModal);
 }
 
-document.addEventListener("click", function (e) {
-  if (!suggestionBox) return;
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeFieldModal();
+    hideSuggestions();
+  }
+});
 
-  if (!e.target.closest(".search-panel")) {
-    suggestionBox.classList.add("d-none");
+document.addEventListener("click", function (event) {
+  if (
+    suggestionBox &&
+    !event.target.closest(".search-panel")
+  ) {
+    hideSuggestions();
+  }
+
+  if (
+    document.body.classList.contains("field-modal-open") &&
+    fieldPreview &&
+    !event.target.closest("#fieldPreview") &&
+    !event.target.closest(".field-tag")
+  ) {
+    closeFieldModal();
   }
 });
 
