@@ -581,45 +581,44 @@ function buildPositionProfiles(jobs, jobKktRows) {
 
   const profiles = POSITION_PROFILE_CATALOG.map((catalogItem, index) => {
     const sourceJobIds = Array.from(new Set(catalogItem.job_ids));
-const foundJobIds = sourceJobIds.filter((jobId) => jobMap.has(jobId));
-const missingJobIds = sourceJobIds.filter((jobId) => !jobMap.has(jobId));
+    const foundJobIds = sourceJobIds.filter((jobId) => jobMap.has(jobId));
+    const missingJobIds = sourceJobIds.filter((jobId) => !jobMap.has(jobId));
 
-const kktList = buildKktList(foundJobIds, termsByJob);
+    const kktList = buildKktList(foundJobIds, termsByJob);
 
-return {
-  position_id: `PP${String(index + 1).padStart(3, "0")}`,
-  order: index + 1,
+    return {
+      position_id: `PP${String(index + 1).padStart(3, "0")}`,
+      order: index + 1,
 
-  // Tên hồ sơ vị trí chuẩn hóa theo file Excel
-  position_name: catalogItem.position_name,
+      // Tên hồ sơ vị trí chuẩn hóa
+      position_name: catalogItem.position_name,
 
-  // Để tương thích với position-profile.js hiện tại:
-  // field sẽ hiển thị trong giao diện.
-  // Ở đây dùng nhóm nghề từ file 44 vị trí thay vì 3 lĩnh vực lớn.
-  field: catalogItem.job_group,
+      // Field hiển thị trên giao diện
+      field: catalogItem.job_group,
 
-  // Lưu thêm để sau này muốn tách rõ thì vẫn có dữ liệu.
-  job_group: catalogItem.job_group,
-  major_field: getDominantMajorField(foundJobIds, jobMap),
+      // Lưu thêm để sau này tách nhóm nghề / lĩnh vực lớn nếu cần
+      job_group: catalogItem.job_group,
+      major_field: getDominantMajorField(foundJobIds, jobMap),
 
-  // Số lượng gốc theo file thống kê 44 vị trí
-  source_job_count: sourceJobIds.length,
-  source_job_ids: sourceJobIds,
+      // Số lượng gốc theo catalog 44 vị trí
+      source_job_count: sourceJobIds.length,
+      source_job_ids: sourceJobIds,
 
-  // Số lượng job thật sự có trong jobs.json
-  job_count: foundJobIds.length,
-  job_ids: foundJobIds,
+      // Số lượng job thật sự có trong jobs.json
+      job_count: foundJobIds.length,
+      job_ids: foundJobIds,
 
-  // Dùng để position-profile.js tìm được hồ sơ khi người dùng bấm từ title job gốc
-  aliases: buildAliases(foundJobIds, jobMap),
+      // Dùng để tìm hồ sơ vị trí từ title job gốc
+      aliases: buildAliases(foundJobIds, jobMap),
 
-  // Kiểm tra dữ liệu bị thiếu nếu có
-  found_job_count: foundJobIds.length,
-  missing_job_ids: missingJobIds,
+      // Kiểm tra dữ liệu bị thiếu nếu có
+      found_job_count: foundJobIds.length,
+      missing_job_ids: missingJobIds,
 
-  // K–S–T tổng hợp từ các job thật sự tồn tại
-  kkt_list: kktList
-};
+      // K–S–T tổng hợp từ các job thật sự tồn tại
+      kkt_list: kktList
+    };
+  });
 
   if (profiles.length !== 44) {
     throw new Error(
