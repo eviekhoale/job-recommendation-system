@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Hồ sơ vị trí - Job Position Advisor</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
 </head>
+
 <body>
   <div class="page-shell">
     <header class="topbar">
       <div class="topbar-inner">
         <a href="../index.html" class="brand-title">Job Position Advisor</a>
 
-        <nav class="top-nav">
+        <nav class="top-nav" aria-label="Điều hướng chính">
           <a class="top-nav-link" href="../index.html">Trang chủ</a>
           <a class="top-nav-link" href="jobs.html">Việc làm</a>
           <a class="top-nav-link active" href="position-profile.html">Hồ sơ vị trí</a>
@@ -30,13 +35,13 @@
           <div class="position-profile-heading">
             <h1 class="position-profile-title">Hồ sơ vị trí</h1>
             <p class="position-profile-subtitle">
-              Tra cứu hồ sơ tổng hợp của vị trí việc làm từ dữ liệu tuyển dụng đã được xử lý trước.
+              Chọn hoặc tra cứu một hồ sơ vị trí để xem nội dung tổng hợp.
             </p>
           </div>
 
-          <section class="position-search-panel">
-            <div class="position-search-wrapper">
-              <div class="search-icon">
+          <section class="position-search-panel" aria-label="Tra cứu hồ sơ vị trí">
+            <div class="search-wrapper position-search-wrapper">
+              <div class="search-icon" aria-hidden="true">
                 <i class="bi bi-search"></i>
               </div>
 
@@ -54,17 +59,26 @@
             </div>
 
             <div class="position-select-row">
-              <label for="profileSelect" class="position-select-label">Hoặc chọn nhanh:</label>
-              <select id="profileSelect" class="position-select"></select>
+              <label for="profileSelect" class="position-select-label">
+                Hoặc chọn nhanh:
+              </label>
+
+              <select id="profileSelect" class="position-select">
+                <option value="">-- Chọn hồ sơ vị trí --</option>
+              </select>
             </div>
           </section>
 
-          <div id="profileEmptyState" class="position-empty-state">
-            Chọn hoặc tra cứu một hồ sơ vị trí để xem nội dung tổng hợp.
-          </div>
+          <!-- Giữ ID này để position-profile.js không lỗi nếu vẫn còn gọi profileEmptyState.
+               hidden giúp không còn khung trắng dưới cùng trên giao diện. -->
+          <div
+            id="profileEmptyState"
+            class="position-empty-state is-hidden"
+            aria-live="polite"
+            hidden
+          ></div>
 
           <div id="positionProfileLayout" class="position-profile-layout is-hidden">
-            <!-- Cột trái -->
             <section class="position-profile-left">
               <article class="position-profile-card">
                 <div class="position-profile-card-scroll">
@@ -72,18 +86,25 @@
 
                   <div class="profile-meta-grid">
                     <div class="profile-meta-item">
-                      <i class="bi bi-diagram-3"></i>
-                      <span><strong>Lĩnh vực:</strong> <span id="profileField">-</span></span>
+                      <i class="bi bi-diagram-3" aria-hidden="true"></i>
+                      <span>
+                        <strong>Lĩnh vực:</strong>
+                        <span id="profileField">-</span>
+                      </span>
                     </div>
 
                     <div class="profile-meta-item">
-                      <i class="bi bi-briefcase"></i>
-                      <span><strong>Số lượng job đại diện:</strong> <span id="profileJobCount">0</span></span>
+                      <i class="bi bi-briefcase" aria-hidden="true"></i>
+                      <span>
+                        <strong>Số lượng job đại diện:</strong>
+                        <span id="profileJobCount">0</span>
+                      </span>
                     </div>
                   </div>
 
                   <p class="profile-card-note">
-                    Hồ sơ này là kết quả tổng hợp dữ liệu tuyển dụng đã được xử lý trước, không phản ánh một tin tuyển dụng riêng lẻ.
+                    Hồ sơ này là kết quả tổng hợp dữ liệu tuyển dụng đã được xử lý trước,
+                    không phản ánh một tin tuyển dụng riêng lẻ.
                   </p>
 
                   <section class="profile-section">
@@ -109,26 +130,32 @@
 
                   <section id="profileUploadSection" class="profile-upload-panel is-hidden">
                     <h3 class="upload-title">Tải hồ sơ cá nhân dạng Excel</h3>
+
                     <p class="upload-desc">
                       File hồ sơ cần có các cột:
-                      <code>profile_id</code>, <code>course_id</code>, <code>course_name</code>,
-                      <code>kkt_type</code>, <code>canonical_name</code>, <code>has_term</code>, <code>source_origin</code>.
+                      <code>profile_id</code>,
+                      <code>course_name</code>,
+                      <code>kkt_type</code>,
+                      <code>canonical_name</code>,
+                      <code>has_term</code>.
                     </p>
 
                     <div class="upload-box">
                       <input id="profileExcelInput" type="file" accept=".xlsx,.xls" />
+
                       <button id="runProfileMatchBtn" class="profile-primary-btn" type="button">
                         Thực hiện đối sánh
                       </button>
                     </div>
 
-                    <p id="uploadStatus" class="upload-status">Chưa có file nào được chọn.</p>
+                    <p id="uploadStatus" class="upload-status">
+                      Chưa có file nào được chọn.
+                    </p>
                   </section>
                 </div>
               </article>
             </section>
 
-            <!-- Cột phải -->
             <aside id="profileMatchResultCard" class="position-profile-right is-hidden">
               <article class="profile-match-card">
                 <div class="profile-match-card-scroll">
@@ -141,23 +168,31 @@
 
                     <div class="profile-match-score-text">
                       <p id="matchScoreLabel">Chưa thực hiện đối sánh</p>
-                      <p id="matchScoreSubtext">Tải hồ sơ cá nhân để xem mức độ phù hợp với hồ sơ vị trí.</p>
+                      <p id="matchScoreSubtext">
+                        Tải hồ sơ cá nhân để xem mức độ bao phủ K–S–T của hồ sơ vị trí.
+                      </p>
                     </div>
                   </div>
 
                   <div class="profile-match-stat-grid">
                     <div class="profile-match-stat-item">
-                      <span class="profile-match-stat-label">Tổng K–S–T của hồ sơ vị trí</span>
+                      <span class="profile-match-stat-label">
+                        Tổng K–S–T của hồ sơ vị trí
+                      </span>
                       <strong id="positionTermCount">0</strong>
                     </div>
 
                     <div class="profile-match-stat-item">
-                      <span class="profile-match-stat-label">Số mục trùng khớp</span>
+                      <span class="profile-match-stat-label">
+                        Số mục trùng khớp
+                      </span>
                       <strong id="matchedTermCount">0</strong>
                     </div>
 
                     <div class="profile-match-stat-item">
-                      <span class="profile-match-stat-label">Số mục còn thiếu</span>
+                      <span class="profile-match-stat-label">
+                        Số mục còn thiếu
+                      </span>
                       <strong id="missingTermCount">0</strong>
                     </div>
                   </div>
@@ -181,6 +216,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
-  <script src="../assets/js/position-profile.js"></script>
+  <script src="../assets/js/position-profile.js?v=3"></script>
 </body>
 </html>
