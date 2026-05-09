@@ -1,280 +1,2582 @@
-[
-  {
-    "position_name": "Công nghệ thông tin - truyền thông (ICT)",
-    "job_count": 48,
-    "kkt_list": [
-      {
-        "kkt_type": "K",
-        "canonical_name": "Chuyển đổi số"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Cơ sở dữ liệu"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Enterprise Resource Planning"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Hệ quản trị cơ sở dữ liệu"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Học máy"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Hồi quy"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Kho dữ liệu"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Lập trình"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Lập trình hướng đối tượng"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Mạng máy tính"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Phân tích thống kê"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Quản lý thông tin"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "SQL"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Truyền thông xã hội"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Giải pháp tích hợp hệ thống"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Làm sạch dữ liệu"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Phân tích dữ liệu doanh nghiệp"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Quản trị cơ sở dữ liệu"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Xây dựng kế hoạch"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "C#"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "C/C++"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "ChatGPT"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Microsoft Excel"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Odoo Business Management Software"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Python"
-      }
-    ]
-  },
-  {
-    "position_name": "Khoa học thông tin (Information Science)",
-    "job_count": 54,
-    "kkt_list": [
-      {
-        "kkt_type": "K",
-        "canonical_name": "Chuyển đổi số"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Cơ sở dữ liệu"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Dự báo"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Enterprise Resource Planning"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Học máy"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Kho dữ liệu"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Lập trình"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Mạng máy tính"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Quy trình kinh doanh"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "SQL"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Làm sạch dữ liệu"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Mô hình hóa dữ liệu"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Phân tích dữ liệu doanh nghiệp"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Tư duy phản biện"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Xây dựng kế hoạch"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "ChatGPT"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Elicit"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Microsoft Excel"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Odoo Business Management Software"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Python"
-      }
-    ]
-  },
-  {
-    "position_name": "Quản lý (Management)",
-    "job_count": 44,
-    "kkt_list": [
-      {
-        "kkt_type": "K",
-        "canonical_name": "Chiến lược marketing"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Chuyển đổi số"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Cơ sở dữ liệu"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Dự báo"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Enterprise Resource Planning"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Hệ quản trị cơ sở dữ liệu"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Học máy"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Lập trình"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Mạng máy tính"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "Quản lý thông tin"
-      },
-      {
-        "kkt_type": "K",
-        "canonical_name": "SQL"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Năng lực tự học"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Phân tích dữ liệu doanh nghiệp"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Quản trị cơ sở dữ liệu"
-      },
-      {
-        "kkt_type": "S",
-        "canonical_name": "Tư duy phản biện"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "ChatGPT"
-      },
-      {
-        "kkt_type": "T",
-        "canonical_name": "Microsoft Excel"
-      }
-    ]
-  }
-]
+{
+  "generated_at": "2026-05-09T16:59:16.813Z",
+  "source_note": "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. The catalog was derived from cleaned job-position statistics.",
+  "total_profiles": 44,
+  "position_profiles": [
+    {
+      "position_id": "PP001",
+      "order": 1,
+      "position_name": "Data Analyst / BI Analyst",
+      "field": "Phân tích dữ liệu & BI",
+      "job_group": "Phân tích dữ liệu & BI",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 28,
+      "source_job_ids": [
+        "JD052",
+        "JD053",
+        "JD086",
+        "JD087",
+        "JD088",
+        "JD125",
+        "JD126",
+        "JD128",
+        "JD131",
+        "JD137",
+        "JD139",
+        "JD144",
+        "JD173",
+        "JD174",
+        "JD182",
+        "JD183",
+        "JD186",
+        "JD189",
+        "JD191",
+        "JD192",
+        "JD199",
+        "JD201",
+        "JD202",
+        "JD203",
+        "JD204",
+        "JD207",
+        "JD212",
+        "JD223"
+      ],
+      "job_count": 28,
+      "job_ids": [
+        "JD052",
+        "JD053",
+        "JD086",
+        "JD087",
+        "JD088",
+        "JD125",
+        "JD126",
+        "JD128",
+        "JD131",
+        "JD137",
+        "JD139",
+        "JD144",
+        "JD173",
+        "JD174",
+        "JD182",
+        "JD183",
+        "JD186",
+        "JD189",
+        "JD191",
+        "JD192",
+        "JD199",
+        "JD201",
+        "JD202",
+        "JD203",
+        "JD204",
+        "JD207",
+        "JD212",
+        "JD223"
+      ],
+      "aliases": [
+        "[HN] Data Analyst / Phân Tích Dữ Liệu",
+        "BI Developer Intern",
+        "Business Data Analyst Project Intern",
+        "Business Intelligence & Planning",
+        "Business Intelligence Analyst",
+        "Carbon Data Analyst",
+        "Data & Insight Analyst",
+        "Data Analysis Intern",
+        "Data Analyst",
+        "Data Analyst - Game Industry",
+        "Data Analyst Intern",
+        "Data Analyst Intern (Supply Chain domain)",
+        "Data Analyst Trainee",
+        "Data Analyst/Business Intelligent Intern",
+        "Executive, MIS Reporting Analyst",
+        "JUNIOR DATA ANALYST",
+        "Junior Data Labeler",
+        "Kỹ Sư Phân Tích Dữ Liệu",
+        "Marketing Data Analysis",
+        "Marketing Data Analyst",
+        "Marketing Data Analyst - Meta Ads, Global e-Commerce Platform",
+        "Power BI Intern",
+        "Real-Time Analyst",
+        "Senior Data Analyst",
+        "Social Insight Analyst",
+        "Thực Tập Sinh Kỹ Thuật Ai"
+      ],
+      "found_job_count": 28,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 14
+        },
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 5
+        },
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0025",
+          "kkt_type": "K",
+          "canonical_name": "Dự báo",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0040",
+          "kkt_type": "K",
+          "canonical_name": "Kho dữ liệu",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0007",
+          "kkt_type": "K",
+          "canonical_name": "Chuyển đổi số",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0100",
+          "kkt_type": "K",
+          "canonical_name": "Quy trình kinh doanh",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 12
+        },
+        {
+          "entity_id": "S0021",
+          "kkt_type": "S",
+          "canonical_name": "Làm sạch dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 15
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 9
+        }
+      ]
+    },
+    {
+      "position_id": "PP002",
+      "order": 2,
+      "position_name": "Project Management / Project Coordinator",
+      "field": "Quản lý dự án",
+      "job_group": "Quản lý dự án",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 28,
+      "source_job_ids": [
+        "JD040",
+        "JD067",
+        "JD069",
+        "JD071",
+        "JD075",
+        "JD102",
+        "JD104",
+        "JD117",
+        "JD118",
+        "JD119",
+        "JD120",
+        "JD136",
+        "JD175",
+        "JD179",
+        "JD180",
+        "JD184",
+        "JD211",
+        "JD229",
+        "JD230",
+        "JD231",
+        "JD232",
+        "JD233",
+        "JD234",
+        "JD235",
+        "JD236",
+        "JD237",
+        "JD238",
+        "JD239"
+      ],
+      "job_count": 27,
+      "job_ids": [
+        "JD040",
+        "JD067",
+        "JD069",
+        "JD071",
+        "JD075",
+        "JD102",
+        "JD117",
+        "JD118",
+        "JD119",
+        "JD120",
+        "JD136",
+        "JD175",
+        "JD179",
+        "JD180",
+        "JD184",
+        "JD211",
+        "JD229",
+        "JD230",
+        "JD231",
+        "JD232",
+        "JD233",
+        "JD234",
+        "JD235",
+        "JD236",
+        "JD237",
+        "JD238",
+        "JD239"
+      ],
+      "aliases": [
+        "Assistant Project Manager",
+        "Chuyên viên điều phối dự án - Digital Strategy Staff",
+        "Chuyên Viên Quản Lý Dự Án Tư Vấn",
+        "Cộng tác viên Project Coordinator",
+        "Cộng Tác Viên Quản Lý Dự Án",
+        "Cross Border - Project Management Associate",
+        "General Program Manager",
+        "Giám Sát Viên Quản Lý Dự Án",
+        "Influencer Project Management Intern",
+        "INTERN PROJECT MANAGEMENT & BUSINESS SUPPORT,",
+        "Mall Project Management Associate",
+        "Nhân Viên Quản Lý Dự Án Sản Xuất MPM",
+        "Nhân Viên/ Chuyên Viên Quản Lý Dự Án - Project Management Coordinator",
+        "Partnership Associate Project Manager",
+        "Planner & Project Management Intern, Creator Growth",
+        "Project Assistant Trainee",
+        "Project Coordinator",
+        "Project Management",
+        "Project Management Executive",
+        "Project Management Intern - Claims Transformation",
+        "Project Management Officer",
+        "Project Management Specialist - Project Leadership",
+        "Project Manager",
+        "Project Manager/ Coordinator",
+        "Technical Project Management Assistant",
+        "Thực Tập Sinh Quản Lý Dự Án",
+        "Trợ Lý Dự Án"
+      ],
+      "found_job_count": 27,
+      "missing_job_ids": [
+        "JD104"
+      ],
+      "kkt_list": [
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0111",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý thông tin",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0118",
+          "kkt_type": "S",
+          "canonical_name": "Tư duy phản biện",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 9
+        }
+      ]
+    },
+    {
+      "position_id": "PP003",
+      "order": 3,
+      "position_name": "Business Analyst",
+      "field": "Phân tích nghiệp vụ",
+      "job_group": "Phân tích nghiệp vụ",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 21,
+      "source_job_ids": [
+        "JD015",
+        "JD017",
+        "JD048",
+        "JD051",
+        "JD090",
+        "JD091",
+        "JD092",
+        "JD093",
+        "JD112",
+        "JD114",
+        "JD124",
+        "JD138",
+        "JD140",
+        "JD143",
+        "JD164",
+        "JD185",
+        "JD205",
+        "JD206",
+        "JD215",
+        "JD216",
+        "JD217"
+      ],
+      "job_count": 21,
+      "job_ids": [
+        "JD015",
+        "JD017",
+        "JD048",
+        "JD051",
+        "JD090",
+        "JD091",
+        "JD092",
+        "JD093",
+        "JD112",
+        "JD114",
+        "JD124",
+        "JD138",
+        "JD140",
+        "JD143",
+        "JD164",
+        "JD185",
+        "JD205",
+        "JD206",
+        "JD215",
+        "JD216",
+        "JD217"
+      ],
+      "aliases": [
+        "AI Application Intern",
+        "Business Analyst",
+        "Business Analyst (Product)",
+        "Business Analyst Intern",
+        "Chuyên Viên Phân Tích Nghiệp Vụ - Business Analyst",
+        "Chuyên Viên Phân Tích Nghiệp Vụ (BA)",
+        "IT Business Analyst",
+        "IT BUSINESS ANALYST",
+        "IT Business Analyst Intern",
+        "Junior Software Analyst (Banking/Finance)",
+        "Lead/ Trưởng Nhóm Business Analyst",
+        "Nhân Viên Triển Khai Giải Pháp ERP (Business Analyst - Vững Nghiệp Vụ Kế Toán)",
+        "Phân Tích Nghiệp Vụ - Business Analyst - Yêu Cầu Tiếng Hàn",
+        "Product Owner/ Business Analyst",
+        "Senior Analyst, Retail Analytics"
+      ],
+      "found_job_count": 21,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 8
+        },
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 5
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 5
+        },
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 3
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0100",
+          "kkt_type": "K",
+          "canonical_name": "Quy trình kinh doanh",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0025",
+          "kkt_type": "K",
+          "canonical_name": "Dự báo",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0040",
+          "kkt_type": "K",
+          "canonical_name": "Kho dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 2
+        },
+        {
+          "entity_id": "S0032",
+          "kkt_type": "S",
+          "canonical_name": "Mô hình hóa dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0118",
+          "kkt_type": "S",
+          "canonical_name": "Tư duy phản biện",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 3
+        },
+        {
+          "entity_id": "T0014",
+          "kkt_type": "T",
+          "canonical_name": "Odoo Business Management Software",
+          "job_count": 2
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 2
+        },
+        {
+          "entity_id": "T0004",
+          "kkt_type": "T",
+          "canonical_name": "ChatGPT",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0006",
+          "kkt_type": "T",
+          "canonical_name": "Elicit",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP004",
+      "order": 4,
+      "position_name": "HR / Administrative HR",
+      "field": "Nhân sự - hành chính nhân sự",
+      "job_group": "Nhân sự - hành chính nhân sự",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 19,
+      "source_job_ids": [
+        "JD035",
+        "JD036",
+        "JD039",
+        "JD049",
+        "JD050",
+        "JD057",
+        "JD063",
+        "JD066",
+        "JD073",
+        "JD078",
+        "JD081",
+        "JD082",
+        "JD121",
+        "JD129",
+        "JD142",
+        "JD149",
+        "JD151",
+        "JD152",
+        "JD178"
+      ],
+      "job_count": 18,
+      "job_ids": [
+        "JD035",
+        "JD036",
+        "JD039",
+        "JD049",
+        "JD050",
+        "JD057",
+        "JD063",
+        "JD066",
+        "JD078",
+        "JD081",
+        "JD082",
+        "JD121",
+        "JD129",
+        "JD142",
+        "JD149",
+        "JD151",
+        "JD152",
+        "JD178"
+      ],
+      "aliases": [
+        "Chuyên Viên Hành Chính Nhân Sự - Pháp Chế",
+        "Divisional Talent Projects & Data Specialist",
+        "Event Intern",
+        "HÀNH CHÍNH - NHÂN SỰ",
+        "Hành Chính Nhân Sự",
+        "HR Intern",
+        "HR Staff",
+        "HR Staff (Nhân Viên Hành Chính Nhân Sự)",
+        "Lễ Tân - Receptionist",
+        "Nhân Viên Hành Chính",
+        "Nhân Viên Hành Chính Nhân Sự",
+        "Recruitment Intern (Mass)",
+        "Recruitment Specialist - Tìm Kiếm Nhân Tài - BO/HO",
+        "Succession Analyst & Data Executive",
+        "Thực Tập Sinh / Cộng Tác Viên Hành Chính Nhân Sự",
+        "Thực Tập Sinh C&B",
+        "Thực Tập Sinh Nhân Sự"
+      ],
+      "found_job_count": 18,
+      "missing_job_ids": [
+        "JD073"
+      ],
+      "kkt_list": [
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 9
+        }
+      ]
+    },
+    {
+      "position_id": "PP005",
+      "order": 5,
+      "position_name": "Market Research / Research Executive",
+      "field": "Nghiên cứu thị trường",
+      "job_group": "Nghiên cứu thị trường",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 15,
+      "source_job_ids": [
+        "JD083",
+        "JD084",
+        "JD101",
+        "JD106",
+        "JD107",
+        "JD141",
+        "JD154",
+        "JD155",
+        "JD156",
+        "JD167",
+        "JD169",
+        "JD190",
+        "JD210",
+        "JD218",
+        "JD228"
+      ],
+      "job_count": 14,
+      "job_ids": [
+        "JD083",
+        "JD084",
+        "JD101",
+        "JD106",
+        "JD107",
+        "JD141",
+        "JD154",
+        "JD155",
+        "JD167",
+        "JD169",
+        "JD190",
+        "JD210",
+        "JD218",
+        "JD228"
+      ],
+      "aliases": [
+        "Chuyên Viên Nghiên Cứu Thị Trường - Market Research Executive",
+        "Chuyên Viên Nghiên Cứu Thị Trường & Sản Phẩm Xe Ô Tô",
+        "Intern Market Research",
+        "Nhân Viên Nghiên Cứu Thị Trường Marketing",
+        "Nhân Viên Research Dự Án Affiliate",
+        "Quantitative Research Intern",
+        "Quantitative Researcher",
+        "Research Executive",
+        "Research Executive (E-Commerce Intelligence)",
+        "Thực Tập Sinh Nghiên Cứu Thị Trường",
+        "Thực Tập Sinh Nghiên Cứu Thị Trường Bất Động Sản"
+      ],
+      "found_job_count": 14,
+      "missing_job_ids": [
+        "JD156"
+      ],
+      "kkt_list": [
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0005",
+          "kkt_type": "K",
+          "canonical_name": "Chiến lược marketing",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 2
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 2
+        },
+        {
+          "entity_id": "T0004",
+          "kkt_type": "T",
+          "canonical_name": "ChatGPT",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP006",
+      "order": 6,
+      "position_name": "Administrative Officer / Admin",
+      "field": "Hành chính văn phòng",
+      "job_group": "Hành chính văn phòng",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 11,
+      "source_job_ids": [
+        "JD016",
+        "JD028",
+        "JD033",
+        "JD041",
+        "JD042",
+        "JD044",
+        "JD045",
+        "JD056",
+        "JD080",
+        "JD134",
+        "JD165"
+      ],
+      "job_count": 10,
+      "job_ids": [
+        "JD016",
+        "JD028",
+        "JD033",
+        "JD041",
+        "JD042",
+        "JD044",
+        "JD045",
+        "JD056",
+        "JD080",
+        "JD134"
+      ],
+      "aliases": [
+        "Admin Intern",
+        "Admin Intern (Sales Support)",
+        "Admin Officer",
+        "Admin Tiếng Nhật",
+        "Administrative Officer",
+        "Chuyên Viên Hành Chính",
+        "Internship - Sales Admin",
+        "Nhân Viên CSKH kiêm Admin Marketing",
+        "Office Admin Intern",
+        "Receptionist cum Admin Intern"
+      ],
+      "found_job_count": 10,
+      "missing_job_ids": [
+        "JD165"
+      ],
+      "kkt_list": [
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 5
+        },
+        {
+          "entity_id": "T0004",
+          "kkt_type": "T",
+          "canonical_name": "ChatGPT",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP007",
+      "order": 7,
+      "position_name": "Digital Marketing / Communications",
+      "field": "Marketing số & truyền thông",
+      "job_group": "Marketing số & truyền thông",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 9,
+      "source_job_ids": [
+        "JD058",
+        "JD059",
+        "JD076",
+        "JD077",
+        "JD079",
+        "JD097",
+        "JD098",
+        "JD105",
+        "JD132"
+      ],
+      "job_count": 9,
+      "job_ids": [
+        "JD058",
+        "JD059",
+        "JD076",
+        "JD077",
+        "JD079",
+        "JD097",
+        "JD098",
+        "JD105",
+        "JD132"
+      ],
+      "aliases": [
+        "Junior Digital Marketing Analyst",
+        "Marketing Intern",
+        "Nhân Viên Quản Lý KOL & Phát Triển Cộng Đồng",
+        "Nhân Viên Quản Lý Tài Khoản ADS",
+        "Nhân Viên Quản Trị Website Và SEO Website",
+        "Thực Tập Sinh Marketing",
+        "Thực Tập Sinh Sự Kiện",
+        "Thực Tập Sinh Truyền Thông và Sự Kiện",
+        "User Acquisition"
+      ],
+      "found_job_count": 9,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 2
+        }
+      ]
+    },
+    {
+      "position_id": "PP008",
+      "order": 8,
+      "position_name": "Product / Product Owner",
+      "field": "Quản lý sản phẩm",
+      "job_group": "Quản lý sản phẩm",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 9,
+      "source_job_ids": [
+        "JD113",
+        "JD133",
+        "JD145",
+        "JD146",
+        "JD147",
+        "JD170",
+        "JD171",
+        "JD172",
+        "JD240"
+      ],
+      "job_count": 9,
+      "job_ids": [
+        "JD113",
+        "JD133",
+        "JD145",
+        "JD146",
+        "JD147",
+        "JD170",
+        "JD171",
+        "JD172",
+        "JD240"
+      ],
+      "aliases": [
+        "Chuyên viên Quản lý sản phẩm (PdM)",
+        "Fresher Product Monetization",
+        "Fresher Product Owner",
+        "Product Associate - Game",
+        "Product Intern",
+        "PRODUCT MARKETING / CONTENT LEAD",
+        "Product Owner",
+        "PRODUCT OWNER (AUTOMATED SALES PRODUCTS - LIVESTREAM, CHATBOT, LEAD CENTER)",
+        "Technical Product Specialist (CRM)"
+      ],
+      "found_job_count": 9,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0038",
+          "kkt_type": "K",
+          "canonical_name": "Hồi quy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 3
+        },
+        {
+          "entity_id": "T0004",
+          "kkt_type": "T",
+          "canonical_name": "ChatGPT",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP009",
+      "order": 9,
+      "position_name": "Customer Service Officer",
+      "field": "Dịch vụ khách hàng",
+      "job_group": "Dịch vụ khách hàng",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 8,
+      "source_job_ids": [
+        "JD037",
+        "JD061",
+        "JD062",
+        "JD064",
+        "JD085",
+        "JD115",
+        "JD135",
+        "JD163"
+      ],
+      "job_count": 8,
+      "job_ids": [
+        "JD037",
+        "JD061",
+        "JD062",
+        "JD064",
+        "JD085",
+        "JD115",
+        "JD135",
+        "JD163"
+      ],
+      "aliases": [
+        "Chuyên Viên Khách Hàng Cá Nhân - Khu Vực Ba Đình, Đống Đa (CNLT.1454)",
+        "Customer Service Executive Freight Forwarding",
+        "Customer Service Officer",
+        "Customer Services",
+        "Nhân Viên Chăm Sóc Khách Hàng",
+        "Nhân Viên Chăm Sóc Khách Hàng (Xuất Nhập Khẩu)",
+        "Nhân viên Chăm Sóc Khách Hàng Và Quản Lý Dữ Liệu Học Viên",
+        "Nhân Viên Customer Services Logistics"
+      ],
+      "found_job_count": 8,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 5
+        }
+      ]
+    },
+    {
+      "position_id": "PP010",
+      "order": 10,
+      "position_name": "Data Scientist / AI Specialist",
+      "field": "Khoa học dữ liệu & AI",
+      "job_group": "Khoa học dữ liệu & AI",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 8,
+      "source_job_ids": [
+        "JD029",
+        "JD187",
+        "JD188",
+        "JD193",
+        "JD197",
+        "JD198",
+        "JD200",
+        "JD222"
+      ],
+      "job_count": 8,
+      "job_ids": [
+        "JD029",
+        "JD187",
+        "JD188",
+        "JD193",
+        "JD197",
+        "JD198",
+        "JD200",
+        "JD222"
+      ],
+      "aliases": [
+        "AI Intern",
+        "Binance Accelerator Program - Data Scientist",
+        "Chuyên Viên Phát Triển Khoa Học Dữ Liệu - Data Scientist",
+        "Data Science and Visualization Intern, GPU Performance",
+        "Data Science Intern",
+        "Data Scientist",
+        "Data Scientust",
+        "Junior Data Scientist"
+      ],
+      "found_job_count": 8,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 6
+        },
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 5
+        },
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0038",
+          "kkt_type": "K",
+          "canonical_name": "Hồi quy",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0025",
+          "kkt_type": "K",
+          "canonical_name": "Dự báo",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0091",
+          "kkt_type": "K",
+          "canonical_name": "Phân tích thống kê",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 5
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 7
+        }
+      ]
+    },
+    {
+      "position_id": "PP011",
+      "order": 11,
+      "position_name": "Data Operations / Reporting Analyst",
+      "field": "Vận hành dữ liệu & báo cáo",
+      "job_group": "Vận hành dữ liệu & báo cáo",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 7,
+      "source_job_ids": [
+        "JD021",
+        "JD095",
+        "JD123",
+        "JD181",
+        "JD194",
+        "JD208",
+        "JD221"
+      ],
+      "job_count": 7,
+      "job_ids": [
+        "JD021",
+        "JD095",
+        "JD123",
+        "JD181",
+        "JD194",
+        "JD208",
+        "JD221"
+      ],
+      "aliases": [
+        "Data Entry Intern",
+        "Data Intern",
+        "Data Operations Analyst",
+        "Data Operations Executive",
+        "Nhân Viên Xử Lý File POD Ca Đêm",
+        "Senior Operational and Reporting Analyst"
+      ],
+      "found_job_count": 7,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 5
+        }
+      ]
+    },
+    {
+      "position_id": "PP012",
+      "order": 12,
+      "position_name": "Information Security / SOC / Risk",
+      "field": "An toàn thông tin & rủi ro",
+      "job_group": "An toàn thông tin & rủi ro",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 7,
+      "source_job_ids": [
+        "JD072",
+        "JD094",
+        "JD127",
+        "JD162",
+        "JD213",
+        "JD219",
+        "JD220"
+      ],
+      "job_count": 7,
+      "job_ids": [
+        "JD072",
+        "JD094",
+        "JD127",
+        "JD162",
+        "JD213",
+        "JD219",
+        "JD220"
+      ],
+      "aliases": [
+        "Brand Protection Analyst",
+        "Chuyên Viên Cao Cấp Quản Trị Rủi Ro Gian Lận - Khối Quản Trị Rủi Ro (HO25.524)",
+        "Chuyên Viên Rủi Ro An Toàn Thông Tin",
+        "Contract IT Associate",
+        "Data Security Intern",
+        "SOC Intern",
+        "Social Media Intern"
+      ],
+      "found_job_count": 7,
+      "missing_job_ids": [],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP013",
+      "order": 13,
+      "position_name": "Sales / Business Development / Commercial",
+      "field": "Kinh doanh & phát triển thị trường",
+      "job_group": "Kinh doanh & phát triển thị trường",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 7,
+      "source_job_ids": [
+        "JD055",
+        "JD068",
+        "JD122",
+        "JD157",
+        "JD158",
+        "JD160",
+        "JD195"
+      ],
+      "job_count": 7,
+      "job_ids": [
+        "JD055",
+        "JD068",
+        "JD122",
+        "JD157",
+        "JD158",
+        "JD160",
+        "JD195"
+      ],
+      "aliases": [
+        "Business Development Executive",
+        "Chuyên Viên Kinh Doanh (B2B Sales)",
+        "Commercial Executive",
+        "Nhân viên Hỗ Trợ Xuất Khẩu",
+        "Nhân Viên Kinh Doanh",
+        "Sales Support Staff",
+        "SMB Strategist Project Intern"
+      ],
+      "found_job_count": 7,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0007",
+          "kkt_type": "K",
+          "canonical_name": "Chuyển đổi số",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 2
+        },
+        {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 3
+        }
+      ]
+    },
+    {
+      "position_id": "PP014",
+      "order": 14,
+      "position_name": "Business Operations / Digital Transformation",
+      "field": "Vận hành kinh doanh & chuyển đổi số",
+      "job_group": "Vận hành kinh doanh & chuyển đổi số",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 6,
+      "source_job_ids": [
+        "JD060",
+        "JD089",
+        "JD103",
+        "JD116",
+        "JD161",
+        "JD214"
+      ],
+      "job_count": 6,
+      "job_ids": [
+        "JD060",
+        "JD089",
+        "JD103",
+        "JD116",
+        "JD161",
+        "JD214"
+      ],
+      "aliases": [
+        "Chuyên Gia Chuyển Đổi Số Doanh Nghiệp Lark Suite",
+        "Chuyên Viên Xây Dựng Hệ Thống - Chuyển Đổi Số",
+        "Fresher Chuyển Đổi Số Quy Trình (Lark Suite)",
+        "MB Trainee",
+        "Nhân Viên Kế Hoạch",
+        "TECHNOLOGY & DIGITAL TRANSFORMATION"
+      ],
+      "found_job_count": 6,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0007",
+          "kkt_type": "K",
+          "canonical_name": "Chuyển đổi số",
+          "job_count": 4
+        },
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 4
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 4
+        },
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0111",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý thông tin",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 3
+        },
+        {
+          "entity_id": "T0014",
+          "kkt_type": "T",
+          "canonical_name": "Odoo Business Management Software",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP015",
+      "order": 15,
+      "position_name": "Database / Master Data Administrator",
+      "field": "Cơ sở dữ liệu & master data",
+      "job_group": "Cơ sở dữ liệu & master data",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 6,
+      "source_job_ids": [
+        "JD031",
+        "JD100",
+        "JD150",
+        "JD224",
+        "JD226",
+        "JD227"
+      ],
+      "job_count": 6,
+      "job_ids": [
+        "JD031",
+        "JD100",
+        "JD150",
+        "JD224",
+        "JD226",
+        "JD227"
+      ],
+      "aliases": [
+        "Commercial Data Administrator",
+        "Database Administrator",
+        "Kỹ Sư Phát Triển Giải Pháp Oracle - Database Developer",
+        "Master Data Administrator",
+        "Master Data Intern",
+        "Quản Trị Cơ Sở Dữ Liệu - Fresher"
+      ],
+      "found_job_count": 6,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 4
+        },
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 3
+        },
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0068",
+          "kkt_type": "S",
+          "canonical_name": "Quản trị cơ sở dữ liệu",
+          "job_count": 2
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 3
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP016",
+      "order": 16,
+      "position_name": "Web / Software Developer",
+      "field": "Phát triển phần mềm / web",
+      "job_group": "Phát triển phần mềm / web",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 6,
+      "source_job_ids": [
+        "JD023",
+        "JD099",
+        "JD153",
+        "JD176",
+        "JD177",
+        "JD196"
+      ],
+      "job_count": 6,
+      "job_ids": [
+        "JD023",
+        "JD099",
+        "JD153",
+        "JD176",
+        "JD177",
+        "JD196"
+      ],
+      "aliases": [
+        "Lập Trình Viên Web",
+        "LTV Backend (PTSP)",
+        "Software Development Intern",
+        "Software Engineering Intern",
+        "Web Developer"
+      ],
+      "found_job_count": 6,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 3
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 3
+        },
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 3
+        },
+        {
+          "entity_id": "K0065",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình hướng đối tượng",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0050",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích dữ liệu doanh nghiệp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0002",
+          "kkt_type": "T",
+          "canonical_name": "C#",
+          "job_count": 2
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP017",
+      "order": 17,
+      "position_name": "IT Staff / General IT Support",
+      "field": "CNTT tổng quát",
+      "job_group": "CNTT tổng quát",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 3,
+      "source_job_ids": [
+        "JD020",
+        "JD159",
+        "JD166"
+      ],
+      "job_count": 3,
+      "job_ids": [
+        "JD020",
+        "JD159",
+        "JD166"
+      ],
+      "aliases": [
+        "IT Intern",
+        "IT Staff",
+        "Nhân Viên IT Xử Lý Phần Mềm"
+      ],
+      "found_job_count": 3,
+      "missing_job_ids": [],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP018",
+      "order": 18,
+      "position_name": "Project Development Specialist",
+      "field": "Phát triển dự án",
+      "job_group": "Phát triển dự án",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 3,
+      "source_job_ids": [
+        "JD014",
+        "JD074",
+        "JD130"
+      ],
+      "job_count": 3,
+      "job_ids": [
+        "JD014",
+        "JD074",
+        "JD130"
+      ],
+      "aliases": [
+        "Chuyên Viên Phát Triển Dự Án",
+        "Chuyên Viên Phát Triển Dự Án Bất Động Sản"
+      ],
+      "found_job_count": 3,
+      "missing_job_ids": [],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP019",
+      "order": 19,
+      "position_name": "UI/UX / Web Graphic Designer",
+      "field": "Thiết kế giao diện & đồ họa số",
+      "job_group": "Thiết kế giao diện & đồ họa số",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 3,
+      "source_job_ids": [
+        "JD026",
+        "JD065",
+        "JD168"
+      ],
+      "job_count": 3,
+      "job_ids": [
+        "JD026",
+        "JD065",
+        "JD168"
+      ],
+      "aliases": [
+        "Junior UI/UX Designer",
+        "UI/UX Designer",
+        "Web Grapic Developer"
+      ],
+      "found_job_count": 3,
+      "missing_job_ids": [],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP020",
+      "order": 20,
+      "position_name": "Business Analyst (Finance/Accounting domain)",
+      "field": "Phân tích nghiệp vụ",
+      "job_group": "Phân tích nghiệp vụ",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD005",
+        "JD054"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD005",
+        "JD054"
+      ],
+      "aliases": [
+        "Chuyên Viên Phân Tích Nghiệp Vụ Phần Mềm",
+        "Chuyên Viên Phân Tích Và Báo Cáo (BI Analyst)"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0007",
+          "kkt_type": "K",
+          "canonical_name": "Chuyển đổi số",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0100",
+          "kkt_type": "K",
+          "canonical_name": "Quy trình kinh doanh",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP021",
+      "order": 21,
+      "position_name": "Construction Supervisor",
+      "field": "Giám sát xây dựng",
+      "job_group": "Giám sát xây dựng",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD004",
+        "JD008"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD004"
+      ],
+      "aliases": [
+        "Giám Sát Xây Dựng"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [
+        "JD008"
+      ],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP022",
+      "order": 22,
+      "position_name": "Data Engineer",
+      "field": "Kỹ sư dữ liệu",
+      "job_group": "Kỹ sư dữ liệu",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD022",
+        "JD225"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD022",
+        "JD225"
+      ],
+      "aliases": [
+        "Data Engineer Executive",
+        "Data Engineering Intern"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 2
+        },
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 2
+        }
+      ]
+    },
+    {
+      "position_id": "PP023",
+      "order": 23,
+      "position_name": "Financial Analyst / Strategy Analyst",
+      "field": "Phân tích tài chính & chiến lược",
+      "job_group": "Phân tích tài chính & chiến lược",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD070",
+        "JD209"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD070",
+        "JD209"
+      ],
+      "aliases": [
+        "M&A Analyst Intern",
+        "Nhân Viên Phân Tích Tài Chính"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0025",
+          "kkt_type": "K",
+          "canonical_name": "Dự báo",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP024",
+      "order": 24,
+      "position_name": "IT Support",
+      "field": "Hỗ trợ CNTT",
+      "job_group": "Hỗ trợ CNTT",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD002",
+        "JD241"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD002",
+        "JD241"
+      ],
+      "aliases": [
+        "IT Support",
+        "IT Support Intern"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP025",
+      "order": 25,
+      "position_name": "Order Management / Merchandiser",
+      "field": "Quản lý đơn hàng / merchandising",
+      "job_group": "Quản lý đơn hàng / merchandising",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD046",
+        "JD047"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD047"
+      ],
+      "aliases": [
+        "Nhân Viên Quản Lý Đơn Hàng/ Merchandiser"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [
+        "JD046"
+      ],
+      "kkt_list": [
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0118",
+          "kkt_type": "S",
+          "canonical_name": "Tư duy phản biện",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP026",
+      "order": 26,
+      "position_name": "PLC / Embedded Engineer",
+      "field": "Kỹ sư hệ thống nhúng / PLC",
+      "job_group": "Kỹ sư hệ thống nhúng / PLC",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD010",
+        "JD110"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD010",
+        "JD110"
+      ],
+      "aliases": [
+        "Kỹ Sư Lập Trình Nhúng",
+        "Kỹ Sư Lập Trình PLC (Team Leader)"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 2
+        },
+        {
+          "entity_id": "T0003",
+          "kkt_type": "T",
+          "canonical_name": "C/C++",
+          "job_count": 2
+        }
+      ]
+    },
+    {
+      "position_id": "PP027",
+      "order": 27,
+      "position_name": "QA Staff",
+      "field": "Kiểm soát chất lượng / QA",
+      "job_group": "Kiểm soát chất lượng / QA",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD003",
+        "JD007"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD003",
+        "JD007"
+      ],
+      "aliases": [
+        "Nhân viên QA",
+        "Nhân Viên QA"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP028",
+      "order": 28,
+      "position_name": "Software Implementation Specialist",
+      "field": "Triển khai phần mềm",
+      "job_group": "Triển khai phần mềm",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD030",
+        "JD108"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD030",
+        "JD108"
+      ],
+      "aliases": [
+        "Chuyên Viên Triển Khai Hệ Thống Phần Mềm ERP",
+        "Nhân Viên Triển Khai Phần Mềm"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0014",
+          "kkt_type": "T",
+          "canonical_name": "Odoo Business Management Software",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP029",
+      "order": 29,
+      "position_name": "Technical Project Assistant",
+      "field": "Hỗ trợ kỹ thuật dự án",
+      "job_group": "Hỗ trợ kỹ thuật dự án",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD011",
+        "JD013"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD011",
+        "JD013"
+      ],
+      "aliases": [
+        "Trợ Lý Kỹ Thuật Dự Án Công Nghiệp",
+        "Trợ Lý Kỹ Thuật Phòng Thiết Kế"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP030",
+      "order": 30,
+      "position_name": "Training Staff",
+      "field": "Đào tạo & phát triển",
+      "job_group": "Đào tạo & phát triển",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD038",
+        "JD096"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD038",
+        "JD096"
+      ],
+      "aliases": [
+        "Nhân Viên Đào Tạo"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0111",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý thông tin",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP031",
+      "order": 31,
+      "position_name": "Web Designer",
+      "field": "Thiết kế web",
+      "job_group": "Thiết kế web",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 2,
+      "source_job_ids": [
+        "JD025",
+        "JD148"
+      ],
+      "job_count": 2,
+      "job_ids": [
+        "JD025",
+        "JD148"
+      ],
+      "aliases": [
+        "REMOTE WEB DESIGNER",
+        "Web Designer (E-Commerce)"
+      ],
+      "found_job_count": 2,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP032",
+      "order": 32,
+      "position_name": "AI Engineer",
+      "field": "AI / Machine Learning",
+      "job_group": "AI / Machine Learning",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD009"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD009"
+      ],
+      "aliases": [
+        "AI Engineer"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0003",
+          "kkt_type": "T",
+          "canonical_name": "C/C++",
+          "job_count": 1
+        },
+        {
+          "entity_id": "T0015",
+          "kkt_type": "T",
+          "canonical_name": "Python",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP033",
+      "order": 33,
+      "position_name": "Business Assistant",
+      "field": "Trợ lý kinh doanh",
+      "job_group": "Trợ lý kinh doanh",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD043"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD043"
+      ],
+      "aliases": [
+        "Business Assistant Intern"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP034",
+      "order": 34,
+      "position_name": "Executive Assistant / Management Support",
+      "field": "Trợ lý điều hành",
+      "job_group": "Trợ lý điều hành",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD109"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD109"
+      ],
+      "aliases": [
+        "Trợ Lý Giám Đốc Quan Hệ Khách Hàng"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0025",
+          "kkt_type": "K",
+          "canonical_name": "Dự báo",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP035",
+      "order": 35,
+      "position_name": "Financial Data Governance Specialist",
+      "field": "Quản trị dữ liệu tài chính",
+      "job_group": "Quản trị dữ liệu tài chính",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD019"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD019"
+      ],
+      "aliases": [
+        "Chuyên viên Quản trị Dữ liệu Tài chính"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0033",
+          "kkt_type": "K",
+          "canonical_name": "Hệ quản trị cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0040",
+          "kkt_type": "K",
+          "canonical_name": "Kho dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0111",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý thông tin",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0021",
+          "kkt_type": "S",
+          "canonical_name": "Làm sạch dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0068",
+          "kkt_type": "S",
+          "canonical_name": "Quản trị cơ sở dữ liệu",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP036",
+      "order": 36,
+      "position_name": "IT Administrator",
+      "field": "Quản trị CNTT",
+      "job_group": "Quản trị CNTT",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD006"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD006"
+      ],
+      "aliases": [
+        "IT Administrator"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": []
+    },
+    {
+      "position_id": "PP037",
+      "order": 37,
+      "position_name": "Manual Tester",
+      "field": "Kiểm thử phần mềm",
+      "job_group": "Kiểm thử phần mềm",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD032"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD032"
+      ],
+      "aliases": [
+        "Manual Tester"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0033",
+          "kkt_type": "K",
+          "canonical_name": "Hệ quản trị cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0038",
+          "kkt_type": "K",
+          "canonical_name": "Hồi quy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0068",
+          "kkt_type": "S",
+          "canonical_name": "Quản trị cơ sở dữ liệu",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP038",
+      "order": 38,
+      "position_name": "NodeJS Developer",
+      "field": "Phát triển phần mềm",
+      "job_group": "Phát triển phần mềm",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD027"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD027"
+      ],
+      "aliases": [
+        "Lập Trình Viên NodeJS"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP039",
+      "order": 39,
+      "position_name": "PLM & MES Manager",
+      "field": "Quản lý hệ thống sản xuất",
+      "job_group": "Quản lý hệ thống sản xuất",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD012"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD012"
+      ],
+      "aliases": [
+        "Manager - PLM & MES"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0027",
+          "kkt_type": "K",
+          "canonical_name": "Enterprise Resource Planning",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0034",
+          "kkt_type": "K",
+          "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP040",
+      "order": 40,
+      "position_name": "Payment Gateway Systems Operations Specialist",
+      "field": "Vận hành hệ thống",
+      "job_group": "Vận hành hệ thống",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD018"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD018"
+      ],
+      "aliases": [
+        "Chuyên Viên Phát Triển và Vận Hành Hệ Thống"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0033",
+          "kkt_type": "K",
+          "canonical_name": "Hệ quản trị cơ sở dữ liệu",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0114",
+          "kkt_type": "K",
+          "canonical_name": "SQL",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0042",
+          "kkt_type": "S",
+          "canonical_name": "Năng lực tự học",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0068",
+          "kkt_type": "S",
+          "canonical_name": "Quản trị cơ sở dữ liệu",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP041",
+      "order": 41,
+      "position_name": "Project Secretary",
+      "field": "Thư ký dự án",
+      "job_group": "Thư ký dự án",
+      "major_field": "Quản lý (Management)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD034"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD034"
+      ],
+      "aliases": [
+        "Thư Ký Dự Án Tổng Hợp"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP042",
+      "order": 42,
+      "position_name": "Solar Performance Analysis & Monitoring",
+      "field": "Phân tích & giám sát vận hành",
+      "job_group": "Phân tích & giám sát vận hành",
+      "major_field": "Khoa học thông tin (Information Science)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD001"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD001"
+      ],
+      "aliases": [
+        "Analysis And Minotor"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP043",
+      "order": 43,
+      "position_name": "Systems Administrator",
+      "field": "Quản trị hệ thống",
+      "job_group": "Quản trị hệ thống",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD024"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD024"
+      ],
+      "aliases": [
+        "Kỹ Sư Quản Trị Hệ Thống"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0063",
+          "kkt_type": "K",
+          "canonical_name": "Lập trình",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1
+        },
+        {
+          "entity_id": "S0012",
+          "kkt_type": "S",
+          "canonical_name": "Giải pháp tích hợp hệ thống",
+          "job_count": 1
+        }
+      ]
+    },
+    {
+      "position_id": "PP044",
+      "order": 44,
+      "position_name": "Web Administrator / Website Operations",
+      "field": "Quản trị website",
+      "job_group": "Quản trị website",
+      "major_field": "Công nghệ thông tin - truyền thông (ICT)",
+      "source_job_count": 1,
+      "source_job_ids": [
+        "JD111"
+      ],
+      "job_count": 1,
+      "job_ids": [
+        "JD111"
+      ],
+      "aliases": [
+        "Chuyên Viên Quản Trị Website & Truyền Thông"
+      ],
+      "found_job_count": 1,
+      "missing_job_ids": [],
+      "kkt_list": [
+        {
+          "entity_id": "K0036",
+          "kkt_type": "K",
+          "canonical_name": "Học máy",
+          "job_count": 1
+        },
+        {
+          "entity_id": "K0128",
+          "kkt_type": "K",
+          "canonical_name": "Truyền thông xã hội",
+          "job_count": 1
+        }
+      ]
+    }
+  ]
+}
