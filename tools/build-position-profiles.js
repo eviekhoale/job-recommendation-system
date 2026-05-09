@@ -8,17 +8,11 @@ const JOB_KKT_PATH = path.join(DATA_DIR, "job_kkt.json");
 const OUTPUT_PATH = path.join(DATA_DIR, "position_profiles.json");
 
 /**
- * Danh mục 44 hồ sơ vị trí lấy theo file Excel:
- * "Thống kê 44 vtri.xlsx" - sheet "Thống kê"
- *
- * Dùng cột:
- * - Vị trí chuẩn hóa
- * - Nhóm nghề
- * - Mã tin
+ * Danh mục 44 hồ sơ vị trí đã được chuẩn hóa từ bảng thống kê sau xử lý.
  *
  * Lưu ý:
- * Tool này KHÔNG tự sinh hồ sơ vị trí từ title nữa.
- * Nó chỉ tạo đúng 44 hồ sơ theo danh mục chuẩn hóa bên dưới.
+ * - Danh mục 44 vị trí được lưu trực tiếp trong POSITION_PROFILE_CATALOG.
+ * - Tool chỉ cần đọc data/jobs.json và data/job_kkt.json để tạo position_profiles.json.
  */
 const POSITION_PROFILE_CATALOG = [
   {
@@ -645,7 +639,7 @@ function main() {
   const output = {
   generated_at: new Date().toISOString(),
   source_note:
-    "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. The catalog was derived from the project's cleaned job-position statistics.",
+    "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. The catalog was derived from cleaned job-position statistics.",
   total_profiles: profiles.length,
   position_profiles: profiles
 };
