@@ -828,12 +828,12 @@ function renderMatchResult(positionTerms, matchedTerms, missingTerms) {
   }
 
   if (matchScoreLabelEl) {
-    if (percent >= 80) {
-      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ cao";
+    if (percent >= 70) {
+      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ tương đối cao";
     } else if (percent >= 40) {
       matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ trung bình";
     } else {
-      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ còn thấp";
+      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ thấp";
     }
   }
 
