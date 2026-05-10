@@ -833,7 +833,7 @@ function renderMatchResult(positionTerms, matchedTerms, missingTerms) {
     } else if (percent >= 40) {
       matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ trung bình";
     } else {
-      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ thấp";
+      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ tương đối thấp";
     }
   }
 
