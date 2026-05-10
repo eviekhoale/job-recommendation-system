@@ -375,6 +375,8 @@ function populateProfileSelect(profiles) {
 
     const option = document.createElement("option");
     option.value = getProfileSelectKey(profile);
+
+    // Dropdown chỉ hiển thị tên hồ sơ vị trí/job title.
     option.textContent = name;
 
     profileSelect.appendChild(option);
@@ -507,6 +509,37 @@ function showMatchResultPanel() {
   }
 }
 
+function scrollToProfileUploadSection() {
+  if (!profileUploadSection) return;
+
+  const scrollContainer = profileUploadSection.closest(".position-profile-card-scroll");
+
+  requestAnimationFrame(() => {
+    if (scrollContainer) {
+      const containerRect = scrollContainer.getBoundingClientRect();
+      const uploadRect = profileUploadSection.getBoundingClientRect();
+
+      const targetTop =
+        scrollContainer.scrollTop +
+        uploadRect.top -
+        containerRect.top -
+        18;
+
+      scrollContainer.scrollTo({
+        top: Math.max(targetTop, 0),
+        behavior: "smooth"
+      });
+
+      return;
+    }
+
+    profileUploadSection.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  });
+}
+
 function resetMatchState() {
   if (profileUploadSection) {
     profileUploadSection.classList.add("is-hidden");
@@ -604,6 +637,9 @@ function openMatchMode() {
   if (uploadStatusEl) {
     uploadStatusEl.textContent = "Chọn file Excel hồ sơ cá nhân để thực hiện đối sánh.";
   }
+
+  // Tự động cuộn trong khung chi tiết tới khu vực upload.
+  scrollToProfileUploadSection();
 }
 
 /* =========================
@@ -979,6 +1015,8 @@ profileExcelInput?.addEventListener("change", () => {
       ? `Đã chọn file: ${file.name}`
       : "Chưa có file nào được chọn.";
   }
+
+  scrollToProfileUploadSection();
 });
 
 runProfileMatchBtn?.addEventListener("click", async () => {
