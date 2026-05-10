@@ -881,7 +881,7 @@ function renderMatchResult(jobTerms, matchedTerms, missingTerms) {
       ? "Mức độ phù hợp tương đối cao"
       : percent >= 40
         ? "Mức độ phù hợp trung bình"
-        : "Mức độ phù hợp thấp";
+        : "Mức độ phù hợp tương đối thấp";
 
   matchScoreSubtextEl.textContent =
     "Kết quả chỉ phản ánh mức độ trùng khớp dữ liệu Kiến thức - Kỹ năng - Công cụ giữa hồ sơ và tin tuyển dụng, không thay thế đánh giá toàn diện năng lực.";
