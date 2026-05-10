@@ -619,12 +619,13 @@ def build_entity_index(entities):
             continue
 
         raw_terms = [
-            canonical_name,
-            entity.get("canonical_norm", ""),
-            entity.get("canonical_ascii", ""),
-            *split_alias_list(entity.get("alias_list", "")),
-            *SUPPLEMENTAL_ALIASES.get(canonical_name, []),
-        ]
+    canonical_name,
+    entity.get("canonical_norm", ""),
+    entity.get("canonical_ascii", ""),
+    *split_alias_list(entity.get("alias_list", "")),
+    *SUPPLEMENTAL_ALIASES.get(canonical_name, []),
+    *EXTRA_SUPPLEMENTAL_ALIASES.get(canonical_name, []),
+]
 
         term_map = {}
 
