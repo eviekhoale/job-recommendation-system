@@ -880,11 +880,11 @@ function renderMatchResult(jobTerms, matchedTerms, missingTerms) {
     percent >= 70
       ? "Mức độ phù hợp tương đối cao"
       : percent >= 40
-        ? "Mức độ phù hợp tương đối trung bình"
-        : "Mức độ phù hợp còn thấp";
+        ? "Mức độ phù hợp trung bình"
+        : "Mức độ phù hợp thấp";
 
   matchScoreSubtextEl.textContent =
-    "Kết quả chỉ phản ánh mức độ trùng khớp dữ liệu K–S–T giữa hồ sơ và tin tuyển dụng, không thay thế đánh giá toàn diện năng lực.";
+    "Kết quả chỉ phản ánh mức độ trùng khớp dữ liệu Kiến thức - Kỹ năng - Công cụ giữa hồ sơ và tin tuyển dụng, không thay thế đánh giá toàn diện năng lực.";
 
   jobTermCountEl.textContent = String(denominator);
   matchedTermCountEl.textContent = String(numerator);
@@ -1075,13 +1075,13 @@ runMatchBtn?.addEventListener("click", async () => {
 
     if (!profileTerms.length) {
       uploadStatusEl.textContent =
-        "Không tìm thấy thực thể K–S–T hợp lệ trong hồ sơ cá nhân.";
+        "Không tìm thấy thực thể Kiến thức - Kỹ năng - Công cụ hợp lệ trong hồ sơ cá nhân.";
       return;
     }
 
     if (!selectedJobTerms.length) {
       uploadStatusEl.textContent =
-        "Tin tuyển dụng này hiện chưa có dữ liệu K–S–T để đối sánh.";
+        "Tin tuyển dụng này hiện chưa có dữ liệu Kiến thức - Kỹ năng - Công cụ để đối sánh.";
       return;
     }
 
