@@ -6,8 +6,12 @@
   <title>Chi tiết tin tuyển dụng - Job Position Advisor</title>
 
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
 </head>
+
 <body>
   <div class="page-shell">
     <header class="topbar">
@@ -42,22 +46,34 @@
                   <div class="job-detail-meta">
                     <div class="job-detail-meta-item">
                       <i class="bi bi-diagram-3"></i>
-                      <span><strong>Lĩnh vực:</strong> <span id="jobField">-</span></span>
+                      <span>
+                        <strong>Lĩnh vực:</strong>
+                        <span id="jobField">-</span>
+                      </span>
                     </div>
 
                     <div class="job-detail-meta-item">
                       <i class="bi bi-building"></i>
-                      <span><strong>Công ty / Mã công ty:</strong> <span id="jobCompany">-</span></span>
+                      <span>
+                        <strong>Công ty / Mã công ty:</strong>
+                        <span id="jobCompany">-</span>
+                      </span>
                     </div>
 
                     <div class="job-detail-meta-item">
                       <i class="bi bi-globe2"></i>
-                      <span><strong>Nguồn tin:</strong> <span id="jobSource">-</span></span>
+                      <span>
+                        <strong>Nguồn tin:</strong>
+                        <span id="jobSource">-</span>
+                      </span>
                     </div>
 
                     <div class="job-detail-meta-item">
                       <i class="bi bi-hash"></i>
-                      <span><strong>Mã tin:</strong> <span id="jobIdText">-</span></span>
+                      <span>
+                        <strong>Mã tin:</strong>
+                        <span id="jobIdText">-</span>
+                      </span>
                     </div>
                   </div>
 
@@ -72,10 +88,11 @@
                   </section>
 
                   <section class="job-detail-section">
-                    <h2>Thực thể K–S–T của tin tuyển dụng</h2>
+                    <h2>Thực thể Kiến thức - Kỹ năng - Công cụ của tin tuyển dụng</h2>
                     <p class="job-kst-note">
-                      Dữ liệu K–S–T được lấy từ tập trích xuất sẵn của hệ thống, không viết cứng trên giao diện.
+                      Dữ liệu Kiến thức - Kỹ năng - Công cụ được lấy từ tập trích xuất sẵn của hệ thống, không viết cứng trên giao diện.
                     </p>
+
                     <div id="jobKstSummary" class="job-kst-summary"></div>
                   </section>
 
@@ -86,21 +103,27 @@
                   </div>
 
                   <section id="profileUploadSection" class="profile-upload-panel is-hidden">
-                    <h2 class="upload-title">Tải hồ sơ cá nhân dạng Excel</h2>
+                    <h2 class="upload-title">Tải hồ sơ (xlsx, xls, xlsm, csv)</h2>
+
                     <p class="upload-desc">
-                      File hồ sơ cần có các cột:
-                      <code>profile_id</code>, <code>course_id</code>, <code>course_name</code>,
-                      <code>kkt_type</code>, <code>canonical_name</code>, <code>has_term</code>, <code>source_origin</code>.
+                      Tải lên file hồ sơ để hệ thống thực hiện đối sánh Kiến thức - Kỹ năng - Công cụ.
                     </p>
 
                     <div class="upload-box">
-                      <input id="profileExcelInput" type="file" accept=".xlsx,.xls" />
+                      <input
+                        id="profileExcelInput"
+                        type="file"
+                        accept=".xlsx,.xls,.xlsm,.csv"
+                      />
+
                       <button id="runMatchBtn" class="job-primary-btn" type="button">
                         Thực hiện đối sánh
                       </button>
                     </div>
 
-                    <p id="uploadStatus" class="upload-status">Chưa có file nào được chọn.</p>
+                    <p id="uploadStatus" class="upload-status">
+                      Chưa có file nào được chọn.
+                    </p>
                   </section>
                 </div>
               </article>
@@ -116,21 +139,26 @@
                     <div class="match-score-circle">
                       <span id="matchPercent">0%</span>
                     </div>
+
                     <div class="match-score-text">
                       <p id="matchScoreLabel">Chưa thực hiện đối sánh</p>
-                      <p id="matchScoreSubtext">Tải file Excel hồ sơ cá nhân để xem kết quả.</p>
+                      <p id="matchScoreSubtext">Tải file hồ sơ để xem kết quả.</p>
                     </div>
                   </div>
 
                   <div class="match-stat-grid">
                     <div class="match-stat-item">
-                      <span class="match-stat-label">Tổng K–S–T của job</span>
+                      <span class="match-stat-label">
+                        Tổng Kiến thức - Kỹ năng - Công cụ của job
+                      </span>
                       <strong id="jobTermCount">0</strong>
                     </div>
+
                     <div class="match-stat-item">
                       <span class="match-stat-label">Số mục trùng khớp</span>
                       <strong id="matchedTermCount">0</strong>
                     </div>
+
                     <div class="match-stat-item">
                       <span class="match-stat-label">Số mục còn thiếu</span>
                       <strong id="missingTermCount">0</strong>
