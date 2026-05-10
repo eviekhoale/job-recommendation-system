@@ -2,17 +2,20 @@ const fs = require("fs");
 const path = require("path");
 
 const DATA_DIR = path.join(__dirname, "..", "data");
+const REPORTS_DIR = path.join(__dirname, "..", "reports");
 
 const JOBS_PATH = path.join(DATA_DIR, "jobs.json");
 const JOB_KKT_PATH = path.join(DATA_DIR, "job_kkt.json");
 const OUTPUT_PATH = path.join(DATA_DIR, "position_profiles.json");
+const AUDIT_PATH = path.join(REPORTS_DIR, "position-profile-audit.json");
 
 /**
  * Danh mục 44 hồ sơ vị trí đã được chuẩn hóa từ bảng thống kê sau xử lý.
  *
  * Lưu ý:
- * - Danh mục 44 vị trí được lưu trực tiếp trong POSITION_PROFILE_CATALOG.
- * - Tool chỉ cần đọc data/jobs.json và data/job_kkt.json để tạo position_profiles.json.
+ * - Tool đọc data/jobs.json và data/job_kkt.json để tạo data/position_profiles.json.
+ * - data/job_kkt.json nên là file đã được làm giàu nếu có bước scripts/enrich_job_kkt.py.
+ * - Tool không tự tạo K–S–T mới; chỉ tổng hợp K–S–T đã có trong job_kkt.json.
  */
 const POSITION_PROFILE_CATALOG = [
   {
@@ -342,7 +345,17 @@ const POSITION_PROFILE_CATALOG = [
   }
 ];
 
+function ensureReportsDir() {
+  if (!fs.existsSync(REPORTS_DIR)) {
+    fs.mkdirSync(REPORTS_DIR, { recursive: true });
+  }
+}
+
 function readJson(filePath) {
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Không tìm thấy file: ${filePath}`);
+  }
+
   const raw = fs.readFileSync(filePath, "utf8");
   const data = JSON.parse(raw);
 
@@ -356,6 +369,10 @@ function readJson(filePath) {
     data.data ||
     []
   );
+}
+
+function writeJson(filePath, data) {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf8");
 }
 
 function normalizeText(value) {
@@ -412,7 +429,11 @@ function getJobField(job) {
 }
 
 function buildTermKey(term) {
-  return `${normalizeText(term.kkt_type)}|${normalizeText(term.canonical_name)}`;
+  const entityId = normalizeText(term.entity_id || "");
+  const type = normalizeText(term.kkt_type || "");
+  const name = normalizeText(term.canonical_name || "");
+
+  return entityId ? `${entityId}|${type}|${name}` : `${type}|${name}`;
 }
 
 function buildJobMap(jobs) {
@@ -420,9 +441,7 @@ function buildJobMap(jobs) {
 
   jobs.forEach((job) => {
     const jobId = getJobId(job);
-
     if (!jobId) return;
-
     map.set(jobId, job);
   });
 
@@ -435,8 +454,8 @@ function buildTermsByJob(jobKktRows) {
   jobKktRows.forEach((row) => {
     const sourceType = String(row.source_type || "").toUpperCase().trim();
 
-    // Nếu dữ liệu có source_type thì chỉ lấy dòng thuộc JOB.
-    // Nếu không có source_type, mặc định xem file job_kkt.json đã là dữ liệu K–S–T của job.
+    // Nếu job_kkt.json còn source_type thì chỉ lấy JOB.
+    // Nếu không có source_type, mặc định toàn bộ file đã là K–S–T của job.
     if (sourceType && sourceType !== "JOB") return;
 
     const jobId = String(
@@ -461,6 +480,26 @@ function buildTermsByJob(jobKktRows) {
       getFirstValue(row, ["entity_id", "Mã thực thể"], "")
     ).trim();
 
+    const field = String(
+      getFirstValue(row, ["field"], "")
+    ).trim();
+
+    const matchedTerm = String(
+      getFirstValue(row, ["matched_term"], "")
+    ).trim();
+
+    const method = String(
+      getFirstValue(row, ["method"], "")
+    ).trim();
+
+    const evidenceSnippet = String(
+      getFirstValue(row, ["evidence_snippet"], "")
+    ).trim();
+
+    const coverageStatus = String(
+      getFirstValue(row, ["coverage_status"], "")
+    ).trim();
+
     if (!jobId) return;
     if (!["K", "S", "T"].includes(kktType)) return;
     if (!canonicalName) return;
@@ -472,7 +511,12 @@ function buildTermsByJob(jobKktRows) {
     const term = {
       entity_id: entityId,
       kkt_type: kktType,
-      canonical_name: canonicalName
+      canonical_name: canonicalName,
+      field,
+      matched_term: matchedTerm,
+      method,
+      evidence_snippet: evidenceSnippet,
+      coverage_status: coverageStatus
     };
 
     const termKey = buildTermKey(term);
@@ -519,7 +563,6 @@ function buildAliases(jobIds, jobMap) {
     if (!job) return;
 
     const title = getJobTitle(job);
-
     if (title) aliases.add(title);
   });
 
@@ -542,7 +585,8 @@ function buildKktList(jobIds, termsByJob) {
           kkt_type: term.kkt_type,
           canonical_name: term.canonical_name,
           job_count: 0,
-          job_ids: new Set()
+          job_ids: new Set(),
+          evidence_examples: []
         });
       }
 
@@ -552,6 +596,20 @@ function buildKktList(jobIds, termsByJob) {
         savedTerm.job_ids.add(jobId);
         savedTerm.job_count += 1;
       }
+
+      if (
+        term.evidence_snippet &&
+        savedTerm.evidence_examples.length < 3
+      ) {
+        savedTerm.evidence_examples.push({
+          job_id: jobId,
+          field: term.field || "",
+          matched_term: term.matched_term || "",
+          method: term.method || "",
+          coverage_status: term.coverage_status || "",
+          evidence_snippet: term.evidence_snippet
+        });
+      }
     });
   });
 
@@ -560,7 +618,8 @@ function buildKktList(jobIds, termsByJob) {
       entity_id: term.entity_id,
       kkt_type: term.kkt_type,
       canonical_name: term.canonical_name,
-      job_count: term.job_count
+      job_count: term.job_count,
+      evidence_examples: term.evidence_examples
     }))
     .sort((a, b) => {
       if (a.kkt_type !== b.kkt_type) {
@@ -575,6 +634,10 @@ function buildKktList(jobIds, termsByJob) {
     });
 }
 
+function countByKktType(kktList, type) {
+  return kktList.filter((item) => item.kkt_type === type).length;
+}
+
 function buildPositionProfiles(jobs, jobKktRows) {
   const jobMap = buildJobMap(jobs);
   const termsByJob = buildTermsByJob(jobKktRows);
@@ -584,38 +647,41 @@ function buildPositionProfiles(jobs, jobKktRows) {
     const foundJobIds = sourceJobIds.filter((jobId) => jobMap.has(jobId));
     const missingJobIds = sourceJobIds.filter((jobId) => !jobMap.has(jobId));
 
+    const jobsWithKktIds = foundJobIds.filter((jobId) => termsByJob.has(jobId));
+    const jobsWithoutKktIds = foundJobIds.filter((jobId) => !termsByJob.has(jobId));
+
     const kktList = buildKktList(foundJobIds, termsByJob);
 
     return {
       position_id: `PP${String(index + 1).padStart(3, "0")}`,
       order: index + 1,
 
-      // Tên hồ sơ vị trí chuẩn hóa
       position_name: catalogItem.position_name,
-
-      // Field hiển thị trên giao diện
       field: catalogItem.job_group,
-
-      // Lưu thêm để sau này tách nhóm nghề / lĩnh vực lớn nếu cần
       job_group: catalogItem.job_group,
       major_field: getDominantMajorField(foundJobIds, jobMap),
 
-      // Số lượng gốc theo catalog 44 vị trí
       source_job_count: sourceJobIds.length,
       source_job_ids: sourceJobIds,
 
-      // Số lượng job thật sự có trong jobs.json
       job_count: foundJobIds.length,
       job_ids: foundJobIds,
 
-      // Dùng để tìm hồ sơ vị trí từ title job gốc
       aliases: buildAliases(foundJobIds, jobMap),
 
-      // Kiểm tra dữ liệu bị thiếu nếu có
       found_job_count: foundJobIds.length,
       missing_job_ids: missingJobIds,
 
-      // K–S–T tổng hợp từ các job thật sự tồn tại
+      jobs_with_kkt_count: jobsWithKktIds.length,
+      jobs_with_kkt_ids: jobsWithKktIds,
+      jobs_without_kkt_count: jobsWithoutKktIds.length,
+      jobs_without_kkt_ids: jobsWithoutKktIds,
+
+      kkt_count: kktList.length,
+      knowledge_count: countByKktType(kktList, "K"),
+      skill_count: countByKktType(kktList, "S"),
+      tool_count: countByKktType(kktList, "T"),
+
       kkt_list: kktList
     };
   });
@@ -629,6 +695,34 @@ function buildPositionProfiles(jobs, jobKktRows) {
   return profiles;
 }
 
+function writeAuditReport(profiles) {
+  ensureReportsDir();
+
+  const audit = {
+    generated_at: new Date().toISOString(),
+    total_profiles: profiles.length,
+    empty_profile_count: profiles.filter((profile) => profile.kkt_count === 0).length,
+    low_kkt_profile_count: profiles.filter(
+      (profile) => profile.kkt_count > 0 && profile.kkt_count < 3
+    ).length,
+    profiles: profiles.map((profile) => ({
+      position_id: profile.position_id,
+      position_name: profile.position_name,
+      source_job_count: profile.source_job_count,
+      found_job_count: profile.found_job_count,
+      jobs_with_kkt_count: profile.jobs_with_kkt_count,
+      jobs_without_kkt_count: profile.jobs_without_kkt_count,
+      jobs_without_kkt_ids: profile.jobs_without_kkt_ids,
+      kkt_count: profile.kkt_count,
+      knowledge_count: profile.knowledge_count,
+      skill_count: profile.skill_count,
+      tool_count: profile.tool_count
+    }))
+  };
+
+  writeJson(AUDIT_PATH, audit);
+}
+
 function main() {
   const jobs = readJson(JOBS_PATH);
   const jobKktRows = readJson(JOB_KKT_PATH);
@@ -638,26 +732,37 @@ function main() {
   const output = {
     generated_at: new Date().toISOString(),
     source_note:
-      "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. The catalog was derived from cleaned job-position statistics.",
+      "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. KST data is aggregated from enriched data/job_kkt.json.",
     total_profiles: profiles.length,
     position_profiles: profiles
   };
 
-  fs.writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2), "utf8");
+  writeJson(OUTPUT_PATH, output);
+  writeAuditReport(profiles);
 
   console.log(`Đã tạo ${profiles.length} hồ sơ vị trí.`);
   console.log(`File xuất ra: ${OUTPUT_PATH}`);
+  console.log(`File kiểm tra dữ liệu: ${AUDIT_PATH}`);
 
-  const profilesWithMissingJobs = profiles.filter(
-    (profile) => profile.missing_job_ids.length > 0
+  const emptyProfiles = profiles.filter((profile) => profile.kkt_count === 0);
+  const lowKktProfiles = profiles.filter(
+    (profile) => profile.kkt_count > 0 && profile.kkt_count < 3
   );
 
-  if (profilesWithMissingJobs.length) {
-    console.warn("\nCảnh báo: Có hồ sơ chứa job_id không tìm thấy trong jobs.json:");
-
-    profilesWithMissingJobs.forEach((profile) => {
+  if (emptyProfiles.length) {
+    console.warn("\nCảnh báo: Có hồ sơ vị trí chưa có K–S–T:");
+    emptyProfiles.forEach((profile) => {
       console.warn(
-        `- ${profile.position_name}: ${profile.missing_job_ids.join(", ")}`
+        `- ${profile.position_id} | ${profile.position_name} | jobs_without_kkt=${profile.jobs_without_kkt_ids.join(", ")}`
+      );
+    });
+  }
+
+  if (lowKktProfiles.length) {
+    console.warn("\nCảnh báo: Có hồ sơ vị trí có ít hơn 3 K–S–T:");
+    lowKktProfiles.forEach((profile) => {
+      console.warn(
+        `- ${profile.position_id} | ${profile.position_name} | kkt_count=${profile.kkt_count}`
       );
     });
   }
