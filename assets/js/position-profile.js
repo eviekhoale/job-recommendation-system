@@ -476,7 +476,7 @@ function clearMatchOutput() {
 
   if (matchScoreSubtextEl) {
     matchScoreSubtextEl.textContent =
-      "Tải hồ sơ cá nhân để xem mức độ bao phủ K–S–T của hồ sơ vị trí.";
+      "Tải hồ sơ cá nhân để xem mức độ bao phủ Kiến thức - Kỹ năng - Công cụ của hồ sơ vị trí.";
   }
 
   if (positionTermCountEl) positionTermCountEl.textContent = "0";
@@ -635,7 +635,7 @@ function openMatchMode() {
   hideMatchResultPanel();
 
   if (uploadStatusEl) {
-    uploadStatusEl.textContent = "Chọn file Excel hồ sơ cá nhân để thực hiện đối sánh.";
+    uploadStatusEl.textContent = "Chọn file Excel hồ sơ để thực hiện đối sánh.";
   }
 
   // Tự động cuộn trong khung chi tiết tới khu vực upload.
@@ -828,18 +828,18 @@ function renderMatchResult(positionTerms, matchedTerms, missingTerms) {
   }
 
   if (matchScoreLabelEl) {
-    if (percent >= 70) {
-      matchScoreLabelEl.textContent = "Mức độ bao phủ K–S–T cao";
+    if (percent >= 80) {
+      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ cao";
     } else if (percent >= 40) {
-      matchScoreLabelEl.textContent = "Mức độ bao phủ K–S–T trung bình";
+      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ trung bình";
     } else {
-      matchScoreLabelEl.textContent = "Mức độ bao phủ K–S–T còn thấp";
+      matchScoreLabelEl.textContent = "Mức độ bao phủ Kiến thức - Kỹ năng - Công cụ còn thấp";
     }
   }
 
   if (matchScoreSubtextEl) {
     matchScoreSubtextEl.textContent =
-      "Kết quả phản ánh mức độ trùng khớp giữa K–S–T trong hồ sơ cá nhân/CTĐT và K–S–T đã trích xuất từ hồ sơ vị trí. Kết quả chưa bao gồm kinh nghiệm làm việc, mức độ thành thạo, chứng chỉ, ngoại ngữ hoặc tiêu chí tuyển dụng khác.";
+      "Kết quả phản ánh mức độ trùng khớp giữa Kiến thức - Kỹ năng - Công cụ trong hồ sơ và Kiến thức - Kỹ năng - Công cụ đã trích xuất từ hồ sơ vị trí. Kết quả chưa bao gồm kinh nghiệm làm việc, mức độ thành thạo, chứng chỉ, ngoại ngữ hoặc tiêu chí tuyển dụng khác.";
   }
 
   if (positionTermCountEl) {
@@ -857,13 +857,13 @@ function renderMatchResult(positionTerms, matchedTerms, missingTerms) {
   renderMatchGroupBoxes(
     matchedGroupWrapEl,
     groupTermsByType(matchedTerms),
-    "Chưa có K–S–T nào trùng khớp theo dữ liệu đã trích xuất."
+    "Chưa có Kiến thức - Kỹ năng - Công cụ nào trùng khớp theo dữ liệu đã trích xuất."
   );
 
   renderMatchGroupBoxes(
     missingGroupWrapEl,
     groupTermsByType(missingTerms),
-    "Không có K–S–T còn thiếu theo dữ liệu đã trích xuất."
+    "Không có Kiến thức - Kỹ năng - Công cụ còn thiếu theo dữ liệu đã trích xuất."
   );
 
   // Chỉ hiện ô kết quả sau khi có kết quả đối sánh hợp lệ.
@@ -1034,14 +1034,14 @@ runProfileMatchBtn?.addEventListener("click", async () => {
   if (!selectedProfileTerms.length) {
     if (uploadStatusEl) {
       uploadStatusEl.textContent =
-        "Hồ sơ vị trí hiện chưa có dữ liệu K–S–T để đối sánh.";
+        "Hồ sơ vị trí hiện chưa có dữ liệu Kiến thức - Kỹ năng - Công cụ để đối sánh.";
     }
     return;
   }
 
   if (!file) {
     if (uploadStatusEl) {
-      uploadStatusEl.textContent = "Vui lòng chọn file Excel hồ sơ cá nhân/CTĐT trước.";
+      uploadStatusEl.textContent = "Vui lòng chọn file Excel hồ sơ trước.";
     }
     return;
   }
@@ -1083,7 +1083,7 @@ runProfileMatchBtn?.addEventListener("click", async () => {
     if (!userTerms.length) {
       if (uploadStatusEl) {
         uploadStatusEl.textContent =
-          "Không tìm thấy thực thể K–S–T hợp lệ trong file Excel.";
+          "Không tìm thấy thực thể Kiến thức - Kỹ năng - Công cụ hợp lệ trong file Excel.";
       }
       return;
     }
@@ -1093,10 +1093,10 @@ runProfileMatchBtn?.addEventListener("click", async () => {
     if (uploadStatusEl) {
       const hasTermMode = hasAnyHasTermColumn(rows)
         ? "có xét cột has_term"
-        : "không có cột has_term, mặc định toàn bộ dòng hợp lệ là K–S–T đã có";
+        : "không có cột has_term, mặc định toàn bộ dòng hợp lệ là Kiến thức - Kỹ năng - Công cụ đã có";
 
       uploadStatusEl.textContent =
-        `Đối sánh hoàn tất với ${userTerms.length} thực thể K–S–T từ file Excel (${hasTermMode}).`;
+        `Đối sánh hoàn tất.`;
     }
   } catch (error) {
     console.error(error);
