@@ -1220,6 +1220,10 @@ input {
    POSITION PROFILE PAGE - FINAL
 ========================= */
 
+.position-profile-body {
+  overflow-y: auto;
+}
+
 .position-profile-page {
   flex: 1 1 auto;
   display: flex;
