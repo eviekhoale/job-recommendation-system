@@ -6,7 +6,7 @@
 
   <title>Hồ sơ vị trí - Job Position Advisor</title>
 
- <link rel="stylesheet" href="../assets/css/style.css?v=8" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=8" />
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
@@ -31,7 +31,6 @@
     <main class="position-profile-page">
       <section class="position-profile-stage">
         <div class="position-profile-container">
-
           <div class="position-profile-heading">
             <h1 class="position-profile-title">Hồ sơ vị trí</h1>
             <p class="position-profile-subtitle">
@@ -39,36 +38,36 @@
             </p>
           </div>
 
-<section class="position-search-panel" aria-label="Tra cứu hồ sơ vị trí">
-  <div class="search-wrapper position-search-wrapper">
-    <div class="search-icon" aria-hidden="true">
-      <i class="bi bi-search"></i>
-    </div>
+          <section class="position-search-panel" aria-label="Tra cứu hồ sơ vị trí">
+            <div class="search-wrapper position-search-wrapper">
+              <div class="search-icon" aria-hidden="true">
+                <i class="bi bi-search"></i>
+              </div>
 
-    <input
-      type="text"
-      id="profileSearchInput"
-      class="search-input"
-      placeholder="Tìm kiếm hồ sơ vị trí"
-      autocomplete="off"
-    />
+              <input
+                type="text"
+                id="profileSearchInput"
+                class="search-input"
+                placeholder="Tìm kiếm hồ sơ vị trí"
+                autocomplete="off"
+              />
 
-    <button id="profileSearchBtn" class="search-btn" type="button">
-      Tìm kiếm
-    </button>
-  </div>
+              <button id="profileSearchBtn" class="search-btn" type="button">
+                Tìm kiếm
+              </button>
+            </div>
 
-  <div class="position-select-row">
-    <label for="profileSelect" class="position-select-label">
-      Hoặc chọn nhanh:
-    </label>
+            <div class="position-select-row">
+              <label for="profileSelect" class="position-select-label">
+                Hoặc chọn nhanh:
+              </label>
 
-    <select id="profileSelect" class="position-select">
-      <option value="">-- Chọn hồ sơ vị trí --</option>
-    </select>
-  </div>
-</section>
-          
+              <select id="profileSelect" class="position-select">
+                <option value="">-- Chọn hồ sơ vị trí --</option>
+              </select>
+            </div>
+          </section>
+
           <!-- Giữ ID này để position-profile.js không lỗi nếu vẫn còn gọi profileEmptyState.
                hidden giúp không còn khung trắng dưới cùng trên giao diện. -->
           <div
@@ -129,19 +128,18 @@
                   </div>
 
                   <section id="profileUploadSection" class="profile-upload-panel is-hidden">
-                    <h3 class="upload-title">Tải hồ sơ cá nhân dạng Excel</h3>
+                    <h3 class="upload-title">Tải hồ sơ (xlsx, xls, xlsm, csv)</h3>
 
                     <p class="upload-desc">
-                      File hồ sơ cần có các cột:
-                      <code>profile_id</code>,
-                      <code>course_name</code>,
-                      <code>kkt_type</code>,
-                      <code>canonical_name</code>,
-                      <code>has_term</code>.
+                      Tải lên file hồ sơ để hệ thống thực hiện đối sánh Kiến thức - Kỹ năng - Công cụ.
                     </p>
 
                     <div class="upload-box">
-                      <input id="profileExcelInput" type="file" accept=".xlsx,.xls" />
+                      <input
+                        id="profileExcelInput"
+                        type="file"
+                        accept=".xlsx,.xls,.xlsm,.csv"
+                      />
 
                       <button id="runProfileMatchBtn" class="profile-primary-btn" type="button">
                         Thực hiện đối sánh
@@ -169,7 +167,7 @@
                     <div class="profile-match-score-text">
                       <p id="matchScoreLabel">Chưa thực hiện đối sánh</p>
                       <p id="matchScoreSubtext">
-                        Tải hồ sơ cá nhân để xem mức độ bao phủ K–S–T của hồ sơ vị trí.
+                        Tải hồ sơ để xem mức độ bao phủ Kiến thức - Kỹ năng - Công cụ của hồ sơ vị trí.
                       </p>
                     </div>
                   </div>
@@ -177,7 +175,7 @@
                   <div class="profile-match-stat-grid">
                     <div class="profile-match-stat-item">
                       <span class="profile-match-stat-label">
-                        Tổng K–S–T của hồ sơ vị trí
+                        Tổng Kiến thức - Kỹ năng - Công cụ của hồ sơ vị trí
                       </span>
                       <strong id="positionTermCount">0</strong>
                     </div>
