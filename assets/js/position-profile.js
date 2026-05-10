@@ -476,7 +476,7 @@ function clearMatchOutput() {
 
   if (matchScoreSubtextEl) {
     matchScoreSubtextEl.textContent =
-      "Tải hồ sơ cá nhân để xem mức độ bao phủ Kiến thức - Kỹ năng - Công cụ của hồ sơ vị trí.";
+      "Tải hồ sơ để xem mức độ bao phủ Kiến thức - Kỹ năng - Công cụ của hồ sơ vị trí.";
   }
 
   if (positionTermCountEl) positionTermCountEl.textContent = "0";
