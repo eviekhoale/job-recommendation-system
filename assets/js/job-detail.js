@@ -884,7 +884,7 @@ function renderMatchResult(jobTerms, matchedTerms, missingTerms) {
         : "Mức độ phù hợp còn thấp";
 
   matchScoreSubtextEl.textContent =
-    "Kết quả chỉ phản ánh mức độ trùng khớp dữ liệu K–S–T giữa hồ sơ cá nhân và tin tuyển dụng, không thay thế đánh giá toàn diện năng lực.";
+    "Kết quả chỉ phản ánh mức độ trùng khớp dữ liệu K–S–T giữa hồ sơ và tin tuyển dụng, không thay thế đánh giá toàn diện năng lực.";
 
   jobTermCountEl.textContent = String(denominator);
   matchedTermCountEl.textContent = String(numerator);
@@ -1049,7 +1049,7 @@ runMatchBtn?.addEventListener("click", async () => {
   const file = profileExcelInput.files?.[0];
 
   if (!file) {
-    uploadStatusEl.textContent = "Vui lòng chọn file Excel hồ sơ cá nhân trước.";
+    uploadStatusEl.textContent = "Vui lòng chọn file Excel hồ sơ trước.";
     return;
   }
 
@@ -1088,7 +1088,7 @@ runMatchBtn?.addEventListener("click", async () => {
     runMatching(profileTerms);
 
     uploadStatusEl.textContent =
-      `Đối sánh hoàn tất với ${profileTerms.length} thực thể K–S–T từ file hồ sơ cá nhân${sheetName ? `, sheet "${sheetName}"` : ""}.`;
+      `Đối sánh hoàn tất.`;
   } catch (error) {
     console.error(error);
     uploadStatusEl.textContent =
