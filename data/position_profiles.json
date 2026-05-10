@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T07:44:36.129Z",
+  "generated_at": "2026-05-10T07:48:59.146Z",
   "source_note": "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. KST data is aggregated from enriched data/job_kkt.json.",
   "total_profiles": 44,
   "position_profiles": [
