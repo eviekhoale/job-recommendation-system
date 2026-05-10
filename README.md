@@ -2,13 +2,19 @@
 Demo hệ thống tư vấn vị trí việc làm cho sinh viên ngành Quản lý thông tin USSH VNU-HCM
 
 Hướng dẫn sử dụng Demo hệ thống tư vấn vị trí việc làm cho sinh viên ngành Quản lý thông tin USSH VNU-HCM
+
 1. Chuẩn bị file hồ sơ đối sánh
 Trước khi sử dụng hệ thống, người dùng tải một trong ba file hồ sơ đối sánh trong thư mục profiles_data của GitHub:
+
 Junior_student_profile.xlsx: dùng để đối sánh với hồ sơ sinh viên năm 3, gồm các Kiến thức - Kỹ năng - Công cụ tích lũy từ năm 1 đến hết năm 3.
+
 Senior_student_profile.xlsx: dùng để đối sánh với hồ sơ sinh viên năm 4, gồm các Kiến thức - Kỹ năng - Công cụ tích lũy từ năm 1 đến hết năm 4.
+
 Course_learning_profile.xlsx: dùng để đối sánh với hồ sơ chương trình đào tạo, gồm toàn bộ Kiến thức - Kỹ năng - Công cụ được trích xuất từ chương trình đào tạo.
+
 Lưu ý: Các file trên là hồ sơ học tập/ hồ sơ chương trình đào tạo dùng cho mục đích thử nghiệm, không phải hồ sơ cá nhân hóa của từng sinh viên.
-2. Truy cập hệ thống demo
+
+3. Truy cập hệ thống demo
 Người dùng truy cập đường link Demo Hệ thống thử nghiệm tư vấn vị trí việc làm: https://eviekhoale.github.io/job-recommendation-system/  
 Luồng 1: Đối sánh hồ sơ học tập với từng tin tuyển dụng
 Bước 1. Tìm kiếm vị trí việc làm
