@@ -698,7 +698,7 @@ function openUploadPanelOnly() {
 
   /*
     Yêu cầu của bạn:
-    - Bấm "Đối sánh với hồ sơ của tôi" chỉ hiện khu upload file.
+    - Bấm "Đối sánh với hồ sơ" chỉ hiện khu upload file.
     - Chưa hiện khung "Kết quả đối sánh".
   */
   matchResultCard.classList.add("is-hidden");
@@ -1067,7 +1067,7 @@ runMatchBtn?.addEventListener("click", async () => {
 
     if (!validation.ok) {
       uploadStatusEl.textContent =
-        `File chưa đúng cấu trúc hồ sơ cá nhân. Thiếu cột: ${validation.missing.join(", ")}`;
+        `File chưa đúng cấu trúc hồ sơ. Thiếu cột: ${validation.missing.join(", ")}`;
       return;
     }
 
@@ -1075,7 +1075,7 @@ runMatchBtn?.addEventListener("click", async () => {
 
     if (!profileTerms.length) {
       uploadStatusEl.textContent =
-        "Không tìm thấy thực thể Kiến thức - Kỹ năng - Công cụ hợp lệ trong hồ sơ cá nhân.";
+        "Không tìm thấy thực thể Kiến thức - Kỹ năng - Công cụ hợp lệ trong hồ sơ.";
       return;
     }
 
@@ -1088,7 +1088,7 @@ runMatchBtn?.addEventListener("click", async () => {
     runMatching(profileTerms);
 
     uploadStatusEl.textContent =
-      `Đối sánh hoàn tất.`;
+      "Đối sánh hoàn tất.";
   } catch (error) {
     console.error(error);
     uploadStatusEl.textContent =
