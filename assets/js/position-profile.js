@@ -33,15 +33,6 @@ let allProfiles = [];
 let selectedProfile = null;
 let selectedProfileTerms = [];
 
-/**
- * File hồ sơ cá nhân/CTĐT dạng Excel cần tối thiểu:
- * - kkt_type
- * - canonical_name
- *
- * Cột has_term không bắt buộc.
- * Nếu có has_term: chỉ lấy dòng có has_term = 1/true/yes/có/x...
- * Nếu không có has_term: mặc định toàn bộ dòng hợp lệ là K–S–T đã có.
- */
 const REQUIRED_PROFILE_COLUMNS = ["kkt_type", "canonical_name"];
 
 const HAS_TERM_COLUMN_NAMES = [
@@ -368,10 +359,6 @@ function renderMatchGroupBoxes(container, groupedTerms, emptyText) {
     .join("");
 }
 
-/**
- * Dropdown chỉ hiển thị tên hồ sơ vị trí / job title.
- * Không hiển thị field, số job, số K–S–T để dropdown gọn trong màn hình.
- */
 function populateProfileSelect(profiles) {
   if (!profileSelect) return;
 
@@ -403,19 +390,11 @@ function findProfileBySelectKey(selectKey) {
 
   if (!normalized) return null;
 
-  return allProfiles.find((profile) => {
-    return getProfileSelectKey(profile) === normalized;
-  }) || null;
-}
-
-function findProfileByName(name) {
-  const normalized = normalizeText(name);
-
-  if (!normalized) return null;
-
-  return allProfiles.find((profile) => {
-    return normalizeText(getProfileName(profile)) === normalized;
-  }) || null;
+  return (
+    allProfiles.find((profile) => {
+      return getProfileSelectKey(profile) === normalized;
+    }) || null
+  );
 }
 
 function searchProfileByKeyword(keyword) {
@@ -431,7 +410,6 @@ function searchProfileByKeyword(keyword) {
 
   const exactByAlias = allProfiles.find((profile) => {
     const aliases = getProfileAliases(profile);
-
     return aliases.some((alias) => normalizeText(alias) === normalized);
   });
 
@@ -487,28 +465,9 @@ function showMessage(message) {
   profileEmptyState.removeAttribute("hidden");
 }
 
-function resetMatchState() {
-  if (profileUploadSection) {
-    profileUploadSection.classList.add("is-hidden");
-  }
-
-  if (profileMatchResultCard) {
-    profileMatchResultCard.classList.add("is-hidden");
-  }
-
-  if (positionProfileLayout) {
-    positionProfileLayout.classList.remove("is-match-mode");
-  }
-
-  if (profileExcelInput) {
-    profileExcelInput.value = "";
-  }
-
-  if (uploadStatusEl) {
-    uploadStatusEl.textContent = "Chưa có file nào được chọn.";
-  }
-
+function clearMatchOutput() {
   if (matchPercentEl) matchPercentEl.textContent = "0%";
+
   if (matchScoreLabelEl) {
     matchScoreLabelEl.textContent = "Chưa thực hiện đối sánh";
   }
@@ -526,6 +485,44 @@ function resetMatchState() {
   if (missingGroupWrapEl) missingGroupWrapEl.innerHTML = "";
 }
 
+function hideMatchResultPanel() {
+  if (profileMatchResultCard) {
+    profileMatchResultCard.classList.add("is-hidden");
+  }
+
+  if (positionProfileLayout) {
+    positionProfileLayout.classList.remove("is-match-mode");
+  }
+
+  clearMatchOutput();
+}
+
+function showMatchResultPanel() {
+  if (profileMatchResultCard) {
+    profileMatchResultCard.classList.remove("is-hidden");
+  }
+
+  if (positionProfileLayout) {
+    positionProfileLayout.classList.add("is-match-mode");
+  }
+}
+
+function resetMatchState() {
+  if (profileUploadSection) {
+    profileUploadSection.classList.add("is-hidden");
+  }
+
+  if (profileExcelInput) {
+    profileExcelInput.value = "";
+  }
+
+  if (uploadStatusEl) {
+    uploadStatusEl.textContent = "Chưa có file nào được chọn.";
+  }
+
+  hideMatchResultPanel();
+}
+
 function showInitialState(message = "") {
   selectedProfile = null;
   selectedProfileTerms = [];
@@ -539,6 +536,10 @@ function showInitialState(message = "") {
 
   if (profileSelect) {
     profileSelect.value = "";
+  }
+
+  if (profileSearchInput) {
+    profileSearchInput.value = "";
   }
 
   if (message) {
@@ -570,6 +571,7 @@ function renderProfile(profile) {
 
   if (positionProfileLayout) {
     positionProfileLayout.classList.remove("is-hidden");
+    positionProfileLayout.classList.remove("is-match-mode");
   }
 
   if (profileSelect) {
@@ -595,12 +597,12 @@ function openMatchMode() {
     profileUploadSection.classList.remove("is-hidden");
   }
 
-  if (profileMatchResultCard) {
-    profileMatchResultCard.classList.remove("is-hidden");
-  }
+  // Không hiện ô "Kết quả đối sánh" ở bước này.
+  // Ô kết quả chỉ hiện sau khi bấm "Thực hiện đối sánh" và xử lý thành công.
+  hideMatchResultPanel();
 
-  if (positionProfileLayout) {
-    positionProfileLayout.classList.add("is-match-mode");
+  if (uploadStatusEl) {
+    uploadStatusEl.textContent = "Chọn file Excel hồ sơ cá nhân để thực hiện đối sánh.";
   }
 }
 
@@ -827,6 +829,9 @@ function renderMatchResult(positionTerms, matchedTerms, missingTerms) {
     groupTermsByType(missingTerms),
     "Không có K–S–T còn thiếu theo dữ liệu đã trích xuất."
   );
+
+  // Chỉ hiện ô kết quả sau khi có kết quả đối sánh hợp lệ.
+  showMatchResultPanel();
 }
 
 function runMatching(userTerms) {
@@ -862,22 +867,22 @@ async function loadPageData() {
       : data.position_profiles || data.profiles || [];
 
     allProfiles = rawProfiles
-  .filter((profile) => getProfileName(profile))
-  .sort((a, b) => {
-    const kstCompare = getProfileTermCount(b) - getProfileTermCount(a);
+      .filter((profile) => getProfileName(profile))
+      .sort((a, b) => {
+        const kstCompare = getProfileTermCount(b) - getProfileTermCount(a);
 
-    if (kstCompare !== 0) {
-      return kstCompare;
-    }
+        if (kstCompare !== 0) {
+          return kstCompare;
+        }
 
-    const jobCompare = getProfileJobCount(b) - getProfileJobCount(a);
+        const jobCompare = getProfileJobCount(b) - getProfileJobCount(a);
 
-    if (jobCompare !== 0) {
-      return jobCompare;
-    }
+        if (jobCompare !== 0) {
+          return jobCompare;
+        }
 
-    return getProfileName(a).localeCompare(getProfileName(b), "vi");
-  });
+        return getProfileName(a).localeCompare(getProfileName(b), "vi");
+      });
 
     allProfiles.forEach((profile, index) => {
       profile.__profile_key = createProfileSelectKey(profile, index);
@@ -967,6 +972,8 @@ openProfileMatchBtn?.addEventListener("click", () => {
 profileExcelInput?.addEventListener("change", () => {
   const file = profileExcelInput.files?.[0];
 
+  hideMatchResultPanel();
+
   if (uploadStatusEl) {
     uploadStatusEl.textContent = file
       ? `Đã chọn file: ${file.name}`
@@ -976,6 +983,8 @@ profileExcelInput?.addEventListener("change", () => {
 
 runProfileMatchBtn?.addEventListener("click", async () => {
   const file = profileExcelInput?.files?.[0];
+
+  hideMatchResultPanel();
 
   if (!selectedProfile) {
     if (uploadStatusEl) {
@@ -1053,6 +1062,8 @@ runProfileMatchBtn?.addEventListener("click", async () => {
     }
   } catch (error) {
     console.error(error);
+
+    hideMatchResultPanel();
 
     if (uploadStatusEl) {
       uploadStatusEl.textContent =
