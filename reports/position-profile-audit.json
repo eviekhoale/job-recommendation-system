@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-10T08:21:19.148Z",
+  "generated_at": "2026-05-10T08:26:09.390Z",
   "total_profiles": 44,
-  "empty_profile_count": 2,
-  "low_kkt_profile_count": 9,
+  "empty_profile_count": 0,
+  "low_kkt_profile_count": 5,
   "profiles": [
     {
       "position_id": "PP001",
@@ -14,9 +14,9 @@
       "jobs_without_kkt_ids": [
         "JD126"
       ],
-      "kkt_count": 20,
-      "knowledge_count": 13,
-      "skill_count": 5,
+      "kkt_count": 30,
+      "knowledge_count": 18,
+      "skill_count": 10,
       "tool_count": 2
     },
     {
@@ -24,21 +24,15 @@
       "position_name": "Project Management / Project Coordinator",
       "source_job_count": 28,
       "found_job_count": 27,
-      "jobs_with_kkt_count": 19,
-      "jobs_without_kkt_count": 8,
+      "jobs_with_kkt_count": 25,
+      "jobs_without_kkt_count": 2,
       "jobs_without_kkt_ids": [
-        "JD069",
         "JD102",
-        "JD184",
-        "JD229",
-        "JD230",
-        "JD231",
-        "JD233",
-        "JD239"
+        "JD230"
       ],
-      "kkt_count": 12,
-      "knowledge_count": 7,
-      "skill_count": 4,
+      "kkt_count": 19,
+      "knowledge_count": 10,
+      "skill_count": 8,
       "tool_count": 1
     },
     {
@@ -51,9 +45,9 @@
       "jobs_without_kkt_ids": [
         "JD048"
       ],
-      "kkt_count": 20,
-      "knowledge_count": 10,
-      "skill_count": 5,
+      "kkt_count": 34,
+      "knowledge_count": 18,
+      "skill_count": 11,
       "tool_count": 5
     },
     {
@@ -61,15 +55,12 @@
       "position_name": "HR / Administrative HR",
       "source_job_count": 19,
       "found_job_count": 18,
-      "jobs_with_kkt_count": 16,
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
-        "JD036",
-        "JD151"
-      ],
-      "kkt_count": 7,
-      "knowledge_count": 4,
-      "skill_count": 2,
+      "jobs_with_kkt_count": 18,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 13,
+      "knowledge_count": 7,
+      "skill_count": 5,
       "tool_count": 1
     },
     {
@@ -77,15 +68,14 @@
       "position_name": "Market Research / Research Executive",
       "source_job_count": 15,
       "found_job_count": 14,
-      "jobs_with_kkt_count": 12,
-      "jobs_without_kkt_count": 2,
+      "jobs_with_kkt_count": 13,
+      "jobs_without_kkt_count": 1,
       "jobs_without_kkt_ids": [
-        "JD101",
-        "JD228"
+        "JD101"
       ],
-      "kkt_count": 13,
+      "kkt_count": 16,
       "knowledge_count": 6,
-      "skill_count": 3,
+      "skill_count": 6,
       "tool_count": 4
     },
     {
@@ -93,15 +83,12 @@
       "position_name": "Administrative Officer / Admin",
       "source_job_count": 11,
       "found_job_count": 10,
-      "jobs_with_kkt_count": 8,
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
-        "JD056",
-        "JD134"
-      ],
-      "kkt_count": 6,
-      "knowledge_count": 4,
-      "skill_count": 0,
+      "jobs_with_kkt_count": 10,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 13,
+      "knowledge_count": 7,
+      "skill_count": 4,
       "tool_count": 2
     },
     {
@@ -109,15 +96,14 @@
       "position_name": "Digital Marketing / Communications",
       "source_job_count": 9,
       "found_job_count": 9,
-      "jobs_with_kkt_count": 7,
-      "jobs_without_kkt_count": 2,
+      "jobs_with_kkt_count": 8,
+      "jobs_without_kkt_count": 1,
       "jobs_without_kkt_ids": [
-        "JD077",
         "JD105"
       ],
-      "kkt_count": 7,
-      "knowledge_count": 3,
-      "skill_count": 3,
+      "kkt_count": 11,
+      "knowledge_count": 5,
+      "skill_count": 5,
       "tool_count": 1
     },
     {
@@ -125,14 +111,12 @@
       "position_name": "Product / Product Owner",
       "source_job_count": 9,
       "found_job_count": 9,
-      "jobs_with_kkt_count": 8,
-      "jobs_without_kkt_count": 1,
-      "jobs_without_kkt_ids": [
-        "JD145"
-      ],
-      "kkt_count": 11,
-      "knowledge_count": 7,
-      "skill_count": 3,
+      "jobs_with_kkt_count": 9,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 20,
+      "knowledge_count": 13,
+      "skill_count": 6,
       "tool_count": 1
     },
     {
@@ -140,15 +124,12 @@
       "position_name": "Customer Service Officer",
       "source_job_count": 8,
       "found_job_count": 8,
-      "jobs_with_kkt_count": 6,
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
-        "JD061",
-        "JD064"
-      ],
-      "kkt_count": 3,
-      "knowledge_count": 2,
-      "skill_count": 0,
+      "jobs_with_kkt_count": 8,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 8,
+      "knowledge_count": 5,
+      "skill_count": 2,
       "tool_count": 1
     },
     {
@@ -159,9 +140,9 @@
       "jobs_with_kkt_count": 8,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 11,
-      "knowledge_count": 7,
-      "skill_count": 2,
+      "kkt_count": 19,
+      "knowledge_count": 11,
+      "skill_count": 6,
       "tool_count": 2
     },
     {
@@ -172,9 +153,9 @@
       "jobs_with_kkt_count": 7,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 10,
-      "knowledge_count": 6,
-      "skill_count": 3,
+      "kkt_count": 20,
+      "knowledge_count": 11,
+      "skill_count": 8,
       "tool_count": 1
     },
     {
@@ -182,16 +163,12 @@
       "position_name": "Information Security / SOC / Risk",
       "source_job_count": 7,
       "found_job_count": 7,
-      "jobs_with_kkt_count": 4,
-      "jobs_without_kkt_count": 3,
-      "jobs_without_kkt_ids": [
-        "JD127",
-        "JD213",
-        "JD220"
-      ],
-      "kkt_count": 4,
-      "knowledge_count": 2,
-      "skill_count": 2,
+      "jobs_with_kkt_count": 7,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 14,
+      "knowledge_count": 8,
+      "skill_count": 6,
       "tool_count": 0
     },
     {
@@ -202,9 +179,9 @@
       "jobs_with_kkt_count": 7,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 9,
-      "knowledge_count": 6,
-      "skill_count": 2,
+      "kkt_count": 12,
+      "knowledge_count": 7,
+      "skill_count": 4,
       "tool_count": 1
     },
     {
@@ -228,9 +205,9 @@
       "jobs_with_kkt_count": 6,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 12,
-      "knowledge_count": 7,
-      "skill_count": 3,
+      "kkt_count": 19,
+      "knowledge_count": 10,
+      "skill_count": 7,
       "tool_count": 2
     },
     {
@@ -241,9 +218,9 @@
       "jobs_with_kkt_count": 6,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 12,
-      "knowledge_count": 6,
-      "skill_count": 4,
+      "kkt_count": 20,
+      "knowledge_count": 10,
+      "skill_count": 8,
       "tool_count": 2
     },
     {
@@ -251,14 +228,12 @@
       "position_name": "IT Staff / General IT Support",
       "source_job_count": 3,
       "found_job_count": 3,
-      "jobs_with_kkt_count": 2,
-      "jobs_without_kkt_count": 1,
-      "jobs_without_kkt_ids": [
-        "JD166"
-      ],
-      "kkt_count": 3,
-      "knowledge_count": 2,
-      "skill_count": 1,
+      "jobs_with_kkt_count": 3,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 14,
+      "knowledge_count": 9,
+      "skill_count": 5,
       "tool_count": 0
     },
     {
@@ -284,8 +259,8 @@
       "jobs_without_kkt_ids": [
         "JD065"
       ],
-      "kkt_count": 3,
-      "knowledge_count": 2,
+      "kkt_count": 5,
+      "knowledge_count": 4,
       "skill_count": 1,
       "tool_count": 0
     },
@@ -297,9 +272,9 @@
       "jobs_with_kkt_count": 2,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 12,
-      "knowledge_count": 7,
-      "skill_count": 3,
+      "kkt_count": 15,
+      "knowledge_count": 8,
+      "skill_count": 5,
       "tool_count": 2
     },
     {
@@ -310,10 +285,10 @@
       "jobs_with_kkt_count": 1,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 2,
+      "kkt_count": 3,
       "knowledge_count": 1,
       "skill_count": 1,
-      "tool_count": 0
+      "tool_count": 1
     },
     {
       "position_id": "PP022",
@@ -323,9 +298,9 @@
       "jobs_with_kkt_count": 2,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 7,
+      "kkt_count": 10,
       "knowledge_count": 5,
-      "skill_count": 0,
+      "skill_count": 3,
       "tool_count": 2
     },
     {
@@ -336,9 +311,9 @@
       "jobs_with_kkt_count": 2,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 2,
+      "kkt_count": 4,
       "knowledge_count": 1,
-      "skill_count": 0,
+      "skill_count": 2,
       "tool_count": 1
     },
     {
@@ -346,16 +321,13 @@
       "position_name": "IT Support",
       "source_job_count": 2,
       "found_job_count": 2,
-      "jobs_with_kkt_count": 0,
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
-        "JD002",
-        "JD241"
-      ],
-      "kkt_count": 0,
+      "jobs_with_kkt_count": 2,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 5,
       "knowledge_count": 0,
-      "skill_count": 0,
-      "tool_count": 0
+      "skill_count": 4,
+      "tool_count": 1
     },
     {
       "position_id": "PP025",
@@ -378,10 +350,10 @@
       "jobs_with_kkt_count": 2,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 4,
+      "kkt_count": 5,
       "knowledge_count": 2,
       "skill_count": 1,
-      "tool_count": 1
+      "tool_count": 2
     },
     {
       "position_id": "PP027",
@@ -471,9 +443,9 @@
       "jobs_with_kkt_count": 1,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 1,
-      "knowledge_count": 0,
-      "skill_count": 0,
+      "kkt_count": 5,
+      "knowledge_count": 1,
+      "skill_count": 3,
       "tool_count": 1
     },
     {
@@ -484,10 +456,10 @@
       "jobs_with_kkt_count": 1,
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 2,
+      "kkt_count": 3,
       "knowledge_count": 2,
       "skill_count": 0,
-      "tool_count": 0
+      "tool_count": 1
     },
     {
       "position_id": "PP035",
@@ -507,14 +479,12 @@
       "position_name": "IT Administrator",
       "source_job_count": 1,
       "found_job_count": 1,
-      "jobs_with_kkt_count": 0,
-      "jobs_without_kkt_count": 1,
-      "jobs_without_kkt_ids": [
-        "JD006"
-      ],
-      "kkt_count": 0,
-      "knowledge_count": 0,
-      "skill_count": 0,
+      "jobs_with_kkt_count": 1,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 7,
+      "knowledge_count": 3,
+      "skill_count": 4,
       "tool_count": 0
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-10T08:21:19.146Z",
+  "generated_at": "2026-05-10T08:26:09.387Z",
   "source_note": "Generated from a fixed 44-position catalog embedded in tools/build-position-profiles.js. KST data is aggregated from enriched data/job_kkt.json.",
   "total_profiles": 44,
   "position_profiles": [
@@ -136,9 +136,9 @@
       "jobs_without_kkt_ids": [
         "JD126"
       ],
-      "kkt_count": 20,
-      "knowledge_count": 13,
-      "skill_count": 5,
+      "kkt_count": 30,
+      "knowledge_count": 18,
+      "skill_count": 10,
       "tool_count": 2,
       "kkt_list": [
         {
@@ -334,6 +334,30 @@
           ]
         },
         {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD125",
+              "field": "title",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data Analyst Intern (Supply Chain domain)"
+            },
+            {
+              "job_id": "JD192",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data analysts leverage business domain and data to drive high impact business decisions and enhance Data Driven Culture within the organization."
+            }
+          ]
+        },
+        {
           "entity_id": "K0027",
           "kkt_type": "K",
           "canonical_name": "Enterprise Resource Planning",
@@ -378,6 +402,78 @@
               "method": "canonical_norm",
               "coverage_status": "",
               "evidence_snippet": "- Hỗ trợ thiết kế và phối hợp với CNTT xây dựng kho dữ liệu báo cáo (Data Warehouse) của công ty"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD087",
+              "field": "requirements",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong analytical and planning skills; ability to turn complex data into practical insights"
+            },
+            {
+              "job_id": "JD182",
+              "field": "title",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Business Intelligence & Planning"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD088",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Create and update documentation for datasets, dashboards, and analysis processes to ensure clarity and consistency"
+            },
+            {
+              "job_id": "JD131",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Maintain basic documentation of data sources, methodologies, and assumptions when required."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0092",
+          "kkt_type": "K",
+          "canonical_name": "Phân tích, đánh giá, ứng dụng thông tin kinh tế hỗ trợ ra quyết định",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD182",
+              "field": "requirements",
+              "matched_term": "business analysis",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "1-2 years of experience in Data Analysis, Business Analysis, or Business Intelligence."
+            },
+            {
+              "job_id": "JD192",
+              "field": "requirements",
+              "matched_term": "decision making",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Has ability to storytelling and communicate effectively to business team to drive decision making"
             }
           ]
         },
@@ -478,6 +574,22 @@
           ]
         },
         {
+          "entity_id": "K0112",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý và kiểm soát thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD053",
+              "field": "description",
+              "matched_term": "check data",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Check data quality, summarize key findings, and prepare reports for internal and external use."
+            }
+          ]
+        },
+        {
           "entity_id": "S0050",
           "kkt_type": "S",
           "canonical_name": "Phân tích dữ liệu doanh nghiệp",
@@ -510,6 +622,158 @@
           ]
         },
         {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 13,
+          "evidence_examples": [
+            {
+              "job_id": "JD086",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Incident Management & Communication: Serve as a key point of contact for operational issues, effectively communicating the impact on performance to internal stakeholders and Help Desk teams;"
+            },
+            {
+              "job_id": "JD087",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good verbal and written communication skills"
+            },
+            {
+              "job_id": "JD088",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Team player with strong communication skills and a positive, proactive attitude"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 12,
+          "evidence_examples": [
+            {
+              "job_id": "JD086",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Incident Management & Communication: Serve as a key point of contact for operational issues, effectively communicating the impact on performance to internal stakeholders and Help Desk teams;"
+            },
+            {
+              "job_id": "JD087",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good verbal and written communication skills"
+            },
+            {
+              "job_id": "JD088",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Team player with strong communication skills and a positive, proactive attitude"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 6,
+          "evidence_examples": [
+            {
+              "job_id": "JD053",
+              "field": "requirements",
+              "matched_term": "troubleshoot",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Reliable, proactive, and can take initiative to troubleshoot issues, follow up, and escalate when necessary."
+            },
+            {
+              "job_id": "JD086",
+              "field": "description",
+              "matched_term": "help desk",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Incident Management & Communication: Serve as a key point of contact for operational issues, effectively communicating the impact on performance to internal stakeholders and Help Desk teams;"
+            },
+            {
+              "job_id": "JD125",
+              "field": "requirements",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "3rd-4th year university student majoring in Information Systems/IT Development/Data Analytics."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD086",
+              "field": "description",
+              "matched_term": "schedule",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "SLA & Target Attainment: Drive the achievement of Service Level Agreements (SLAs) and other client-specific targets by ensuring strict schedule adherence and compliance across the moderation team."
+            },
+            {
+              "job_id": "JD087",
+              "field": "requirements",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong analytical and planning skills; ability to turn complex data into practical insights"
+            },
+            {
+              "job_id": "JD182",
+              "field": "title",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Business Intelligence & Planning"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0007",
+          "kkt_type": "S",
+          "canonical_name": "Cài đặt và cấu hình dịch vụ mạng cơ bản trong Workgroup và Domain",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD125",
+              "field": "title",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data Analyst Intern (Supply Chain domain)"
+            },
+            {
+              "job_id": "JD192",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data analysts leverage business domain and data to drive high impact business decisions and enhance Data Driven Culture within the organization."
+            }
+          ]
+        },
+        {
           "entity_id": "S0021",
           "kkt_type": "S",
           "canonical_name": "Làm sạch dữ liệu",
@@ -530,30 +794,6 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "You'll collaborate with senior analysts and cross-functional teams to collect and clean data, explore trends, and design dashboards that highlight key performance metrics."
-            }
-          ]
-        },
-        {
-          "entity_id": "S0146",
-          "kkt_type": "S",
-          "canonical_name": "Xây dựng kế hoạch",
-          "job_count": 2,
-          "evidence_examples": [
-            {
-              "job_id": "JD087",
-              "field": "requirements",
-              "matched_term": "planning",
-              "method": "auto_alias_norm",
-              "coverage_status": "auto_enriched",
-              "evidence_snippet": "Strong analytical and planning skills; ability to turn complex data into practical insights"
-            },
-            {
-              "job_id": "JD182",
-              "field": "title",
-              "matched_term": "planning",
-              "method": "auto_alias_norm",
-              "coverage_status": "auto_enriched",
-              "evidence_snippet": "Business Intelligence & Planning"
             }
           ]
         },
@@ -586,6 +826,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Strong Critical Thinking and Creative problem solving is a MUST"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0131",
+          "kkt_type": "S",
+          "canonical_name": "Vận hành quy trình quản lý dữ liệu và thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD183",
+              "field": "requirements",
+              "matched_term": "information management",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "BSc/BA in Computer Science, Engineering, Mathematics, Economics, Information Management or Statistics or related profession is greatly appreciated"
             }
           ]
         },
@@ -756,10 +1012,11 @@
       "missing_job_ids": [
         "JD104"
       ],
-      "jobs_with_kkt_count": 19,
+      "jobs_with_kkt_count": 25,
       "jobs_with_kkt_ids": [
         "JD040",
         "JD067",
+        "JD069",
         "JD071",
         "JD075",
         "JD117",
@@ -770,28 +1027,27 @@
         "JD175",
         "JD179",
         "JD180",
+        "JD184",
         "JD211",
+        "JD229",
+        "JD231",
         "JD232",
+        "JD233",
         "JD234",
         "JD235",
         "JD236",
         "JD237",
-        "JD238"
-      ],
-      "jobs_without_kkt_count": 8,
-      "jobs_without_kkt_ids": [
-        "JD069",
-        "JD102",
-        "JD184",
-        "JD229",
-        "JD230",
-        "JD231",
-        "JD233",
+        "JD238",
         "JD239"
       ],
-      "kkt_count": 12,
-      "knowledge_count": 7,
-      "skill_count": 4,
+      "jobs_without_kkt_count": 2,
+      "jobs_without_kkt_ids": [
+        "JD102",
+        "JD230"
+      ],
+      "kkt_count": 19,
+      "knowledge_count": 10,
+      "skill_count": 8,
       "tool_count": 1,
       "kkt_list": [
         {
@@ -859,6 +1115,70 @@
           ]
         },
         {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD179",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist in planning, implementing, and monitoring Mall initiatives to improve business"
+            },
+            {
+              "job_id": "JD180",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Organize and facilitate sprint planning, daily standups, sprint reviews and retrospectives."
+            },
+            {
+              "job_id": "JD235",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Works together with people from the business unit. Contacts are under guidance and/or geared towards specifying activities, planning of activities and giving explanations on technical isses."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD184",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Reports Generation and Documentation"
+            },
+            {
+              "job_id": "JD211",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Maintain project documentation and follow-up on action items."
+            },
+            {
+              "job_id": "JD231",
+              "field": "requirements",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "English proficiency sufficient for technical documentation and cross-team communication."
+            }
+          ]
+        },
+        {
           "entity_id": "K0034",
           "kkt_type": "K",
           "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
@@ -903,6 +1223,30 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Phối hợp đa nhóm: Làm việc, giao tiếp phối hợp đồng bộ giữa các nhóm như Product Owner, Game Designer, Developer, Artist, QA, Operations,... để đảm bảo dự án triển khai trơn tru."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0092",
+          "kkt_type": "K",
+          "canonical_name": "Phân tích, đánh giá, ứng dụng thông tin kinh tế hỗ trợ ra quyết định",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD179",
+              "field": "requirements",
+              "matched_term": "business analysis",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "1-3 years of experience in project management, business analysis, consulting or similar role."
+            },
+            {
+              "job_id": "JD235",
+              "field": "description",
+              "matched_term": "decision making",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Process tracking, metrics tracking. Could be degreed or non-degreed. Responsible for headcount and various other data collections that are used for ultimate decision making."
             }
           ]
         },
@@ -963,10 +1307,74 @@
           ]
         },
         {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 16,
+          "evidence_examples": [
+            {
+              "job_id": "JD069",
+              "field": "description",
+              "matched_term": "communicate",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Conduct project meetings to communicate individual roles, project expectations, and ensure that all project team members have the tools and training required to perform effectively."
+            },
+            {
+              "job_id": "JD136",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Proficient in Japanese communication, at least JLPN N2"
+            },
+            {
+              "job_id": "JD175",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent communication and organizational skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 15,
+          "evidence_examples": [
+            {
+              "job_id": "JD136",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Proficient in Japanese communication, at least JLPN N2"
+            },
+            {
+              "job_id": "JD175",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent communication and organizational skills."
+            },
+            {
+              "job_id": "JD179",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent communication and stakeholder management skills."
+            }
+          ]
+        },
+        {
           "entity_id": "S0146",
           "kkt_type": "S",
           "canonical_name": "Xây dựng kế hoạch",
-          "job_count": 7,
+          "job_count": 10,
           "evidence_examples": [
             {
               "job_id": "JD040",
@@ -977,20 +1385,52 @@
               "evidence_snippet": "đúng chất lượng thông qua việc lập kế hoạch, điều phối triển khai, quản lý thông tin"
             },
             {
+              "job_id": "JD069",
+              "field": "description",
+              "matched_term": "schedule",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Manage the project estimating activities and coordinate schedule of activities related to the project"
+            },
+            {
               "job_id": "JD118",
               "field": "description",
               "matched_term": "lập kế hoạch",
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Tham gia hỗ trợ các hoạt động của dự án: lập kế hoạch, triển khai, quản lý tiến độ dự án"
-            },
+            }
+          ]
+        },
+        {
+          "entity_id": "S0150",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng ý tưởng và lập kế hoạch triển khai dự án",
+          "job_count": 3,
+          "evidence_examples": [
             {
-              "job_id": "JD179",
+              "job_id": "JD069",
               "field": "description",
-              "matched_term": "planning",
+              "matched_term": "project execution",
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
-              "evidence_snippet": "Assist in planning, implementing, and monitoring Mall initiatives to improve business"
+              "evidence_snippet": "Utilize industry best practices, techniques, and standards throughout the entire project execution"
+            },
+            {
+              "job_id": "JD211",
+              "field": "description",
+              "matched_term": "project coordination",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Project Coordination & Stakeholder Engagement"
+            },
+            {
+              "job_id": "JD236",
+              "field": "description",
+              "matched_term": "project coordination",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Perform administrative and operational tasks to provide support for Developers and the Project Manager, ensuring smooth workflow and project coordination."
             }
           ]
         },
@@ -1015,6 +1455,30 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Identify issues, develop hypotheses, gather and analyze data, and present findings and strategic recommendations to facilitate senior leadership decision-making;"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD136",
+              "field": "description",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Use various internal and external tools/applications (Microsoft Project, Salesforce, etc.), and ensure that the project information is properly maintained in the Project Management Information Systems (internal tools will be trained through probation)."
+            },
+            {
+              "job_id": "JD236",
+              "field": "description",
+              "matched_term": "troubleshooting",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Troubleshooting, handling, and monitoring the conversation between Developers & Project Manager"
             }
           ]
         },
@@ -1185,9 +1649,9 @@
       "jobs_without_kkt_ids": [
         "JD048"
       ],
-      "kkt_count": 20,
-      "knowledge_count": 10,
-      "skill_count": 5,
+      "kkt_count": 34,
+      "knowledge_count": 18,
+      "skill_count": 11,
       "tool_count": 5,
       "kkt_list": [
         {
@@ -1319,6 +1783,38 @@
           ]
         },
         {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 6,
+          "evidence_examples": [
+            {
+              "job_id": "JD114",
+              "field": "description",
+              "matched_term": "user behavior",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Gather user feedback and analyze user behavior to identify pain points, feature needs, and opportunities for improvement."
+            },
+            {
+              "job_id": "JD140",
+              "field": "requirements",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Intermediate Business Analysis and Configuration Tools: Proficiency in more advanced tools and software for requirements management and documentation (e.g., Jira, Excel, Word, Microsoft Visio, PowerPoint). Undertake medium complexity configuration activities (RMT/Workbenches)."
+            },
+            {
+              "job_id": "JD143",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support documentation of business processes and identify improvement opportunities under guidance."
+            }
+          ]
+        },
+        {
           "entity_id": "K0027",
           "kkt_type": "K",
           "canonical_name": "Enterprise Resource Planning",
@@ -1383,6 +1879,38 @@
           ]
         },
         {
+          "entity_id": "K0092",
+          "kkt_type": "K",
+          "canonical_name": "Phân tích, đánh giá, ứng dụng thông tin kinh tế hỗ trợ ra quyết định",
+          "job_count": 5,
+          "evidence_examples": [
+            {
+              "job_id": "JD114",
+              "field": "description",
+              "matched_term": "market analysis",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Conduct competitor research and market analysis to identify trends and opportunities in Affiliate Marketing, and incorporate insights into product decisions."
+            },
+            {
+              "job_id": "JD138",
+              "field": "requirements",
+              "matched_term": "decision making",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Expert judgment and decision making skills."
+            },
+            {
+              "job_id": "JD140",
+              "field": "requirements",
+              "matched_term": "business analysis",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "At least more than 1 year of experience in business analysis"
+            }
+          ]
+        },
+        {
           "entity_id": "K0020",
           "kkt_type": "K",
           "canonical_name": "Cơ sở dữ liệu",
@@ -1411,6 +1939,94 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Intermediate Data Analysis: Ability to conduct more detailed data analysis and create complex reports using data analysis tools or databases (e.g., SQL)."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD114",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support sprint planning, clarify scope with the development team, and manage the delivery process to ensure features are completed on time."
+            },
+            {
+              "job_id": "JD205",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "BCG offers a comprehensive benefits program, including medical, dental and vision coverage, telemedicine services, life, accident and disability insurance, parental leave and family planning benefits, caregiving resources, mental health offerings, a generous retirement program, financial guidance, paid time off, and more."
+            },
+            {
+              "job_id": "JD215",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist in project planning, estimation, and resource allocation."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD090",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Tham gia trực tiếp vào những dự án với domain khác nhau như ví điện tử, cổng thanh toán, xác thực định danh, y tế, giao thông..."
+            },
+            {
+              "job_id": "JD217",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Responsibilities include identifying and evaluating business processes, creating seamless workflows, collaborating with technical teams on solutions, and ensuring the successful implementation of technology initiatives that drive efficiency and innovation in the fintech domain."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0003",
+          "kkt_type": "K",
+          "canonical_name": "Bảo mật mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD185",
+              "field": "description",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Be compliant with data security and customer information management standards as well as group policies."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0008",
+          "kkt_type": "K",
+          "canonical_name": "Chính sách an toàn bảo mật hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD185",
+              "field": "description",
+              "matched_term": "data security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Be compliant with data security and customer information management standards as well as group policies."
             }
           ]
         },
@@ -1447,6 +2063,22 @@
           ]
         },
         {
+          "entity_id": "K0037",
+          "kkt_type": "K",
+          "canonical_name": "Hồ sơ và quản lý hồ sơ",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD216",
+              "field": "description",
+              "matched_term": "document management",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support the operation of the HRIS (Human Resource Information System) based on individual strengths (e.g. requirements analysis, solution research, testing), and assist end users in modules such as recruitment, performance evaluation, and personnel/document management."
+            }
+          ]
+        },
+        {
           "entity_id": "K0040",
           "kkt_type": "K",
           "canonical_name": "Kho dữ liệu",
@@ -1459,6 +2091,86 @@
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Phối hợp với đội Data Engineering trong triển khai data warehouse/lake."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0112",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý và kiểm soát thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD215",
+              "field": "description",
+              "matched_term": "quality assurance",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Quality Assurance:"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 10,
+          "evidence_examples": [
+            {
+              "job_id": "JD114",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong communication skills in English (written and verbal)."
+            },
+            {
+              "job_id": "JD138",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent communication skill (Vietnamese and English) and interpersonal skill"
+            },
+            {
+              "job_id": "JD140",
+              "field": "description",
+              "matched_term": "collaboration",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Collaboration: Facilitate discussions with business stakeholders, developers, and QA teams to ensure requirements are clearly understood, technical solutions are aligned, and testing plans are robust. Act as a key point of contact for complex system-related issues, providing detailed analysis and insights to refine design approaches."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 8,
+          "evidence_examples": [
+            {
+              "job_id": "JD114",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong communication skills in English (written and verbal)."
+            },
+            {
+              "job_id": "JD138",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent communication skill (Vietnamese and English) and interpersonal skill"
+            },
+            {
+              "job_id": "JD143",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good written and verbal communication skills in English."
             }
           ]
         },
@@ -1591,6 +2303,62 @@
           ]
         },
         {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD206",
+              "field": "requirements",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Current third / final year students studying a bachelor's degree in the fields of Management Information Systems, Information Technology, E-Commerce, Economics, Logistics & Supply Chain or related fields"
+            },
+            {
+              "job_id": "JD216",
+              "field": "description",
+              "matched_term": "information system",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support the operation of the HRIS (Human Resource Information System) based on individual strengths (e.g. requirements analysis, solution research, testing), and assist end users in modules such as recruitment, performance evaluation, and personnel/document management."
+            },
+            {
+              "job_id": "JD217",
+              "field": "requirements",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Bachelor's degree in Business Administration, Information Systems, or a related field is preferred"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0007",
+          "kkt_type": "S",
+          "canonical_name": "Cài đặt và cấu hình dịch vụ mạng cơ bản trong Workgroup và Domain",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD090",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Tham gia trực tiếp vào những dự án với domain khác nhau như ví điện tử, cổng thanh toán, xác thực định danh, y tế, giao thông..."
+            },
+            {
+              "job_id": "JD217",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Responsibilities include identifying and evaluating business processes, creating seamless workflows, collaborating with technical teams on solutions, and ensuring the successful implementation of technology initiatives that drive efficiency and innovation in the fintech domain."
+            }
+          ]
+        },
+        {
           "entity_id": "S0042",
           "kkt_type": "S",
           "canonical_name": "Năng lực tự học",
@@ -1603,6 +2371,38 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Tham gia training và tự học hỏi kiến thức, công nghệ mới để áp dụng vào dự án."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0131",
+          "kkt_type": "S",
+          "canonical_name": "Vận hành quy trình quản lý dữ liệu và thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD185",
+              "field": "description",
+              "matched_term": "information management",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Responsible for providing accurate and decision supportive information management, data management process, performance calculation & analytics support to business stakeholders."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0150",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng ý tưởng và lập kế hoạch triển khai dự án",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD215",
+              "field": "description",
+              "matched_term": "project planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist in project planning, estimation, and resource allocation."
             }
           ]
         },
@@ -1793,9 +2593,10 @@
       "missing_job_ids": [
         "JD073"
       ],
-      "jobs_with_kkt_count": 16,
+      "jobs_with_kkt_count": 18,
       "jobs_with_kkt_ids": [
         "JD035",
+        "JD036",
         "JD039",
         "JD049",
         "JD050",
@@ -1809,17 +2610,15 @@
         "JD129",
         "JD142",
         "JD149",
+        "JD151",
         "JD152",
         "JD178"
       ],
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
-        "JD036",
-        "JD151"
-      ],
-      "kkt_count": 7,
-      "knowledge_count": 4,
-      "skill_count": 2,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 13,
+      "knowledge_count": 7,
+      "skill_count": 5,
       "tool_count": 1,
       "kkt_list": [
         {
@@ -1887,6 +2686,78 @@
           ]
         },
         {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD121",
+              "field": "requirements",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Basic event planning and event organisation skills."
+            },
+            {
+              "job_id": "JD178",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Plan, execute, and monitor talent-related projects (e.g., leadership development, succession planning, engagement programs) ensuring alignment with divisional and global priorities."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD078",
+              "field": "title",
+              "matched_term": "receptionist",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Receptionist"
+            },
+            {
+              "job_id": "JD151",
+              "field": "requirements",
+              "matched_term": "customer service",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Hardworking, enthusiastic, customer service mindset"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD057",
+              "field": "description",
+              "matched_term": "networking",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Utilize various recruiting platforms, social media, and networking to attract qualified candidates."
+            },
+            {
+              "job_id": "JD152",
+              "field": "description",
+              "matched_term": "networking",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Có khả năng networking rộng và khả năng tuyển dụng các vị trí, duy trì nguồn ứng viên hiệu quả."
+            }
+          ]
+        },
+        {
           "entity_id": "K0128",
           "kkt_type": "K",
           "canonical_name": "Truyền thông xã hội",
@@ -1927,11 +2798,83 @@
           ]
         },
         {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD036",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Skills in office computing, communication, teamwork and independent work ."
+            },
+            {
+              "job_id": "JD121",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication and teamwork skills with a problem-solving attitude, willing to support tasks beyond their core responsibilities."
+            },
+            {
+              "job_id": "JD151",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good English communication"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD036",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Skills in office computing, communication, teamwork and independent work ."
+            },
+            {
+              "job_id": "JD121",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication and teamwork skills with a problem-solving attitude, willing to support tasks beyond their core responsibilities."
+            },
+            {
+              "job_id": "JD151",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good English communication"
+            }
+          ]
+        },
+        {
           "entity_id": "S0146",
           "kkt_type": "S",
           "canonical_name": "Xây dựng kế hoạch",
-          "job_count": 3,
+          "job_count": 4,
           "evidence_examples": [
+            {
+              "job_id": "JD057",
+              "field": "description",
+              "matched_term": "schedule",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Schedule and conduct interviews, assess candidate qualifications, and make recommendations for hiring decisions."
+            },
             {
               "job_id": "JD121",
               "field": "requirements",
@@ -1947,14 +2890,6 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Xây dựng thương hiệu Tuyển dụng: Phối hợp với TBP lập kế hoạch tổ chức các hoạt động xây dựng thương hiệu tuyển dụng Công ty"
-            },
-            {
-              "job_id": "JD178",
-              "field": "description",
-              "matched_term": "planning",
-              "method": "auto_alias_norm",
-              "coverage_status": "auto_enriched",
-              "evidence_snippet": "Plan, execute, and monitor talent-related projects (e.g., leadership development, succession planning, engagement programs) ensuring alignment with divisional and global priorities."
             }
           ]
         },
@@ -1983,10 +2918,26 @@
           ]
         },
         {
+          "entity_id": "S0150",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng ý tưởng và lập kế hoạch triển khai dự án",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD178",
+              "field": "requirements",
+              "matched_term": "project coordination",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Hands-on experience in project coordination and data analysis."
+            }
+          ]
+        },
+        {
           "entity_id": "T0009",
           "kkt_type": "T",
           "canonical_name": "Microsoft Excel",
-          "job_count": 9,
+          "job_count": 15,
           "evidence_examples": [
             {
               "job_id": "JD035",
@@ -1997,20 +2948,20 @@
               "evidence_snippet": "- Sử dụng thành thạo Microsoft Excel, Word."
             },
             {
+              "job_id": "JD036",
+              "field": "requirements",
+              "matched_term": "tin học văn phòng",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Kỹ năng tin học văn phòng, giao tiếp, làm việc nhóm và làm việc độc lập"
+            },
+            {
               "job_id": "JD039",
               "field": "requirements",
               "matched_term": "excel",
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Thành thạo tin học văn phòng (Word/Excel)."
-            },
-            {
-              "job_id": "JD063",
-              "field": "requirements",
-              "matched_term": "excel",
-              "method": "alias_norm",
-              "coverage_status": "",
-              "evidence_snippet": "- Sử dụng thành thạo MS Office (Word, Excel, Outlook)"
             }
           ]
         }
@@ -2075,7 +3026,7 @@
       "missing_job_ids": [
         "JD156"
       ],
-      "jobs_with_kkt_count": 12,
+      "jobs_with_kkt_count": 13,
       "jobs_with_kkt_ids": [
         "JD083",
         "JD084",
@@ -2088,16 +3039,16 @@
         "JD169",
         "JD190",
         "JD210",
-        "JD218"
-      ],
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
-        "JD101",
+        "JD218",
         "JD228"
       ],
-      "kkt_count": 13,
+      "jobs_without_kkt_count": 1,
+      "jobs_without_kkt_ids": [
+        "JD101"
+      ],
+      "kkt_count": 16,
       "knowledge_count": 6,
-      "skill_count": 3,
+      "skill_count": 6,
       "tool_count": 4,
       "kkt_list": [
         {
@@ -2253,6 +3204,70 @@
           ]
         },
         {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD141",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Communication"
+            },
+            {
+              "job_id": "JD218",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good English communication skills; English certification is a plus."
+            },
+            {
+              "job_id": "JD228",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Articulate and credible written and verbal communication skills, including good presentation skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD141",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Communication"
+            },
+            {
+              "job_id": "JD218",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good English communication skills; English certification is a plus."
+            },
+            {
+              "job_id": "JD228",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Articulate and credible written and verbal communication skills, including good presentation skills."
+            }
+          ]
+        },
+        {
           "entity_id": "S0042",
           "kkt_type": "S",
           "canonical_name": "Năng lực tự học",
@@ -2297,6 +3312,22 @@
               "method": "canonical_norm",
               "coverage_status": "",
               "evidence_snippet": "- Tham gia phân tích các nhu cầu chiến lược của tập đoàn và xây dựng kế hoạch nghiên cứu theo từng dự án."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0131",
+          "kkt_type": "S",
+          "canonical_name": "Vận hành quy trình quản lý dữ liệu và thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD141",
+              "field": "description",
+              "matched_term": "data management",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Taking part in team's contribution to build working process within Research Department regarding Data Management, Account Management & Analytical Skills Training."
             }
           ]
         },
@@ -2432,7 +3463,7 @@
       "missing_job_ids": [
         "JD165"
       ],
-      "jobs_with_kkt_count": 8,
+      "jobs_with_kkt_count": 10,
       "jobs_with_kkt_ids": [
         "JD016",
         "JD028",
@@ -2441,18 +3472,49 @@
         "JD042",
         "JD044",
         "JD045",
-        "JD080"
-      ],
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
         "JD056",
+        "JD080",
         "JD134"
       ],
-      "kkt_count": 6,
-      "knowledge_count": 4,
-      "skill_count": 0,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 13,
+      "knowledge_count": 7,
+      "skill_count": 4,
       "tool_count": 2,
       "kkt_list": [
+        {
+          "entity_id": "K0037",
+          "kkt_type": "K",
+          "canonical_name": "Hồ sơ và quản lý hồ sơ",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD041",
+              "field": "description",
+              "matched_term": "archive",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Receive, file, archive and manage purchase order, contracts, correspondences from Sales Reps and Business Developer."
+            },
+            {
+              "job_id": "JD044",
+              "field": "description",
+              "matched_term": "employee records",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist in managing, storing, and preserving employee records, employee data"
+            },
+            {
+              "job_id": "JD045",
+              "field": "description",
+              "matched_term": "archiving",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist in organizing, filing, and archiving invoices, contracts, and supporting documents (soft copy & hard copy if required)."
+            }
+          ]
+        },
         {
           "entity_id": "K0027",
           "kkt_type": "K",
@@ -2542,11 +3604,147 @@
           ]
         },
         {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD044",
+              "field": "title",
+              "matched_term": "receptionist",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Receptionist cum Admin Intern"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD045",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Coordinate with internal teams to collect required information for reports and documentation."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 6,
+          "evidence_examples": [
+            {
+              "job_id": "JD041",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Great oral and written communication skills and Interpersonal skills"
+            },
+            {
+              "job_id": "JD042",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication and teamwork"
+            },
+            {
+              "job_id": "JD044",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication and problem solving skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 6,
+          "evidence_examples": [
+            {
+              "job_id": "JD041",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Great oral and written communication skills and Interpersonal skills"
+            },
+            {
+              "job_id": "JD042",
+              "field": "description",
+              "matched_term": "coordinate with",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Coordinate with other department for associate benefit/ gifts."
+            },
+            {
+              "job_id": "JD044",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication and problem solving skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD080",
+              "field": "description",
+              "matched_term": "schedule",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Schedule meetings, manage calendars, and coordinate appointments."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0150",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng ý tưởng và lập kế hoạch triển khai dự án",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD080",
+              "field": "description",
+              "matched_term": "project coordination",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Internal communication support or small project coordination."
+            }
+          ]
+        },
+        {
           "entity_id": "T0009",
           "kkt_type": "T",
           "canonical_name": "Microsoft Excel",
-          "job_count": 5,
+          "job_count": 8,
           "evidence_examples": [
+            {
+              "job_id": "JD016",
+              "field": "requirements",
+              "matched_term": "tin học văn phòng",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Thành thạo tin học văn phòng; kỹ năng soạn thảo văn bản rõ ràng, chuyên nghiệp."
+            },
             {
               "job_id": "JD028",
               "field": "requirements",
@@ -2562,14 +3760,6 @@
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Proficiency in Microsoft Office (Work, Excel, Power point)"
-            },
-            {
-              "job_id": "JD044",
-              "field": "requirements",
-              "matched_term": "ms excel",
-              "method": "alias_norm",
-              "coverage_status": "",
-              "evidence_snippet": "- Familiar with using MS office, especially MS Word, MS Excel and MS Power Point;"
             }
           ]
         },
@@ -2635,24 +3825,24 @@
       ],
       "found_job_count": 9,
       "missing_job_ids": [],
-      "jobs_with_kkt_count": 7,
+      "jobs_with_kkt_count": 8,
       "jobs_with_kkt_ids": [
         "JD058",
         "JD059",
         "JD076",
+        "JD077",
         "JD079",
         "JD097",
         "JD098",
         "JD132"
       ],
-      "jobs_without_kkt_count": 2,
+      "jobs_without_kkt_count": 1,
       "jobs_without_kkt_ids": [
-        "JD077",
         "JD105"
       ],
-      "kkt_count": 7,
-      "knowledge_count": 3,
-      "skill_count": 3,
+      "kkt_count": 11,
+      "knowledge_count": 5,
+      "skill_count": 5,
       "tool_count": 1,
       "kkt_list": [
         {
@@ -2688,6 +3878,22 @@
           ]
         },
         {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD077",
+              "field": "description",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Phát triển mạng lưới cộng đồng Nhà sáng tạo yêu thích sản phẩm Kim Phú để tạo hệ sinh thái lan tỏa tự nhiên"
+            }
+          ]
+        },
+        {
           "entity_id": "K0027",
           "kkt_type": "K",
           "canonical_name": "Enterprise Resource Planning",
@@ -2700,6 +3906,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Có kỹ năng quản lý thời gian, sắp xếp công việc, làm việc độc lập và hợp tác tốt với đội nhóm."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD077",
+              "field": "description",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Phát triển mạng lưới cộng đồng Nhà sáng tạo yêu thích sản phẩm Kim Phú để tạo hệ sinh thái lan tỏa tự nhiên"
             }
           ]
         },
@@ -2752,6 +3974,54 @@
           ]
         },
         {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD058",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Create, write, and edit content for various communication channels on social media as directed by line manager"
+            },
+            {
+              "job_id": "JD132",
+              "field": "description",
+              "matched_term": "communicate",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Communicate performance insights clearly to the team and flag issues early."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD058",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Create, write, and edit content for various communication channels on social media as directed by line manager"
+            },
+            {
+              "job_id": "JD132",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong English written and verbal communication skills."
+            }
+          ]
+        },
+        {
           "entity_id": "S0146",
           "kkt_type": "S",
           "canonical_name": "Xây dựng kế hoạch",
@@ -2795,7 +4065,7 @@
           "entity_id": "T0009",
           "kkt_type": "T",
           "canonical_name": "Microsoft Excel",
-          "job_count": 2,
+          "job_count": 3,
           "evidence_examples": [
             {
               "job_id": "JD058",
@@ -2804,6 +4074,14 @@
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Familiar with Microsoft Office (Outlook, Word, Excel) & Google Sheets"
+            },
+            {
+              "job_id": "JD059",
+              "field": "requirements",
+              "matched_term": "tin học văn phòng",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Kỹ năng tin học văn phòng cơ bản, biết sử dụng các công cụ thiết kế là một lợi thế."
             },
             {
               "job_id": "JD132",
@@ -2861,10 +4139,11 @@
       ],
       "found_job_count": 9,
       "missing_job_ids": [],
-      "jobs_with_kkt_count": 8,
+      "jobs_with_kkt_count": 9,
       "jobs_with_kkt_ids": [
         "JD113",
         "JD133",
+        "JD145",
         "JD146",
         "JD147",
         "JD170",
@@ -2872,13 +4151,11 @@
         "JD172",
         "JD240"
       ],
-      "jobs_without_kkt_count": 1,
-      "jobs_without_kkt_ids": [
-        "JD145"
-      ],
-      "kkt_count": 11,
-      "knowledge_count": 7,
-      "skill_count": 3,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 20,
+      "knowledge_count": 13,
+      "skill_count": 6,
       "tool_count": 1,
       "kkt_list": [
         {
@@ -2910,6 +4187,38 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Own product positioning and messaging for global B2B SaaS/AI markets, including ICP/personas, value propositions, \"why us\", and pricing page narratives"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD133",
+              "field": "description",
+              "matched_term": "user behavior",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Analyze user behavior, revenue data, and key metrics (e.g., ARPU, LTV, ad fill rates, subscription conversion) using available tools."
+            },
+            {
+              "job_id": "JD170",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Prepare change documentation: impact assessment, UAT evidence, and rollback considerations."
+            },
+            {
+              "job_id": "JD171",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Product Documentation: Write and maintain PRDs, user stories, acceptance criteria, and release notes that enable fast, aligned execution."
             }
           ]
         },
@@ -2962,6 +4271,38 @@
           ]
         },
         {
+          "entity_id": "K0003",
+          "kkt_type": "K",
+          "canonical_name": "Bảo mật mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD170",
+              "field": "description",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "IT Security Management:"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0008",
+          "kkt_type": "K",
+          "canonical_name": "Chính sách an toàn bảo mật hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD170",
+              "field": "description",
+              "matched_term": "IT security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "IT Security Management:"
+            }
+          ]
+        },
+        {
           "entity_id": "K0020",
           "kkt_type": "K",
           "canonical_name": "Cơ sở dữ liệu",
@@ -2994,6 +4335,38 @@
           ]
         },
         {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD113",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Trực tiếp tham gia quá trình hình thành sản phẩm: Idea Validate Planning"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD170",
+              "field": "requirements",
+              "matched_term": "customer service",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong understanding of Sales, Marketing, and Customer Service workflows."
+            }
+          ]
+        },
+        {
           "entity_id": "K0075",
           "kkt_type": "K",
           "canonical_name": "Mạng máy tính",
@@ -3010,6 +4383,22 @@
           ]
         },
         {
+          "entity_id": "K0092",
+          "kkt_type": "K",
+          "canonical_name": "Phân tích, đánh giá, ứng dụng thông tin kinh tế hỗ trợ ra quyết định",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD133",
+              "field": "requirements",
+              "matched_term": "decision making",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Knowledge with mobile app analytics tools (Firebase, Google Analytics) and data-driven decision making."
+            }
+          ]
+        },
+        {
           "entity_id": "K0100",
           "kkt_type": "K",
           "canonical_name": "Quy trình kinh doanh",
@@ -3022,6 +4411,70 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Troubleshoot and resolve incidents requiring Specialist-level knowledge such as workflow failures, automation errors, permission misalignments, pipeline discrepancies, and data-sync issues."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 6,
+          "evidence_examples": [
+            {
+              "job_id": "JD133",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication skills in English (written and spoken) for collaborating with global partners."
+            },
+            {
+              "job_id": "JD145",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent communication and collaboration skills, with the ability to work closely with cross-functional teams and stakeholders."
+            },
+            {
+              "job_id": "JD146",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Effective communication skills in both Vietnamese and English."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 6,
+          "evidence_examples": [
+            {
+              "job_id": "JD133",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication skills in English (written and spoken) for collaborating with global partners."
+            },
+            {
+              "job_id": "JD145",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent communication and collaboration skills, with the ability to work closely with cross-functional teams and stakeholders."
+            },
+            {
+              "job_id": "JD146",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Effective communication skills in both Vietnamese and English."
             }
           ]
         },
@@ -3058,6 +4511,38 @@
           ]
         },
         {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD113",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Trực tiếp tham gia quá trình hình thành sản phẩm: Idea Validate Planning"
+            },
+            {
+              "job_id": "JD145",
+              "field": "description",
+              "matched_term": "roadmap",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Develop and maintain the product roadmap, incorporating customer feedback, market trends, and new opportunities to grow the product."
+            },
+            {
+              "job_id": "JD240",
+              "field": "description",
+              "matched_term": "roadmap",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Đề xuất phương án tùy chỉnh sản phẩm nếu khách hàng có yêu cầu riêng, đảm bảo hài hòa lợi ích giữa khách hàng, Tập đoàn và Công ty, phù hợp với roadmap sản phẩm đã được phê duyệt."
+            }
+          ]
+        },
+        {
           "entity_id": "S0042",
           "kkt_type": "S",
           "canonical_name": "Năng lực tự học",
@@ -3082,18 +4567,26 @@
           ]
         },
         {
-          "entity_id": "S0146",
+          "entity_id": "S0148",
           "kkt_type": "S",
-          "canonical_name": "Xây dựng kế hoạch",
-          "job_count": 1,
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 2,
           "evidence_examples": [
             {
-              "job_id": "JD113",
+              "job_id": "JD146",
               "field": "description",
-              "matched_term": "planning",
+              "matched_term": "troubleshoot",
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
-              "evidence_snippet": "Trực tiếp tham gia quá trình hình thành sản phẩm: Idea Validate Planning"
+              "evidence_snippet": "Investigate and troubleshoot ad delivery issues across demand and supply channels, working closely with Engineering and Operations teams;"
+            },
+            {
+              "job_id": "JD170",
+              "field": "description",
+              "matched_term": "troubleshooting",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Create troubleshooting documentation and contribute to the Known Issues repository."
             }
           ]
         },
@@ -3156,23 +4649,22 @@
       ],
       "found_job_count": 8,
       "missing_job_ids": [],
-      "jobs_with_kkt_count": 6,
+      "jobs_with_kkt_count": 8,
       "jobs_with_kkt_ids": [
         "JD037",
+        "JD061",
         "JD062",
+        "JD064",
         "JD085",
         "JD115",
         "JD135",
         "JD163"
       ],
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
-        "JD061",
-        "JD064"
-      ],
-      "kkt_count": 3,
-      "knowledge_count": 2,
-      "skill_count": 0,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 8,
+      "knowledge_count": 5,
+      "skill_count": 2,
       "tool_count": 1,
       "kkt_list": [
         {
@@ -3208,6 +4700,38 @@
           ]
         },
         {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD037",
+              "field": "requirements",
+              "matched_term": "customer service",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "At least 1 year experience in Customer Service function;"
+            },
+            {
+              "job_id": "JD064",
+              "field": "title",
+              "matched_term": "customer service",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Customer Service Executive Freight Forwarding"
+            },
+            {
+              "job_id": "JD135",
+              "field": "title",
+              "matched_term": "customer service",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Customer Service Officer"
+            }
+          ]
+        },
+        {
           "entity_id": "K0020",
           "kkt_type": "K",
           "canonical_name": "Cơ sở dữ liệu",
@@ -3220,6 +4744,102 @@
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Key in customers database shared by supermarket, pharmacy,..."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD135",
+              "field": "requirements",
+              "matched_term": "network",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Proficiency in using MS Word, Excel, PowerPoint, Social network"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD037",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support necessary administrative tasks related to DI Repair programs (e.g. purchasing support, payment process, internal documentation, etc.)."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD037",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support communication activities related to DI Repair services, including service program, service policies, and customer experience initiatives."
+            },
+            {
+              "job_id": "JD061",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Handle SI, BL, Post Advice & keep an effective communication among OPSC Team, Carriers and Customers;"
+            },
+            {
+              "job_id": "JD064",
+              "field": "description",
+              "matched_term": "communicate",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Communicate on daily basis with shipping lines, airlines, truckers, customers, warehouse, sales representatives and oversea agent offices."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD037",
+              "field": "description",
+              "matched_term": "coordinate with",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Coordinate with internal teams (Service, DI team, Marketing, etc.) to deploy customer experience improvement programs for DI Repair."
+            },
+            {
+              "job_id": "JD061",
+              "field": "description",
+              "matched_term": "coordinate with",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Coordinate with suplier/customer for plan changing;"
+            },
+            {
+              "job_id": "JD064",
+              "field": "description",
+              "matched_term": "coordinate with",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Coordinate with sale team/ pricing in offering & consultant about company's services."
             }
           ]
         },
@@ -3311,9 +4931,9 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 11,
-      "knowledge_count": 7,
-      "skill_count": 2,
+      "kkt_count": 19,
+      "knowledge_count": 11,
+      "skill_count": 6,
       "tool_count": 2,
       "kkt_list": [
         {
@@ -3413,6 +5033,38 @@
           ]
         },
         {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD029",
+              "field": "description",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Quản lý rủi ro và gian lận: Hỗ trợ phát hiện các giao dịch bất thường, đánh giá rủi ro tín dụng và tối ưu hóa các quy trình kiểm soát rủi ro."
+            },
+            {
+              "job_id": "JD188",
+              "field": "requirements",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong desire to learn about programming, statistics, ML, product, domain expertise, etc. Here we are avid learners, you'll see."
+            },
+            {
+              "job_id": "JD197",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "This internship offers a unique opportunity to work at the intersection of AI, data analysis, and domain understanding, with room to grow into more technical tasks for those with programming skills."
+            }
+          ]
+        },
+        {
           "entity_id": "K0020",
           "kkt_type": "K",
           "canonical_name": "Cơ sở dữ liệu",
@@ -3485,6 +5137,38 @@
           ]
         },
         {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD029",
+              "field": "description",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Quản lý rủi ro và gian lận: Hỗ trợ phát hiện các giao dịch bất thường, đánh giá rủi ro tín dụng và tối ưu hóa các quy trình kiểm soát rủi ro."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD197",
+              "field": "requirements",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Detail-Oriented: Careful and precise in handling data, validation tasks, and documentation."
+            }
+          ]
+        },
+        {
           "entity_id": "K0091",
           "kkt_type": "K",
           "canonical_name": "Phân tích thống kê",
@@ -3497,6 +5181,22 @@
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Data Mining & Insight Discovery: Applying statistical analysis and data mining techniques to our rich datasets. You will identify subtle patterns, pinpoint performance bottlenecks, and discover actionable insights that will inform future product development."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0112",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý và kiểm soát thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD197",
+              "field": "description",
+              "matched_term": "quality assurance",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "This role is ideal for students or recent graduates looking to gain hands-on experience in the AI/tech space, especially those aspiring to become Business Analysts, Quality Assurance Engineers, Developers, or Product Owners."
             }
           ]
         },
@@ -3533,6 +5233,94 @@
           ]
         },
         {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 4,
+          "evidence_examples": [
+            {
+              "job_id": "JD193",
+              "field": "description",
+              "matched_term": "collaboration",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Collaboration: Working closely with performance architects, engineers, and product managers to understand their requirements and deliver data-driven solutions."
+            },
+            {
+              "job_id": "JD197",
+              "field": "requirements",
+              "matched_term": "collaboration",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Self-Motivated & Communicative: Comfortable working independently in a remote environment, yet proactive in seeking feedback and collaboration."
+            },
+            {
+              "job_id": "JD200",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data visualization and communication"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD188",
+              "field": "description",
+              "matched_term": "communicate",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Communicate insights effectively to both technical and non-technical stakeholders."
+            },
+            {
+              "job_id": "JD193",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent problem-solving and communication skills."
+            },
+            {
+              "job_id": "JD200",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data visualization and communication"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0007",
+          "kkt_type": "S",
+          "canonical_name": "Cài đặt và cấu hình dịch vụ mạng cơ bản trong Workgroup và Domain",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD188",
+              "field": "requirements",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong desire to learn about programming, statistics, ML, product, domain expertise, etc. Here we are avid learners, you'll see."
+            },
+            {
+              "job_id": "JD197",
+              "field": "description",
+              "matched_term": "domain",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "This internship offers a unique opportunity to work at the intersection of AI, data analysis, and domain understanding, with room to grow into more technical tasks for those with programming skills."
+            }
+          ]
+        },
+        {
           "entity_id": "S0032",
           "kkt_type": "S",
           "canonical_name": "Mô hình hóa dữ liệu",
@@ -3553,6 +5341,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Pandas, NumPy, and Scikit-learn. Knowledge of SQL, databases, and data modeling is also preferred."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD193",
+              "field": "requirements",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Currently enrolled in a Bachelor's, Master's, or PhD program in Computer Science, Data Science, Business Analytics, Information Systems, or a related quantitative field."
             }
           ]
         },
@@ -3655,11 +5459,35 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 10,
-      "knowledge_count": 6,
-      "skill_count": 3,
+      "kkt_count": 20,
+      "knowledge_count": 11,
+      "skill_count": 8,
       "tool_count": 1,
       "kkt_list": [
+        {
+          "entity_id": "K0020",
+          "kkt_type": "K",
+          "canonical_name": "Cơ sở dữ liệu",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD208",
+              "field": "requirements",
+              "matched_term": "master data",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Able to work with Excel files and master data sheets"
+            },
+            {
+              "job_id": "JD221",
+              "field": "description",
+              "matched_term": "data storage",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Implement best practices for data storage and documentation."
+            }
+          ]
+        },
         {
           "entity_id": "K0027",
           "kkt_type": "K",
@@ -3685,15 +5513,23 @@
           ]
         },
         {
-          "entity_id": "K0020",
+          "entity_id": "K0074",
           "kkt_type": "K",
-          "canonical_name": "Cơ sở dữ liệu",
-          "job_count": 1,
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 2,
           "evidence_examples": [
+            {
+              "job_id": "JD123",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support in organizing and maintaining digital documentation for product setup and updates in the predefined structure."
+            },
             {
               "job_id": "JD221",
               "field": "description",
-              "matched_term": "data storage",
+              "matched_term": "documentation",
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Implement best practices for data storage and documentation."
@@ -3749,6 +5585,70 @@
           ]
         },
         {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD194",
+              "field": "requirements",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Basic knowledge of project planning & execution"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD181",
+              "field": "requirements",
+              "matched_term": "client support",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Experience in client support or operations within a compliance or tech-related field"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0092",
+          "kkt_type": "K",
+          "canonical_name": "Phân tích, đánh giá, ứng dụng thông tin kinh tế hỗ trợ ra quyết định",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD021",
+              "field": "requirements",
+              "matched_term": "business analysis",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Kỹ năng Business Analysis tốt, chú ý chi tiết."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0112",
+          "kkt_type": "K",
+          "canonical_name": "Quản lý và kiểm soát thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD221",
+              "field": "requirements",
+              "matched_term": "quality control",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Experience in Data Operations, Data Processing, Data Entry, or Data Quality Control is a strong advantage."
+            }
+          ]
+        },
+        {
           "entity_id": "K0128",
           "kkt_type": "K",
           "canonical_name": "Truyền thông xã hội",
@@ -3761,6 +5661,102 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Perform quality checks (QC) on classified social media data to ensure accuracy and relevance."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 5,
+          "evidence_examples": [
+            {
+              "job_id": "JD123",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Basic English communication skills."
+            },
+            {
+              "job_id": "JD181",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong communication skills, both written and verbal (email + occasional phone)"
+            },
+            {
+              "job_id": "JD194",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication skills in English and Vietnamese languages"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 5,
+          "evidence_examples": [
+            {
+              "job_id": "JD123",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Basic English communication skills."
+            },
+            {
+              "job_id": "JD181",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong communication skills, both written and verbal (email + occasional phone)"
+            },
+            {
+              "job_id": "JD194",
+              "field": "description",
+              "matched_term": "collaboration",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Teamwork/Collaboration with other stakeholder from many section"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0131",
+          "kkt_type": "S",
+          "canonical_name": "Vận hành quy trình quản lý dữ liệu và thông tin",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD123",
+              "field": "requirements",
+              "matched_term": "data management",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Basic knowledge of data entry and data management"
+            },
+            {
+              "job_id": "JD181",
+              "field": "title",
+              "matched_term": "data operations",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data Operations Analyst"
+            },
+            {
+              "job_id": "JD221",
+              "field": "title",
+              "matched_term": "data operations",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data Operations Executive"
             }
           ]
         },
@@ -3789,6 +5785,54 @@
           ]
         },
         {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD123",
+              "field": "description",
+              "matched_term": "timeline",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Enter product credentials into the system accurately and within the defined timeline."
+            },
+            {
+              "job_id": "JD194",
+              "field": "description",
+              "matched_term": "roadmap",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist Packaging Leader for sample record & data reporting within Digital Roadmap of Connected Brewery Project"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD181",
+              "field": "requirements",
+              "matched_term": "troubleshoot",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Ability to manage multiple tasks, troubleshoot issues, and meet deadlines"
+            },
+            {
+              "job_id": "JD194",
+              "field": "requirements",
+              "matched_term": "information system",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Major in Information System/ System Management or related fileds"
+            }
+          ]
+        },
+        {
           "entity_id": "S0068",
           "kkt_type": "S",
           "canonical_name": "Quản trị cơ sở dữ liệu",
@@ -3805,15 +5849,15 @@
           ]
         },
         {
-          "entity_id": "S0146",
+          "entity_id": "S0150",
           "kkt_type": "S",
-          "canonical_name": "Xây dựng kế hoạch",
+          "canonical_name": "Xây dựng ý tưởng và lập kế hoạch triển khai dự án",
           "job_count": 1,
           "evidence_examples": [
             {
               "job_id": "JD194",
               "field": "requirements",
-              "matched_term": "planning",
+              "matched_term": "project planning",
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Basic knowledge of project planning & execution"
@@ -3892,24 +5936,87 @@
       ],
       "found_job_count": 7,
       "missing_job_ids": [],
-      "jobs_with_kkt_count": 4,
+      "jobs_with_kkt_count": 7,
       "jobs_with_kkt_ids": [
         "JD072",
         "JD094",
-        "JD162",
-        "JD219"
-      ],
-      "jobs_without_kkt_count": 3,
-      "jobs_without_kkt_ids": [
         "JD127",
+        "JD162",
         "JD213",
+        "JD219",
         "JD220"
       ],
-      "kkt_count": 4,
-      "knowledge_count": 2,
-      "skill_count": 2,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 14,
+      "knowledge_count": 8,
+      "skill_count": 6,
       "tool_count": 0,
       "kkt_list": [
+        {
+          "entity_id": "K0003",
+          "kkt_type": "K",
+          "canonical_name": "Bảo mật mạng máy tính",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD127",
+              "field": "description",
+              "matched_term": "network security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Monitor security alerts and events using SIEM tools (e.g., Sentinel, Qradar, AWS cloudTrail/cloudwatch...) for various systems such as: Network security (firewall, WAF...), Endpoint security (EDR, XDR...), Data security, Cloud security..."
+            },
+            {
+              "job_id": "JD213",
+              "field": "description",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Handle offboarding tasks, including retrieving laptops and closing user accounts, with strict attention to IT security protocols."
+            },
+            {
+              "job_id": "JD220",
+              "field": "title",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data Security Intern"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0008",
+          "kkt_type": "K",
+          "canonical_name": "Chính sách an toàn bảo mật hệ thống thông tin",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD127",
+              "field": "description",
+              "matched_term": "data security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Monitor security alerts and events using SIEM tools (e.g., Sentinel, Qradar, AWS cloudTrail/cloudwatch...) for various systems such as: Network security (firewall, WAF...), Endpoint security (EDR, XDR...), Data security, Cloud security..."
+            },
+            {
+              "job_id": "JD213",
+              "field": "description",
+              "matched_term": "IT security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Handle offboarding tasks, including retrieving laptops and closing user accounts, with strict attention to IT security protocols."
+            },
+            {
+              "job_id": "JD220",
+              "field": "title",
+              "matched_term": "data security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data Security Intern"
+            }
+          ]
+        },
         {
           "entity_id": "K0036",
           "kkt_type": "K",
@@ -3935,6 +6042,78 @@
           ]
         },
         {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD127",
+              "field": "description",
+              "matched_term": "network",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Monitor security alerts and events using SIEM tools (e.g., Sentinel, Qradar, AWS cloudTrail/cloudwatch...) for various systems such as: Network security (firewall, WAF...), Endpoint security (EDR, XDR...), Data security, Cloud security..."
+            },
+            {
+              "job_id": "JD162",
+              "field": "title",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Chuyên Viên Cao Cấp Quản Trị Rủi Ro Gian Lận"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD162",
+              "field": "title",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Chuyên Viên Cao Cấp Quản Trị Rủi Ro Gian Lận"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD072",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Support in planning and executing content on platforms such as Discord, X (Twitter), Telegram, and other social media channels."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD220",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Help with documentation of policies, security checklists, and risk reports."
+            }
+          ]
+        },
+        {
           "entity_id": "K0128",
           "kkt_type": "K",
           "canonical_name": "Truyền thông xã hội",
@@ -3947,6 +6126,70 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Social Media Intern"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD072",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Collaborate with the team to implement communication campaigns aligned with brand direction."
+            },
+            {
+              "job_id": "JD127",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent written and verbal communication"
+            },
+            {
+              "job_id": "JD220",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Team player with good communication skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD072",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Collaborate with the team to implement communication campaigns aligned with brand direction."
+            },
+            {
+              "job_id": "JD127",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Excellent written and verbal communication"
+            },
+            {
+              "job_id": "JD220",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Team player with good communication skills."
             }
           ]
         },
@@ -3975,6 +6218,22 @@
           ]
         },
         {
+          "entity_id": "S0046",
+          "kkt_type": "S",
+          "canonical_name": "Phân quyền người dùng trong cơ sở dữ liệu",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD220",
+              "field": "description",
+              "matched_term": "access control",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Propose ideas to improve data protection, access control, and compliance."
+            }
+          ]
+        },
+        {
           "entity_id": "S0146",
           "kkt_type": "S",
           "canonical_name": "Xây dựng kế hoạch",
@@ -3987,6 +6246,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Support in planning and executing content on platforms such as Discord, X (Twitter), Telegram, and other social media channels."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD213",
+              "field": "requirements",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "A diploma or degree in Information Systems, Information Technology, or Computer Science."
             }
           ]
         }
@@ -4042,9 +6317,9 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 9,
-      "knowledge_count": 6,
-      "skill_count": 2,
+      "kkt_count": 12,
+      "knowledge_count": 7,
+      "skill_count": 4,
       "tool_count": 1,
       "kkt_list": [
         {
@@ -4136,6 +6411,22 @@
           ]
         },
         {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD055",
+              "field": "requirements",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Must have high level of organizational and planning skills, so that workflow is managed efficiently and accurately."
+            }
+          ]
+        },
+        {
           "entity_id": "K0100",
           "kkt_type": "K",
           "canonical_name": "Quy trình kinh doanh",
@@ -4192,6 +6483,30 @@
           ]
         },
         {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD055",
+              "field": "requirements",
+              "matched_term": "interpersonal skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Must have excellent interpersonal skills, with the ability to interact with all levels of co-workers and individuals."
+            },
+            {
+              "job_id": "JD195",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong logical thinking, business understanding, and learning agility; self-driven with good communication and teamwork skills"
+            }
+          ]
+        },
+        {
           "entity_id": "S0146",
           "kkt_type": "S",
           "canonical_name": "Xây dựng kế hoạch",
@@ -4216,10 +6531,26 @@
           ]
         },
         {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD195",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong logical thinking, business understanding, and learning agility; self-driven with good communication and teamwork skills"
+            }
+          ]
+        },
+        {
           "entity_id": "T0009",
           "kkt_type": "T",
           "canonical_name": "Microsoft Excel",
-          "job_count": 3,
+          "job_count": 4,
           "evidence_examples": [
             {
               "job_id": "JD055",
@@ -4230,20 +6561,20 @@
               "evidence_snippet": "- Requires excellent computer skills, including keyboard and all associated software."
             },
             {
+              "job_id": "JD068",
+              "field": "requirements",
+              "matched_term": "tin học văn phòng",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Thành thạo tin học văn phòng"
+            },
+            {
               "job_id": "JD160",
               "field": "requirements",
               "matched_term": "excel",
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Thành thạo công cụ văn phòng như Word, Excel và PowerPoint...;"
-            },
-            {
-              "job_id": "JD195",
-              "field": "requirements",
-              "matched_term": "excel",
-              "method": "alias_norm",
-              "coverage_status": "",
-              "evidence_snippet": "- Proficient in Excel/SQL and familiar with common data analysis methods"
             }
           ]
         }
@@ -4660,17 +6991,25 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 12,
-      "knowledge_count": 7,
-      "skill_count": 3,
+      "kkt_count": 19,
+      "knowledge_count": 10,
+      "skill_count": 7,
       "tool_count": 2,
       "kkt_list": [
         {
           "entity_id": "K0020",
           "kkt_type": "K",
           "canonical_name": "Cơ sở dữ liệu",
-          "job_count": 4,
+          "job_count": 6,
           "evidence_examples": [
+            {
+              "job_id": "JD031",
+              "field": "title",
+              "matched_term": "master data",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Master Data Administrator"
+            },
             {
               "job_id": "JD100",
               "field": "description",
@@ -4686,14 +7025,6 @@
               "method": "alias_norm",
               "coverage_status": "",
               "evidence_snippet": "- Cài đặt, cấu hình và triển khai CSDL: SQL Server, PostgreSQL, MySQL, MongoDB, ElasticSearch"
-            },
-            {
-              "job_id": "JD224",
-              "field": "requirements",
-              "matched_term": "database",
-              "method": "alias_norm",
-              "coverage_status": "",
-              "evidence_snippet": "- Có kiến thức cơ bản về Data System (cấu trúc dữ liệu, database, xử lý dữ liệu, v.v.);"
             }
           ]
         },
@@ -4810,6 +7141,22 @@
           ]
         },
         {
+          "entity_id": "K0003",
+          "kkt_type": "K",
+          "canonical_name": "Bảo mật mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD227",
+              "field": "description",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Ensure database operations comply with IT governance, security policies, change management procedures, and risk control standards."
+            }
+          ]
+        },
+        {
           "entity_id": "K0034",
           "kkt_type": "K",
           "canonical_name": "Hệ thống thông tin doanh nghiệp tích hợp",
@@ -4838,6 +7185,38 @@
               "method": "canonical_norm",
               "coverage_status": "",
               "evidence_snippet": "- Lập trình cơ sở dữ liệu PL/SQL, phát triển các chức năng xử lý dưới tầng Cơ sở dữ liệu."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD227",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Administer and support the management and operation of enterprise database systems, ensuring capacity planning, high availability, and 24/7 service continuity."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD031",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Compliance & Documentation: Maintain accurate documentation of data standards and processes; ensure compliance with data governance frameworks."
             }
           ]
         },
@@ -4874,6 +7253,86 @@
           ]
         },
         {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD031",
+              "field": "requirements",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Bachelor's degree in Business, Supply Chain, Information Systems, or related discipline (preferred)"
+            },
+            {
+              "job_id": "JD226",
+              "field": "requirements",
+              "matched_term": "troubleshooting",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "High attention to detail and a proactive approach to troubleshooting."
+            },
+            {
+              "job_id": "JD227",
+              "field": "requirements",
+              "matched_term": "troubleshooting",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Solid knowledge of database performance tuning, backup and recovery, and troubleshooting."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD226",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong Communication skills"
+            },
+            {
+              "job_id": "JD227",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good English communication skills and the ability to manage multiple tasks in a dynamic environment."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD226",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong Communication skills"
+            },
+            {
+              "job_id": "JD227",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good English communication skills and the ability to manage multiple tasks in a dynamic environment."
+            }
+          ]
+        },
+        {
           "entity_id": "S0021",
           "kkt_type": "S",
           "canonical_name": "Làm sạch dữ liệu",
@@ -4886,6 +7345,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Support periodic mass data cleansing activities"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0058",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích quy trình sao lưu, phục hồi cơ sở dữ liệu",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD227",
+              "field": "description",
+              "matched_term": "backup and recovery",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Manage and execute database backup and recovery strategies to ensure data integrity and business continuity."
             }
           ]
         },
@@ -5000,9 +7475,9 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 12,
-      "knowledge_count": 6,
-      "skill_count": 4,
+      "kkt_count": 20,
+      "knowledge_count": 10,
+      "skill_count": 8,
       "tool_count": 2,
       "kkt_list": [
         {
@@ -5190,6 +7665,142 @@
           ]
         },
         {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD176",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Maintain strong documentation and clean code so the site is easy to scale and hand over"
+            },
+            {
+              "job_id": "JD196",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "We maintain a problem-solving culture. Everyone is strongly encouraged to have rigorous understanding of a problem, separating Problem Space vs Solution Space as well as using Eigenquestions to find the most important dimensions of a problem. Solutions are deliberated over with trade-offs explicitly listed in discussion documentation."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0003",
+          "kkt_type": "K",
+          "canonical_name": "Bảo mật mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD177",
+              "field": "description",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Test and debug the tool to ensure reliability, performance, and security."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD196",
+              "field": "description",
+              "matched_term": "customer support",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "You'll be working on all aspects of our products, for example: front-end & backend development, implementing new features, website development, customer support..."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD099",
+              "field": "requirements",
+              "matched_term": "network",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Có kiến thức về network, nắm và hiểu được các thuật ngữ/giao thức như HTTP/HTTPS, DNS, SSL, có hiểu biết về các mô hình TCP/IP hoặc OSI."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD099",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Communication Platform"
+            },
+            {
+              "job_id": "JD176",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Clear communication"
+            },
+            {
+              "job_id": "JD177",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good teamwork and communication skills"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD099",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Communication Platform"
+            },
+            {
+              "job_id": "JD176",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Clear communication"
+            },
+            {
+              "job_id": "JD177",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good teamwork and communication skills"
+            }
+          ]
+        },
+        {
           "entity_id": "S0050",
           "kkt_type": "S",
           "canonical_name": "Phân tích dữ liệu doanh nghiệp",
@@ -5262,6 +7873,38 @@
           ]
         },
         {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD177",
+              "field": "requirements",
+              "matched_term": "schedule",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Available to commit to the internship for the agreed duration and schedule (part-time or full-time, as applicable)"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD177",
+              "field": "description",
+              "matched_term": "troubleshoot",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Troubleshoot integration issues and optimize the tool for better efficiency."
+            }
+          ]
+        },
+        {
           "entity_id": "T0002",
           "kkt_type": "T",
           "canonical_name": "C#",
@@ -5329,20 +7972,115 @@
       ],
       "found_job_count": 3,
       "missing_job_ids": [],
-      "jobs_with_kkt_count": 2,
+      "jobs_with_kkt_count": 3,
       "jobs_with_kkt_ids": [
         "JD020",
-        "JD159"
-      ],
-      "jobs_without_kkt_count": 1,
-      "jobs_without_kkt_ids": [
+        "JD159",
         "JD166"
       ],
-      "kkt_count": 3,
-      "knowledge_count": 2,
-      "skill_count": 1,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 14,
+      "knowledge_count": 9,
+      "skill_count": 5,
       "tool_count": 0,
       "kkt_list": [
+        {
+          "entity_id": "K0003",
+          "kkt_type": "K",
+          "canonical_name": "Bảo mật mạng máy tính",
+          "job_count": 3,
+          "evidence_examples": [
+            {
+              "job_id": "JD020",
+              "field": "description",
+              "matched_term": "access control",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Manage and support infrastructure-related systems such as CCTV, PA, PBX, eWork, and access control systems to ensure stable operation and integrate with corporate IT environment"
+            },
+            {
+              "job_id": "JD159",
+              "field": "requirements",
+              "matched_term": "firewall",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Có kinh nghiệm làm việc với các thiết bị mạng (switch, router, firewall) của các hãng như Cisco, Juniper, Mikrotik."
+            },
+            {
+              "job_id": "JD166",
+              "field": "requirements",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Knowledge of network and system security"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD020",
+              "field": "requirements",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong knowledge of LAN/WAN, VLAN, routing, switching, and firewall management"
+            },
+            {
+              "job_id": "JD159",
+              "field": "requirements",
+              "matched_term": "router",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Có kinh nghiệm làm việc với các thiết bị mạng (switch, router, firewall) của các hãng như Cisco, Juniper, Mikrotik."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD020",
+              "field": "description",
+              "matched_term": "network",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Monitor and maintain IT infrastructure systems including server, network, storage, backup, and cloud environment"
+            },
+            {
+              "job_id": "JD166",
+              "field": "requirements",
+              "matched_term": "network",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Knowledge of network and system security"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0008",
+          "kkt_type": "K",
+          "canonical_name": "Chính sách an toàn bảo mật hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD166",
+              "field": "requirements",
+              "matched_term": "system security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Knowledge of network and system security"
+            }
+          ]
+        },
         {
           "entity_id": "K0036",
           "kkt_type": "K",
@@ -5360,6 +8098,54 @@
           ]
         },
         {
+          "entity_id": "K0067",
+          "kkt_type": "K",
+          "canonical_name": "Lập và thực hiện kế hoạch công tác",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD020",
+              "field": "description",
+              "matched_term": "planning",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Prepare and maintain documentation, standard procedures, and reports to support audit, planning and continuous improvement"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD166",
+              "field": "description",
+              "matched_term": "customer service",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Provide high-level customer service and escalate issues as per protocol."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD020",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Prepare and maintain documentation, standard procedures, and reports to support audit, planning and continuous improvement"
+            }
+          ]
+        },
+        {
           "entity_id": "K0100",
           "kkt_type": "K",
           "canonical_name": "Quy trình kinh doanh",
@@ -5372,6 +8158,78 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Xây dựng và duy trì tài liệu hướng dẫn, quy trình vận hành hệ thống."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD020",
+              "field": "description",
+              "matched_term": "troubleshoot",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Troubleshoot and resolve system incidents to ensure minimal downtime and timely recovery"
+            },
+            {
+              "job_id": "JD166",
+              "field": "description",
+              "matched_term": "troubleshoot",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Monitor system performance and troubleshoot any issues"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0046",
+          "kkt_type": "S",
+          "canonical_name": "Phân quyền người dùng trong cơ sở dữ liệu",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD020",
+              "field": "description",
+              "matched_term": "access control",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Manage and support infrastructure-related systems such as CCTV, PA, PBX, eWork, and access control systems to ensure stable operation and integrate with corporate IT environment"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD166",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication and customer service skills"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD166",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication and customer service skills"
             }
           ]
         },
@@ -5516,11 +8374,27 @@
       "jobs_without_kkt_ids": [
         "JD065"
       ],
-      "kkt_count": 3,
-      "knowledge_count": 2,
+      "kkt_count": 5,
+      "knowledge_count": 4,
       "skill_count": 1,
       "tool_count": 0,
       "kkt_list": [
+        {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD026",
+              "field": "requirements",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Có khả năng làm việc độc lập lẫn làm việc nhóm, tinh thần hợp tác tốt."
+            }
+          ]
+        },
         {
           "entity_id": "K0036",
           "kkt_type": "K",
@@ -5550,6 +8424,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Web Grapic Developer"
+            }
+          ]
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD026",
+              "field": "requirements",
+              "matched_term": "LAN",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Có khả năng làm việc độc lập lẫn làm việc nhóm, tinh thần hợp tác tốt."
             }
           ]
         },
@@ -5601,9 +8491,9 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 12,
-      "knowledge_count": 7,
-      "skill_count": 3,
+      "kkt_count": 15,
+      "knowledge_count": 8,
+      "skill_count": 5,
       "tool_count": 2,
       "kkt_list": [
         {
@@ -5687,6 +8577,22 @@
           ]
         },
         {
+          "entity_id": "K0074",
+          "kkt_type": "K",
+          "canonical_name": "Mô tả thông tin, tài liệu, hành vi người dùng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD005",
+              "field": "description",
+              "matched_term": "documentation",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Analyze and synthesize the collected business information and document it as business requirements/documentation."
+            }
+          ]
+        },
+        {
           "entity_id": "K0100",
           "kkt_type": "K",
           "canonical_name": "Quy trình kinh doanh",
@@ -5751,6 +8657,22 @@
           ]
         },
         {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD005",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong communication and teamwork skills; excellent persuasion, negotiation, and problem-solving abilities.Technology Pioneer, Trustworthy"
+            }
+          ]
+        },
+        {
           "entity_id": "S0118",
           "kkt_type": "S",
           "canonical_name": "Tư duy phản biện",
@@ -5763,6 +8685,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Intelligent, logical thinker, proactive, with strong critical thinking."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD005",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Strong communication and teamwork skills; excellent persuasion, negotiation, and problem-solving abilities.Technology Pioneer, Trustworthy"
             }
           ]
         },
@@ -5829,10 +8767,10 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 2,
+      "kkt_count": 3,
       "knowledge_count": 1,
       "skill_count": 1,
-      "tool_count": 0,
+      "tool_count": 1,
       "kkt_list": [
         {
           "entity_id": "K0036",
@@ -5863,6 +8801,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Lập kế hoạch, tổ chức và tiến hành thi công dự án."
+            }
+          ]
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD004",
+              "field": "requirements",
+              "matched_term": "tin học văn phòng",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Sử dụng tốt phần mềm tin học chuyên ngành, tin học văn phòng."
             }
           ]
         }
@@ -5898,9 +8852,9 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 7,
+      "kkt_count": 10,
       "knowledge_count": 5,
-      "skill_count": 0,
+      "skill_count": 3,
       "tool_count": 2,
       "kkt_list": [
         {
@@ -5992,6 +8946,54 @@
           ]
         },
         {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD225",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist in developing and executing internal and external communication plans and initiatives"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD225",
+              "field": "description",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Assist in developing and executing internal and external communication plans and initiatives"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD225",
+              "field": "requirements",
+              "matched_term": "information systems",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Current third or final-year students pursuing a bachelor's degree in Data Engineer, Information Systems, Data Science, or related fields"
+            }
+          ]
+        },
+        {
           "entity_id": "T0015",
           "kkt_type": "T",
           "canonical_name": "Python",
@@ -6063,9 +9065,9 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 2,
+      "kkt_count": 4,
       "knowledge_count": 1,
-      "skill_count": 0,
+      "skill_count": 2,
       "tool_count": 1,
       "kkt_list": [
         {
@@ -6081,6 +9083,38 @@
               "method": "canonical_norm",
               "coverage_status": "",
               "evidence_snippet": "- Lập dự báo và theo dõi tình hình thực hiện Target theo kế hoạch của - các bộ phận kinh doanh."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD209",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Clear, confident social and communication abilities (both written and verbal) to interact in a natural, compelling manner with senior executives"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD209",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Clear, confident social and communication abilities (both written and verbal) to interact in a natural, compelling manner with senior executives"
             }
           ]
         },
@@ -6125,18 +9159,107 @@
       ],
       "found_job_count": 2,
       "missing_job_ids": [],
-      "jobs_with_kkt_count": 0,
-      "jobs_with_kkt_ids": [],
-      "jobs_without_kkt_count": 2,
-      "jobs_without_kkt_ids": [
+      "jobs_with_kkt_count": 2,
+      "jobs_with_kkt_ids": [
         "JD002",
         "JD241"
       ],
-      "kkt_count": 0,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 5,
       "knowledge_count": 0,
-      "skill_count": 0,
-      "tool_count": 0,
-      "kkt_list": []
+      "skill_count": 4,
+      "tool_count": 1,
+      "kkt_list": [
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 2,
+          "evidence_examples": [
+            {
+              "job_id": "JD002",
+              "field": "title",
+              "matched_term": "IT support",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "IT Support"
+            },
+            {
+              "job_id": "JD241",
+              "field": "title",
+              "matched_term": "IT support",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "IT Support Intern"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD002",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good troubleshooting mindset & communication skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD002",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good troubleshooting mindset & communication skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0146",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng kế hoạch",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD002",
+              "field": "description",
+              "matched_term": "roadmap",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "The IT Support Officer role works both autonomously and within a geographically dispersed team to deliver IT service improvements in line with the Five Group's technology roadmap."
+            }
+          ]
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD241",
+              "field": "requirements",
+              "matched_term": "Microsoft Office",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Basic understanding of Windows OS, Microsoft Office, and computer hardware."
+            }
+          ]
+        }
+      ]
     },
     {
       "position_id": "PP025",
@@ -6300,10 +9423,10 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 4,
+      "kkt_count": 5,
       "knowledge_count": 2,
       "skill_count": 1,
-      "tool_count": 1,
+      "tool_count": 2,
       "kkt_list": [
         {
           "entity_id": "K0036",
@@ -6390,6 +9513,22 @@
               "method": "canonical_norm",
               "coverage_status": "",
               "evidence_snippet": "- Thành thạo ngôn ngữ lập trình C/C++"
+            }
+          ]
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD010",
+              "field": "requirements",
+              "matched_term": "tin học văn phòng",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Sử dụng tốt tin học văn phòng, các phần mềm MSoffice, các công cụ quản lý dự án, ...."
             }
           ]
         }
@@ -7055,11 +10194,75 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 1,
-      "knowledge_count": 0,
-      "skill_count": 0,
+      "kkt_count": 5,
+      "knowledge_count": 1,
+      "skill_count": 3,
       "tool_count": 1,
       "kkt_list": [
+        {
+          "entity_id": "K0068",
+          "kkt_type": "K",
+          "canonical_name": "Lễ tân và giao tiếp trong môi trường văn phòng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD043",
+              "field": "description",
+              "matched_term": "customer support",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Customer support (such as handling inquiries, onboarding, and creating the guide to use product)"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD043",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication in English is a must"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD043",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good communication in English is a must"
+            }
+          ]
+        },
+        {
+          "entity_id": "S0131",
+          "kkt_type": "S",
+          "canonical_name": "Vận hành quy trình quản lý dữ liệu và thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD043",
+              "field": "description",
+              "matched_term": "data management",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Data management and analysis"
+            }
+          ]
+        },
         {
           "entity_id": "T0009",
           "kkt_type": "T",
@@ -7104,10 +10307,10 @@
       ],
       "jobs_without_kkt_count": 0,
       "jobs_without_kkt_ids": [],
-      "kkt_count": 2,
+      "kkt_count": 3,
       "knowledge_count": 2,
       "skill_count": 0,
-      "tool_count": 0,
+      "tool_count": 1,
       "kkt_list": [
         {
           "entity_id": "K0025",
@@ -7138,6 +10341,22 @@
               "method": "auto_alias_norm",
               "coverage_status": "auto_enriched",
               "evidence_snippet": "Tốt nghiệp đại học trở lên thuộc các chuyên ngành kinh tế / tài chính ngân hàng / quản trị kinh doanh..."
+            }
+          ]
+        },
+        {
+          "entity_id": "T0009",
+          "kkt_type": "T",
+          "canonical_name": "Microsoft Excel",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD109",
+              "field": "requirements",
+              "matched_term": "tin học văn phòng",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Kỹ năng về tin học văn phòng"
             }
           ]
         }
@@ -7324,17 +10543,130 @@
       ],
       "found_job_count": 1,
       "missing_job_ids": [],
-      "jobs_with_kkt_count": 0,
-      "jobs_with_kkt_ids": [],
-      "jobs_without_kkt_count": 1,
-      "jobs_without_kkt_ids": [
+      "jobs_with_kkt_count": 1,
+      "jobs_with_kkt_ids": [
         "JD006"
       ],
-      "kkt_count": 0,
-      "knowledge_count": 0,
-      "skill_count": 0,
+      "jobs_without_kkt_count": 0,
+      "jobs_without_kkt_ids": [],
+      "kkt_count": 7,
+      "knowledge_count": 3,
+      "skill_count": 4,
       "tool_count": 0,
-      "kkt_list": []
+      "kkt_list": [
+        {
+          "entity_id": "K0003",
+          "kkt_type": "K",
+          "canonical_name": "Bảo mật mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD006",
+              "field": "description",
+              "matched_term": "security",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Ensure server security and optimal performance."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0014",
+          "kkt_type": "K",
+          "canonical_name": "Cách thiết kế, vận hành hệ thống mạng",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD006",
+              "field": "description",
+              "matched_term": "network infrastructure",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Perform the installation, configuration, and maintenance of servers and network infrastructure."
+            }
+          ]
+        },
+        {
+          "entity_id": "K0075",
+          "kkt_type": "K",
+          "canonical_name": "Mạng máy tính",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD006",
+              "field": "description",
+              "matched_term": "network infrastructure",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Perform the installation, configuration, and maintenance of servers and network infrastructure."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0058",
+          "kkt_type": "S",
+          "canonical_name": "Phân tích quy trình sao lưu, phục hồi cơ sở dữ liệu",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD006",
+              "field": "description",
+              "matched_term": "disaster recovery",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Develop and test disaster recovery plans."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0075",
+          "kkt_type": "S",
+          "canonical_name": "Sử dụng kiến thức mạng máy tính trong học tập và giao tiếp",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD006",
+              "field": "requirements",
+              "matched_term": "communication",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good interpersonal and communication skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0125",
+          "kkt_type": "S",
+          "canonical_name": "Vận dụng kỹ năng giao tiếp và làm việc",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD006",
+              "field": "requirements",
+              "matched_term": "communication skills",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "Good interpersonal and communication skills."
+            }
+          ]
+        },
+        {
+          "entity_id": "S0148",
+          "kkt_type": "S",
+          "canonical_name": "Xây dựng và quản lý hệ thống thông tin",
+          "job_count": 1,
+          "evidence_examples": [
+            {
+              "job_id": "JD006",
+              "field": "title",
+              "matched_term": "IT administrator",
+              "method": "auto_alias_norm",
+              "coverage_status": "auto_enriched",
+              "evidence_snippet": "IT Administrator"
+            }
+          ]
+        }
+      ]
     },
     {
       "position_id": "PP037",
