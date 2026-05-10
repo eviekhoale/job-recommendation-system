@@ -1362,10 +1362,11 @@ input {
 
 .position-select {
   flex: 1 1 auto;
+  width: 100%;
   min-width: 0;
   max-width: 650px;
-  min-height: 58px;
-  padding: 0 46px 0 22px;
+  min-height: 54px;
+  padding: 0 42px 0 20px;
   border: 1px solid rgba(255, 255, 255, 0.68);
   border-radius: 18px;
   outline: none;
@@ -1374,6 +1375,10 @@ input {
   font-size: 1rem;
   font-weight: 800;
   box-shadow: 0 12px 26px rgba(15, 35, 66, 0.14);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .position-select:focus {
