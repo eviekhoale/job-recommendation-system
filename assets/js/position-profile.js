@@ -862,10 +862,22 @@ async function loadPageData() {
       : data.position_profiles || data.profiles || [];
 
     allProfiles = rawProfiles
-      .filter((profile) => getProfileName(profile))
-      .sort((a, b) => {
-        return getProfileName(a).localeCompare(getProfileName(b), "vi");
-      });
+  .filter((profile) => getProfileName(profile))
+  .sort((a, b) => {
+    const kstCompare = getProfileTermCount(b) - getProfileTermCount(a);
+
+    if (kstCompare !== 0) {
+      return kstCompare;
+    }
+
+    const jobCompare = getProfileJobCount(b) - getProfileJobCount(a);
+
+    if (jobCompare !== 0) {
+      return jobCompare;
+    }
+
+    return getProfileName(a).localeCompare(getProfileName(b), "vi");
+  });
 
     allProfiles.forEach((profile, index) => {
       profile.__profile_key = createProfileSelectKey(profile, index);
